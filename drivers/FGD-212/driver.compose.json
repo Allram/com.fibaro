@@ -42,6 +42,7 @@
       40960,
       45056
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2836,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2836/FGD-212-EN-T-v1.3.pdf",
     "learnmode": {

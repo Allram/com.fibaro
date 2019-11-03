@@ -38,6 +38,7 @@
       40960,
       45056
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 1655,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1655/FGGC-001-EN-T-v1.0.pdf",
     "learnmode": {

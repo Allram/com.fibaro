@@ -32,6 +32,7 @@
       40960,
       45056
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2731,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2731/FGS-2x3-EN-T-v1.2.pdf",
     "learnmode": {

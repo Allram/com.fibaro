@@ -27,6 +27,7 @@
       8202,
       12298
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 38,
     "learnmode": {
       "instruction": {
