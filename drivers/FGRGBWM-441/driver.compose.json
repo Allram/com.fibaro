@@ -62,6 +62,7 @@
       12288,
       16384
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 1054,
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
