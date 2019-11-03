@@ -33,6 +33,7 @@
       40960,
       45056
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2181,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2181/FGDW-002-EN-T-v0.3.2.pdf",
     "learnmode": {

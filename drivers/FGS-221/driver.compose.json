@@ -28,6 +28,7 @@
       8202,
       12298
     ],
+    "includeSecure": false,
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {

@@ -26,6 +26,7 @@
       8194,
       12290
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2791,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2791/FGFS-101-EN-T-v2.1.pdf",
     "learnmode": {

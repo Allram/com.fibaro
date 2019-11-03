@@ -26,6 +26,7 @@
       8194,
       12290
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2837,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2837/FGSD-002-EN-A-v1.1.pdf",
     "learnmode": {

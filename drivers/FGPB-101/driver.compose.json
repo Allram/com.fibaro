@@ -28,6 +28,7 @@
       40960,
       45056
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 1944,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1944/FGPB-101-EN-T-v1.0.pdf",
     "learnmode": {

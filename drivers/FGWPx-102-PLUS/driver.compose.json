@@ -42,6 +42,7 @@
       45057,
       45059
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 1653,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1653/FGWPx-102-EN-A-v2.0 29.01.2016-3.pdf",
     "learnmode": {

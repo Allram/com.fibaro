@@ -45,6 +45,7 @@
       45057,
       45058
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2762,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2762/FGMS-001-EN-T-v2.1.pdf",
     "learnmode": {

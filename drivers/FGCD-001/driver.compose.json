@@ -44,6 +44,7 @@
       45056,
       45057
     ],
+    "includeSecure": false,
     "zwaveAllianceProductId": 2336,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2336/FGCD-001-EN-T-v0.4.pdf",
     "learnmode": {
