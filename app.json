@@ -5,7 +5,7 @@
   },
   "brandColor": "#000000",
   "sdk": 2,
-  "version": "2.2.7",
+  "version": "2.2.8",
   "compatibility": ">=2.4.0",
   "description": {
     "en": "Fibaro devices for Homey"
@@ -5728,7 +5728,7 @@
         "learnmode": {
           "image": "/drivers/FGDW-002/assets/learnmode.svg",
           "instruction": {
-            "en": "press the button on your Fibaro Door/Window Sensor 2 three times.",
+            "en": "Press the button on your Fibaro Door/Window Sensor 2 three times.",
             "nl": "Druk driemaal op de knop op de Fibaro Door/Window Sensor 2."
           }
         },

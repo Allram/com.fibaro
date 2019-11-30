@@ -1,0 +1,5 @@
+{
+    "2.2.8": {
+        "en": "Fix RGBW light temperature mode. Thanks to aartse for contributing his fix."
+    }
+}

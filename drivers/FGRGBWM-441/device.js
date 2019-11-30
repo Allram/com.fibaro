@@ -57,10 +57,10 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
 
         this.registerCapabilityListener('light_temperature', async (value, opts) => {
             const colorTempValues = {
-                blue: (1 - value) * 255, // In temperature mode mix in blue to imitate cool white mode
+                blue: Math.round((1 - value) * 255  * this.getCapabilityValue('dim')), // In temperature mode mix in blue to imitate cool white mode
                 red: 0, // Set red to zero since we don't want colors
                 green: 0, // Set red to zero since we don't want colors
-                white: 255,
+                white: Math.round(255 * this.getCapabilityValue('dim')),
             }
 
             if (this.stripType === 'cct' || this.stripType === 'rgbw') {
@@ -186,7 +186,7 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
 
             return voltageValue;
         } else {
-            this.log('Color mode');
+            this.log('Color report received');
             // Get the associated color channel from the multichannelnode number
             let color = Object.keys(multiChannelNodeToColorMap).find(key => {
                 return multiChannelNodeToColorMap[key] === multiChannelNodeId;
@@ -194,6 +194,11 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
 
             this.currentRGB[color] = Math.round((report['Value (Raw)'].readUIntBE(0, 1) /99) * 255);
             const tempHSV = ZwaveUtils.convertRGBToHSV(this.currentRGB);
+
+            //overwrite tempHSV.value for dim level when lightmode is temperature
+            if (typeof this.currentRGB['white'] !== 'undefined' && this.currentRGB['white'] > 0) {
+                tempHSV.value = this.currentRGB['white'] / 255;
+            }
             
             // Debounce timeout to prevent glitches in the Homey UI.
             if (this.colorChangeReportTimeout) clearTimeout(this.colorChangeReportTimeout);
@@ -219,8 +224,8 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
 
         Object.keys(colorObject).forEach(async (key) => {
             this.log(`Sending value: ${colorObject[key]} to node: ${multiChannelNodeToColorMap[key]}`);
-            // Get the node matching with the color, then send the color value divided by 2.55 (0-100 range)
-            await this.node.MultiChannelNodes[multiChannelNodeToColorMap[key]].CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_SET({Value: Math.round(colorObject[key] /2.55)});
+            // Get the node matching with the color, then send the color value divided by 2.55 (0-99 range)
+            await this.node.MultiChannelNodes[multiChannelNodeToColorMap[key]].CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_SET({Value: Math.round((colorObject[key] / 255)*99)});
         });
         return true;
     }
