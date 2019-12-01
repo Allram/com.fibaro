@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Motion sensor",
+      "no": "Bevegelsesmelder",
       "nl": "Bewegingssensor"
     },
     "collapsed": false,
@@ -26,6 +27,7 @@
         "type": "number",
         "label": {
           "en": "Motion sensor blindtime",
+          "no": "Bevegelsesmelder blindtid",
           "nl": "Bewegingssensor blindtime"
         },
         "zwave": {
@@ -39,6 +41,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the period of time through which the PIR sensor is “blind” (insensitive) to motion.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer perioden som sensoren er “blind” (ikke oppdager) for bevegelse.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de periode na detecteren van beweging gedurende de sensor ongevoelig is voor nieuwe bewegingsdetectie."
         }
       },
@@ -61,6 +64,7 @@
         "type": "dropdown",
         "label": {
           "en": "Motion operating mode",
+          "no": "Operasjonsmodus bevegelse",
           "nl": "Bewegingsalarm functie"
         },
         "zwave": {
@@ -70,6 +74,7 @@
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines when the motion should be active.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer når bevegelsesdeteksjon skal være aktivt.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer het bewegingsalarm actief moet zijn."
         },
         "values": [
@@ -77,6 +82,7 @@
             "id": "0",
             "label": {
               "en": "Always active",
+              "no": "Alltid aktiv",
               "nl": "Altijd actief"
             }
           },
@@ -84,6 +90,7 @@
             "id": "1",
             "label": {
               "en": "Only during day",
+              "no": "Kun om dagen",
               "nl": "Alleen overdag"
             }
           },
@@ -91,6 +98,7 @@
             "id": "2",
             "label": {
               "en": "Only during night",
+              "no": "Kun om natten",
               "nl": "Alleen 's nachts"
             }
           }
@@ -102,6 +110,7 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
+      "no": "Temperatursensor",
       "nl": "Temperatuurssensor"
     },
     "collapsed": true,
@@ -165,6 +174,7 @@
         "type": "number",
         "label": {
           "en": "Minimum temperature for blue LED (°C)",
+          "no": "Minimumstemperatur for blå LED (°C)",
           "nl": "Minimale temperatuur voor blauwe LED (°C)"
         },
         "zwave": {
@@ -179,6 +189,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) is only relevant when LED signaling mode is set to \"depends on temperature\", and must be below red LED.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) er kun relevant når LED signalmodus er satt til \"avhenger av temperatur\", og må være under rød LED.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) is alleen relevant wanneer LED kleur staat ingesteld op \"op basis van temperatuur\", en moet onder rode LED zijn."
         }
       },
@@ -187,6 +198,7 @@
         "type": "number",
         "label": {
           "en": "Temperature for red LED (°C)",
+          "no": "Temperatur for rød LED (°C)",
           "nl": "Temperatuur voor rode LED (°C)"
         },
         "zwave": {
@@ -201,6 +213,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) is only relevant when LED signaling mode is set to \"depends on temperature\", and must be above blue LED.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) er kun relevant når LED signalmodus er satt til \"avhenger av temperatur\", og må være over blå LED.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) is alleen relevant wanneer LED kleur staat ingesteld op \"op basis van temperatuur\", en moet boven blauwe LED zijn."
         }
       }
@@ -210,6 +223,7 @@
     "type": "group",
     "label": {
       "en": "Light sensor",
+      "no": "Lyssensor",
       "nl": "Lichtsensor"
     },
     "collapsed": true,
@@ -247,6 +261,7 @@
         "type": "number",
         "label": {
           "en": "Motion operating mode threshold",
+          "no": "Bevegelsesgrense",
           "nl": "Bewegingsalarm functie drempel"
         },
         "zwave": {
@@ -261,6 +276,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines on which lux level it is either day or night.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer lux nivå som definerer dag eller natt.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt bij hoeveel lux het schakelt tussen dag of nacht."
         }
       }
@@ -270,6 +286,7 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
+      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,
@@ -305,10 +322,12 @@
         "value": "0",
         "label": {
           "en": "Tamper operation mode",
+          "no": "Operasjonsmodus sabotasje",
           "nl": "Trilling operatie modus"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the tamper alarm and how it reports.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvordan sabotasjealarm skal oppføre seg og rapportere.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van het sabotage alarm en hoe het rapporteert."
         },
         "zwave": {
@@ -320,6 +339,7 @@
             "id": "0",
             "label": {
               "en": "Tamper only",
+              "no": "Kun sabotasje",
               "nl": "Alleen sabotage alarm"
             }
           },
@@ -327,6 +347,7 @@
             "id": "1",
             "label": {
               "en": "Tamper and earthquake detector",
+              "no": "Sabotasje og jordskjelvsensor",
               "nl": "Sabotage en aardbeving detectie"
             }
           },
@@ -334,6 +355,7 @@
             "id": "2",
             "label": {
               "en": "Tamper and orientation in space",
+              "no": "Sabotasje og rotasjonsvarsling",
               "nl": "Sabotage en orientatie raportage"
             }
           }
@@ -346,6 +368,7 @@
     "type": "group",
     "label": {
       "en": "LED notifications",
+      "no": "LED varsling",
       "nl": "LED notificaties"
     },
     "collapsed": true,
@@ -371,6 +394,7 @@
         "type": "checkbox",
         "label": {
           "en": "LED indicating tamper alarm",
+          "no": "LED varsling ved sabotasje",
           "nl": "LED geeft trillingsalarm aan"
         },
         "zwave": {
@@ -380,6 +404,7 @@
         "value": true,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the LED alarm (police car resemblance) is active or not.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om LED alarm skal være aktiv eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de LED actief is bij het sabotage alarm."
         }
       }
@@ -389,6 +414,7 @@
     "type": "group",
     "label": {
       "en": "Commands",
+      "no": "Kommandoer",
       "nl": "Commando's"
     },
     "collapsed": true,
@@ -405,6 +431,7 @@
             "id": "0",
             "label": {
               "en": "on and off",
+              "no": "på og av",
               "nl": "aan en uit"
             }
           },
@@ -412,6 +439,7 @@
             "id": "1",
             "label": {
               "en": "only on",
+              "no": "kun på",
               "nl": "alleen aan"
             }
           },
@@ -419,6 +447,7 @@
             "id": "2",
             "label": {
               "en": "only off",
+              "no": "kun av",
               "nl": "alleen uit"
             }
           }
