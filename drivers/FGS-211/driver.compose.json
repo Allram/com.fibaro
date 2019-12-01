@@ -33,6 +33,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on the {{driverNameEn}} three times",
+        "no": "Trykk på knappen på {{driverNameEn}} tre ganger",
         "nl": "Druk driemaal op de knop op de {{driverNameNl}}"
       }
     },
@@ -48,6 +49,7 @@
         "icon": "{{driverAssetsPath}}/icon-2.svg",
         "name": {
           "en": "Input 2 (S2)",
+          "no": "Inngang 2 (S2)",
           "nl": "Ingang 2 (S2)"
         },
         "settings": []

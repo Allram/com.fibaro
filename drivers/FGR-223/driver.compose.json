@@ -28,6 +28,7 @@
       "image": "{{driverassetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the B-button on your {{driverNameEn}} three times.",
+        "no": "Trykk på B-knappen på {{driverNameEn}} tre ganger.",
         "nl": "Druk driemaal op de B-knop van uw {{driverNameNl}}."
       }
     },

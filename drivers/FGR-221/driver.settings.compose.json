@@ -4,10 +4,12 @@
     "type": "dropdown",
     "label": {
       "en": "Switch type input",
+      "no": "Bryterinngang",
       "nl": "Schakelaar type ingang"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines what type of switch is used.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilken type bryter som er benyttet.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type schakelaar er wordt gebruikt."
     },
     "zwave": {
@@ -20,6 +22,7 @@
         "id": "0",
         "label": {
           "en": "Monostable switch",
+          "no": "Monostabil bryter",
           "nl": "Puls schakelaar"
         }
       },
@@ -27,6 +30,7 @@
         "id": "1",
         "label": {
           "en": "Toggle switch",
+          "no": "Vekslebryter",
           "nl": "Tuimel schakelaar"
         }
       },
@@ -34,6 +38,7 @@
         "id": "2",
         "label": {
           "en": "Single monostable switch",
+          "no": "Singel monostabil bryter",
           "nl": "Enkele puls schakelaar"
         }
       }

@@ -4,10 +4,12 @@
     "type": "checkbox",
     "label": {
       "en": "Auto-off behaviour",
+      "no": "Auto-av oppførsel",
       "nl": "Automatisch uit gedrag"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not pressing the switch a second time will immediately turn of the relay.",
+      "no": "Denne ({{zwaveParameterIndex}}) bestemmer om relèet skal skru seg av om du trykker på knappen for andre gang eller ikke.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het tweemaal indrukken van de schakelaar het relais direct uitschakelt."
     },
     "zwave": {
@@ -21,10 +23,12 @@
     "type": "number",
     "label": {
       "en": "Auto-off relay",
+      "no": "Auto-av relè",
       "nl": "Automatisch uit relais"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the time after which the relay will turn off automatically.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tiden som relèet skal skru seg av automatisk.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd waarna het relais automatisch uit gaat."
     },
     "zwave": {
@@ -43,6 +47,7 @@
     "$id": "switch_type",
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the type of switch connected to input 1 of the {{driverNameEn}}.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer typen bryter som er tilkoblet inngang 1 på {{driverNameEn}}.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) specificeert het type schakelaar dat is aangesloten op ingang 1 van de {{driverNameNl}}."
     },
     "zwave": {
@@ -54,6 +59,7 @@
         "id": "0",
         "label": {
           "en": "Momentary switch",
+          "no": "Momentanbryter",
           "nl": "Pulsdrukschakelaar"
         }
       },
@@ -61,6 +67,7 @@
         "id": "1",
         "label": {
           "en": "Toggle switch",
+          "no": "Vekslebryter",
           "nl": "Tuimelschakelaar"
         }
       }
