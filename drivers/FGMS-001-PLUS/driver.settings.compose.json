@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Motion sensor",
+      "no": "Bevegelsesmelder",
       "nl": "Bewegingssensor"
     },
     "collapsed": false,
@@ -16,6 +17,7 @@
         "type": "number",
         "label": {
           "en": "Motion sensor blindtime",
+          "no": "Bevegelsesmelder blindtid",
           "nl": "Bewegingssensor blindtime"
         },
         "zwave": {
@@ -29,6 +31,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the period of time through which the PIR sensor is “blind” (insensitive) to motion.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer perioden som sensoren er “blind” (ikke oppdager) for bevegelse.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de periode na detecteren van beweging gedurende de sensor ongevoelig is voor nieuwe bewegingsdetectie."
         }
       },
@@ -37,10 +40,12 @@
         "value": "1",
         "label": {
           "en": "Motion detection pulse counter",
+          "no": "Pulsteller bevegelse",
           "nl": "Bewegingsdetectie pulse teller"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the number of times motion is detected before motion is reported. A higher value results in a less sensitive motion sensor.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) determines bestemmer antall ganger bevegelse må oppdages før det blir rapportert. En høyere verdi resulterer i en mindre sensitiv bevegelsesmelder.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de hoeveelheid bewegingen voordat dit wordt gerapporteert, een hogere waarde resulteert in een minder gevoelige sensor."
         },
         "zwave": {
@@ -52,6 +57,7 @@
             "id": "0",
             "label": {
               "en": "1 pulse",
+              "no": "1 puls",
               "nl": "1 beweging"
             }
           },
@@ -59,6 +65,7 @@
             "id": "1",
             "label": {
               "en": "2 pulse",
+              "no": "2 pulser",
               "nl": "2 bewegingen"
             }
           },
@@ -66,6 +73,7 @@
             "id": "2",
             "label": {
               "en": "3 pulse",
+              "no": "3 pulser",
               "nl": "3 bewegingen"
             }
           },
@@ -73,6 +81,7 @@
             "id": "3",
             "label": {
               "en": "4 pulse",
+              "no": "4 pulser",
               "nl": "4 bewegingen"
             }
           }
@@ -84,10 +93,12 @@
         "value": "2",
         "label": {
           "en": "Motion detection time window",
+          "no": "Tidsvindu bevegelse",
           "nl": "Tijdvak voor bewegingsdetectie"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the period of time in which the number of moves set in the \"Motion pulse counter\" must be reported. A higher value results in a more sensitive motion sensor. It is not recommended to modify this setting.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tidsperioden som antall pulser satt i \"Pulsteller bevegelse\" må rapportere. En høyere verdi resulterer i en mer sensitiv bevegelsesmelder. Det er ikke anbefalt å endre denne innstillingen.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het tijdvak waarin de bewegingen aangegeven in de \"Bewegingsdetectie pulse teller\" instelling moeten worden gerapporteerd. Een hogere waarde resulteert in een gevoeligere sensor. Het is afgeraden om deze instelling aan te passen."
         },
         "zwave": {
@@ -98,25 +109,29 @@
           {
             "id": "0",
             "label": {
-              "en": "4 seconds"
+              "en": "4 seconds",
+              "no": "4 sekunder"
             }
           },
           {
             "id": "1",
             "label": {
-              "en": "8 seconds"
+              "en": "8 seconds",
+              "no": "8 sekunder"
             }
           },
           {
             "id": "2",
             "label": {
-              "en": "12 seconds"
+              "en": "12 seconds",
+              "no": "12 sekunder"
             }
           },
           {
             "id": "3",
             "label": {
-              "en": "16 seconds"
+              "en": "16 seconds",
+              "no": "16 sekunder"
             }
           }
         ],
@@ -131,10 +146,12 @@
         "value": "0",
         "label": {
           "en": "Motion operating mode",
+          "no": "Operasjonsmodus bevegelse",
           "nl": "Bewegingsalarm functie"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines when the motion should be active.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer når bevegelse skal være aktivt.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer het bewegingsalarm actief moet zijn."
         },
         "zwave": {
@@ -146,6 +163,7 @@
             "id": "0",
             "label": {
               "en": "Always active",
+              "no": "Alltid aktiv",
               "nl": "Altijd actief"
             }
           },
@@ -153,6 +171,7 @@
             "id": "1",
             "label": {
               "en": "Only during day",
+              "no": "Kun om dagen",
               "nl": "Alleen overdag"
             }
           },
@@ -160,6 +179,7 @@
             "id": "2",
             "label": {
               "en": "Only during night",
+              "no": "Kun om natten",
               "nl": "Alleen 's nachts"
             }
           }
@@ -172,6 +192,7 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
+      "no": "Temperatursensor",
       "nl": "Temperatuurssensor"
     },
     "collapsed": true,
@@ -220,10 +241,12 @@
         "value": 18,
         "label": {
           "en": "Temperature for blue LED (°C)",
+          "no": "Minimumstemperatur for blå LED (°C)",
           "nl": "Temperatuur voor blauwe LED (°C)"
         },
         "hint": {
           "en": "The parameter ({{zwaveParameterIndex}}) is relevant only when LED signaling mode is set to 'depends on temperature'. Any temperature at or below this value will set the LED to blue, above this value it will gradually change to red.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) er kun relevant når LED signalmodus er satt til \"avhenger av temperatur\", og må være under rød LED.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) is alleen relevant wanneer LED kleur modus staat ingesteld op 'op basis van temperatuur'. Als de temperatuur lager of gelijk aan deze waarde is licht de LED blauw op, boven deze waarde wordt de LED geleidelijk roder."
         },
         "zwave": {
@@ -241,10 +264,12 @@
         "value": 28,
         "label": {
           "en": "Temperature for red LED (°C)",
+          "no": "Temperatur for rød LED (°C)",
           "nl": "Temperatuur voor rode LED (°C)"
         },
         "hint": {
           "en": "The parameter ({{zwaveParameterIndex}}) is relevant only when LED signaling mode is set to 'depends on temperature'.  Any temperature at or above this value will set the LED to red, below this value it will gradually change to blue.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) er kun relevant når LED signalmodus er satt til \"avhenger av temperatur\", og må være over blå LED.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) is alleen relevant wanneer LED kleur modus staat ingesteld op 'op basis van temperatuur'. Als de temperatuur hoger of gelijk aan deze waarde is licht de LED rood op, onder deze waarde wordt de LED geleidelijk blauwer."
         },
         "zwave": {
@@ -263,6 +288,7 @@
     "type": "group",
     "label": {
       "en": "Light sensor",
+      "no": "Lyssensor",
       "nl": "Lichtsensor"
     },
     "collapsed": true,
@@ -280,10 +306,12 @@
         "value": 200,
         "label": {
           "en": "Motion operating mode threshold",
+          "no": "Bevegelsesgrense",
           "nl": "Bewegingsalarm functie drempel"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines on which lux level it is either day or night.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer lux nivå som definerer dag eller natt.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de hoeveel lux waarbij het schakelt tussen dag of nacht."
         },
         "zwave": {
@@ -302,6 +330,7 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
+      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,
@@ -340,10 +369,12 @@
         "value": "0",
         "label": {
           "en": "Tamper operation mode",
+          "no": "Operasjonsmodus sabotasje",
           "nl": "Trilling operatie modus"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the tamper alarm and how it reports.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvordan sabotasjealarm skal oppføre seg og rapportere.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van het sabotage alarm en hoe het rapporteert."
         },
         "zwave": {
@@ -355,6 +386,7 @@
             "id": "0",
             "label": {
               "en": "Tamper only",
+              "no": "Kun sabotasje",
               "nl": "Alleen sabotage alarm"
             }
           },
@@ -362,6 +394,7 @@
             "id": "1",
             "label": {
               "en": "Tamper and earthquake detector",
+              "no": "Sabotasje og jordskjelvsensor",
               "nl": "Sabotage en aardbeving detectie"
             }
           },
@@ -369,6 +402,7 @@
             "id": "2",
             "label": {
               "en": "Tamper and orientation in space",
+              "no": "Sabotasje og rotasjonsvarsling",
               "nl": "Sabotage en orientatie raportage"
             }
           }
@@ -383,10 +417,12 @@
         "id": "tamper_broadcast_mode",
         "value": false,
         "label": {
-          "en": "Tamper broadcast mode"
+          "en": "Tamper broadcast mode",
+          "no": "Sabotasje broadcast modus"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not tamper alarms are send in broadcast mode.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om sabotasjealarm skal sendes i broadcast-modus eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de sabotage alarm meldingen worden verstuurt in broadcast modus."
         },
         "zwave": {
@@ -399,10 +435,12 @@
         "id": "tamper_broadcast_mode_backward_compatible",
         "value": false,
         "label": {
-          "en": "Tamper - backward compatible broadcast mode"
+          "en": "Tamper - backward compatible broadcast mode",
+          "no": "Sabotasje - Bakoverkompatibel broadcast-modus"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not tamper alarms are send in broadcast mode. (Backwards compatibility mode).",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om sabotasjealarm skal sendes i broadcast-modus eller ikke. (Bakoverkompatibel modus)",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de sabotage alarm meldingen worden verstuurt in broadcast modus. (Backwards compatibility modus)."
         },
         "zwave": {
@@ -417,6 +455,7 @@
     "type": "group",
     "label": {
       "en": "LED notifications",
+      "no": "LED varsling",
       "nl": "LED notificaties"
     },
     "collapsed": true,
@@ -459,6 +498,7 @@
     "type": "group",
     "label": {
       "en": "Commands",
+      "no": "Kommandoer",
       "nl": "Commando's"
     },
     "collapsed": true,
@@ -471,6 +511,7 @@
             "id": "0",
             "label": {
               "en": "On and off",
+              "no": "på og av",
               "nl": "Aan en uit"
             }
           },
@@ -478,6 +519,7 @@
             "id": "1",
             "label": {
               "en": "Only on",
+              "no": "kun på",
               "nl": "Alleen aan"
             }
           },
@@ -485,6 +527,7 @@
             "id": "2",
             "label": {
               "en": "Only off",
+              "no": "kun av",
               "nl": "Alleen uit"
             }
           }
@@ -504,6 +547,7 @@
     "type": "group",
     "label": {
       "en": "Associations",
+      "no": "Assosiasjoner",
       "nl": "Associaties"
     },
     "collapsed": true,
@@ -516,6 +560,7 @@
             "id": "0",
             "label": {
               "en": "None of the groups are sent as secure",
+              "no": "Ingen av gruppene sendes som secure",
               "nl": "Geen van de groepen wordt beveiligd verstuurd"
             }
           },
@@ -523,6 +568,7 @@
             "id": "1",
             "label": {
               "en": "Association group 2, on/off sent as secure",
+              "no": "Assosiasjonsgruppe 2, på/av sendes som secure",
               "nl": "Associatie groep 2, aan/uit wordt beveiligd verstuurd"
             }
           },
@@ -530,6 +576,7 @@
             "id": "2",
             "label": {
               "en": "Association group 3, tamper sent as secure",
+              "no": "Assosiasjonsgruppe 3, sabotasje sendes som secure",
               "nl": "Associatie groep 3, trilling wordt beveiligd verstuurd"
             }
           },
@@ -537,6 +584,7 @@
             "id": "3",
             "label": {
               "en": "Association group 2 and 3 sent as secure (on/off and tamper)",
+              "no": "Assosiasjonsgruppe 2 og 3 sendes som secure (på/av og sabotasje)",
               "nl": "Associatie groep 2 en 3 worden beveiligd verstuurd (aan/uit and trilling)"
             }
           }
