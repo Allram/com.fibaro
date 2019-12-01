@@ -2,10 +2,12 @@
   "value": 15,
   "label": {
     "en": "Sensitivity",
+    "no": "Sensititet",
     "nl": "Gevoeligheid"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) sets the sensitivity for this sensor.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) setter sensitiviteten for denne sensoren.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gevoeligheid van deze sensor."
   },
   "zwave": {

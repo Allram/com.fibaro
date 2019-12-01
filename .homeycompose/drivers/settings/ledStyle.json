@@ -2,10 +2,12 @@
   "value": "10",
   "label": {
     "en": "LED light style",
+    "no": "LED lysstil",
     "nl": "LED licht stijl"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the way in which the LED behaves after events have been detected.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvordan LED oppfører seg etter hendelser har blitt detektert.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de LED wanneer er een statusverandering is gedetecteerd."
   },
   "zwave": {
@@ -17,6 +19,7 @@
       "id": "0",
       "label": {
         "en": "Inactive",
+        "no": "Inaktiv",
         "nl": "Inactief"
       }
     },
@@ -24,6 +27,7 @@
       "id": "1",
       "label": {
         "en": "Colour depends on the temperature *1",
+        "no": "Farge avhenger av temperatur *1",
         "nl": "Kleur op basis van de temperatuur *1"
       }
     },
@@ -31,6 +35,7 @@
       "id": "10",
       "label": {
         "en": "Colour depends on the temperature *2",
+        "no": "Farge avhenger av temperatur *2",
         "nl": "Kleur op basis van de temperatuur *2"
       }
     },
@@ -38,6 +43,7 @@
       "id": "19",
       "label": {
         "en": "Colour depends on the temperature *3",
+        "no": "Farge avhenger av temperatur *3",
         "nl": "Kleur op basis van de temperatuur *3"
       }
     },
@@ -45,6 +51,7 @@
       "id": "2",
       "label": {
         "en": "Flashlight mode - 10 seconds",
+        "no": "Lommelyktmodus - 10 sekunder",
         "nl": "Zaklamp modus - 10 seconden"
       }
     },
@@ -52,6 +59,7 @@
       "id": "11",
       "label": {
         "en": "Flashlight mode (10 seconds, extends every motion)",
+        "no": "Lommelyktmodus (10 sekunder, forlenger ved bevegelse)",
         "nl": "Zaklamp modus (10 seconden, langer met elke beweging)"
       }
     },
@@ -59,6 +67,7 @@
       "id": "3",
       "label": {
         "en": "White *1",
+        "no": "Hvit *1",
         "nl": "Wit *1"
       }
     },
@@ -66,6 +75,7 @@
       "id": "12",
       "label": {
         "en": "White *2",
+        "no": "Hvit *2",
         "nl": "Wit *2"
       }
     },
@@ -73,6 +83,7 @@
       "id": "20",
       "label": {
         "en": "White *3",
+        "no": "Hvit *3",
         "nl": "Wit *3"
       }
     },
@@ -80,6 +91,7 @@
       "id": "4",
       "label": {
         "en": "Red *1",
+        "no": "Rød *1",
         "nl": "Rood *1"
       }
     },
@@ -87,6 +99,7 @@
       "id": "13",
       "label": {
         "en": "Red *2",
+        "no": "Rød *3",
         "nl": "Rood *2"
       }
     },
@@ -94,6 +107,7 @@
       "id": "21",
       "label": {
         "en": "Red *3",
+        "no": "Rød *3",
         "nl": "Rood *3"
       }
     },
@@ -101,6 +115,7 @@
       "id": "5",
       "label": {
         "en": "Green *1",
+        "no": "Grønn *1",
         "nl": "Groen *1"
       }
     },
@@ -108,6 +123,7 @@
       "id": "14",
       "label": {
         "en": "Green *2",
+        "no": "Grønn *2",
         "nl": "Groen *2"
       }
     },
@@ -115,6 +131,7 @@
       "id": "22",
       "label": {
         "en": "Green *3",
+        "no": "Grønn *3",
         "nl": "Groen *3"
       }
     },
@@ -122,6 +139,7 @@
       "id": "6",
       "label": {
         "en": "Blue *1",
+        "no": "Blå *1",
         "nl": "Blauw *1"
       }
     },
@@ -129,6 +147,7 @@
       "id": "15",
       "label": {
         "en": "Blue *2",
+        "no": "Blå *2",
         "nl": "Blauw *2"
       }
     },
@@ -136,6 +155,7 @@
       "id": "23",
       "label": {
         "en": "Blue *3",
+        "no": "Blå *3",
         "nl": "Blauw *3"
       }
     },
@@ -143,6 +163,7 @@
       "id": "7",
       "label": {
         "en": "Yellow *1",
+        "no": "Gul *1",
         "nl": "Geel *1"
       }
     },
@@ -150,6 +171,7 @@
       "id": "16",
       "label": {
         "en": "Yellow *2",
+        "no": "Gul *2",
         "nl": "Geel *2"
       }
     },
@@ -157,6 +179,7 @@
       "id": "24",
       "label": {
         "en": "Yellow *3",
+        "no": "Gul *3",
         "nl": "Geel *3"
       }
     },
@@ -164,6 +187,7 @@
       "id": "8",
       "label": {
         "en": "Cyan *1",
+        "no": "Cyan *1",
         "nl": "Cyaan *1"
       }
     },
@@ -171,6 +195,7 @@
       "id": "17",
       "label": {
         "en": "Cyan *2",
+        "no": "Cyan *2",
         "nl": "Cyaan *2"
       }
     },
@@ -178,6 +203,7 @@
       "id": "25",
       "label": {
         "en": "Cyan *3",
+        "no": "Cyan *3",
         "nl": "Cyaan *3"
       }
     },
@@ -185,6 +211,7 @@
       "id": "9",
       "label": {
         "en": "Magenta *1",
+        "no": "Magenta *1",
         "nl": "Magenta *1"
       }
     },
@@ -192,6 +219,7 @@
       "id": "18",
       "label": {
         "en": "Magenta *2",
+        "no": "Magenta *2",
         "nl": "Magenta *2"
       }
     },
@@ -199,6 +227,7 @@
       "id": "26",
       "label": {
         "en": "Magenta *3",
+        "no": "Magenta *3",
         "nl": "Magenta *3"
       }
     }

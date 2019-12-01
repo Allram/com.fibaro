@@ -2,10 +2,12 @@
 	"id": "FGD-21x_dim_startLevelChange",
 	"title": {
 		"en": "Start dim level change",
+		"no": "Start endring av dimmenivå",
 		"nl": "Start helderheid transitie"
 	},
 	"hint": {
 		"en": "This action card will trigger the start of a dim level change in the set direction. \nDuration (for the change in dim-level from 0-100%) can be set by using the transition symbol. \nIf not set, factory default duration is used.",
+		"no": "Dette handlingskortet vil utløse starten på en svak dimmeendring i innstilt retning. \nVarighet (for endring av dimmenivå 0-100%) kan bli satt ved bruk av overgangssymbolet. \nHvis ikke satt vil fabrikkinstillinger bli benyttet.",
 		"nl": "Deze actie kaart start een helderheids transitie in de ingestelde richting. \nTransitie duur (voor de transitie in helderheid van 0-100%) kan ingesteld worden met behulp van de transitie symbool. \nWanneer niet ingesteld, dan wordt de standaard duur gebruikt."
 	},
 	"duration": true,
@@ -23,6 +25,7 @@
 					"id": "0",
 					"label": {
 						"en": "Increase dim level",
+						"no": "Øk dimmenivå",
 						"nl": "Toenemende helderheid"
 					}
             },
@@ -30,6 +33,7 @@
 					"id": "1",
 					"label": {
 						"en": "Decrease dim level",
+						"no": "Senk dimmenivå",
 						"nl": "Afnemende helderheid"
 					}
             }

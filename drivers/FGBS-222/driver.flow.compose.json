@@ -4,6 +4,7 @@
       "id": "FGBS-222_i1_on",
       "title": {
         "en": "Input 1 opened",
+        "no": "Inngang 1 åpnet",
         "nl": "Ingang 1 geopend"
       },
       "args": []
@@ -12,6 +13,7 @@
       "id": "FGBS-222_i1_off",
       "title": {
         "en": "Input 1 closed",
+        "no": "Inngang 1 lukket",
         "nl": "Ingang 1 gesloten"
       },
       "args": []
@@ -20,6 +22,7 @@
       "id": "FGBS-222_i1_switch",
       "title": {
         "en": "Input 1 switched",
+        "no": "Inngang 1 endret",
         "nl": "Ingang 1 geschakeld"
       },
       "args": []
@@ -28,6 +31,7 @@
       "id": "FGBS-222_i2_on",
       "title": {
         "en": "Input 2 opened",
+        "no": "Inngang 2 åpnet",
         "nl": "Ingang 2 geopend"
       },
       "args": []
@@ -36,6 +40,7 @@
       "id": "FGBS-222_i2_off",
       "title": {
         "en": "Input 2 closed",
+        "no": "Inngang 2 lukket",
         "nl": "Ingang 2 gesloten"
       },
       "args": []
@@ -44,6 +49,7 @@
       "id": "FGBS-222_i2_switch",
       "title": {
         "en": "Input 2 switched",
+        "no": "Inngang 2 endret",
         "nl": "Ingang 2 geschakeld"
       },
       "args": []
@@ -52,6 +58,7 @@
       "id": "FGBS-222_temp_internal",
       "title": {
         "en": "Internal temperature has changed",
+        "no": "Intern temperatur er endret",
         "nl": "Interal temperatuur is veranderd"
       },
       "args": [],
@@ -61,6 +68,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -71,6 +79,7 @@
       "id": "FGBS-222_temp1",
       "title": {
         "en": "Temperature 1 has changed",
+        "no": "Temperature 1 er endret",
         "nl": "Temperatuur 1 is veranderd"
       },
       "args": [],
@@ -80,6 +89,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -90,6 +100,7 @@
       "id": "FGBS-222_temp2",
       "title": {
         "en": "Temperature 2 has changed",
+        "no": "Temperature 2 er endret",
         "nl": "Temperatuur 2 is veranderd"
       },
       "args": [],
@@ -99,6 +110,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -109,6 +121,7 @@
       "id": "FGBS-222_temp3",
       "title": {
         "en": "Temperature 3 has changed",
+        "no": "Temperature 3 er endret",
         "nl": "Temperatuur 3 is veranderd"
       },
       "args": [],
@@ -118,6 +131,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -128,6 +142,7 @@
       "id": "FGBS-222_temp4",
       "title": {
         "en": "Temperature 4 has changed",
+        "no": "Temperature 4 er endret",
         "nl": "Temperatuur 4 is veranderd"
       },
       "args": [],
@@ -137,6 +152,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -147,6 +163,7 @@
       "id": "FGBS-222_temp5",
       "title": {
         "en": "Temperature 5 has changed",
+        "no": "Temperature 5 er endret",
         "nl": "Temperatuur 5 is veranderd"
       },
       "args": [],
@@ -156,6 +173,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -166,6 +184,7 @@
       "id": "FGBS-222_temp6",
       "title": {
         "en": "Temperature 6 has changed",
+        "no": "Temperature 6 er endret",
         "nl": "Temperatuur 6 is veranderd"
       },
       "args": [],
@@ -175,6 +194,7 @@
           "type": "number",
           "title": {
             "en": "Temperature",
+            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -187,6 +207,7 @@
       "id": "FGBS-222_i1_state",
       "title": {
         "en": "Input 1 !{{is open|is closed}}",
+        "no": "Inngang 1 !{{er åpen|er lukket}}",
         "nl": "Ingang 1 !{{is geopend|is gesloten}}"
       },
       "args": []
@@ -195,6 +216,7 @@
       "id": "FGBS-222_i2_state",
       "title": {
         "en": "Input 2 !{{is open|is closed}}",
+        "no": "Inngang 2 !{{er åpen|er lukket}}",
         "nl": "Ingang 2 !{{is geopend|is gesloten}}"
       },
       "args": []
@@ -205,6 +227,7 @@
       "id": "FGBS-222_o1_on",
       "title": {
         "en": "Output 1 on",
+        "no": "Utgang 1 på",
         "nl": "Uitgang 1 aan"
       },
       "args": []
@@ -213,6 +236,7 @@
       "id": "FGBS-222_o1_off",
       "title": {
         "en": "Output 1 off",
+        "no": "Utgang 1 av",
         "nl": "Uitgang 1 uit"
       },
       "args": []
@@ -221,6 +245,7 @@
       "id": "FGBS-222_o1_toggle",
       "title": {
         "en": "Output 1 toggle",
+        "no": "Utgang 1 veksle",
         "nl": "Uitgang 1 omschakelen"
       },
       "args": []
@@ -229,6 +254,7 @@
       "id": "FGBS-222_o2_on",
       "title": {
         "en": "Output 2 on",
+        "no": "Utgang 2 på",
         "nl": "Uitgang 2 aan"
       },
       "args": []
@@ -237,6 +263,7 @@
       "id": "FGBS-222_o2_off",
       "title": {
         "en": "Output 2 off",
+        "no": "Utgang 2 av",
         "nl": "Uitgang 2 uit"
       },
       "args": []
@@ -245,6 +272,7 @@
       "id": "FGBS-222_o2_toggle",
       "title": {
         "en": "Output 2 toggle",
+        "no": "Utgang 2 veksle",
         "nl": "Uitgang 2 omschakelen"
       },
       "args": []

@@ -2,6 +2,7 @@
   "type": "radio",
   "label": {
     "en": "Default position for sensor",
+    "no": "Standardposisjon for sensor",
     "nl": "Standaard positie voor sensor"
   },
   "zwave": {
@@ -10,6 +11,7 @@
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the default position for this sensor.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer standardposisjon for denne sensoren.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de standaard positite van de sensor."
   },
   "value": "0",

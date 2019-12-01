@@ -2,10 +2,12 @@
   "value": 0,
   "label": {
     "en": "Offset",
+    "no": "Offset",
     "nl": "Correctie"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the value to be added to the measured values.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer verdien som skal legges til på målt verdi.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de waarde die wordt opgeteld aan de gemeten waarden."
   },
   "zwave": {
