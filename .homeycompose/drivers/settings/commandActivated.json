@@ -2,10 +2,12 @@
   "value": 255,
   "label": {
     "en": "Activation command",
+    "no": "Aktiveringskommando",
     "nl": "Activatie commando"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the command sent when this sensor/alarm activates.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer kommandoen som blir sendt når sensor/alarm aktiveres.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk activatiecommando er wordt verstuurd wanneer dit alarm/deze sensor is geactiveerd."
   },
   "zwave": {

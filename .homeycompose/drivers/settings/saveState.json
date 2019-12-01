@@ -2,10 +2,12 @@
   "type": "checkbox",
   "label": {
     "en": "Restore state after power failure",
+    "no": "Gjenopprett tilstand etter strømbrudd",
     "nl": "Herstel status na stroomonderbreking"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines whether after a power failure the device should be restored to the state it had before the power failure.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om en enhet skal gjennopprette tidligere status hvis den opplever ett strømbrudd.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat na een stroomonderbreking moet worden ingesteld zoals deze voor de stroomonderbreking stond ingesteld."
   },
   "zwave": {

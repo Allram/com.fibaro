@@ -2,10 +2,12 @@
   "value": "0",
   "label": {
     "en": "2nd association group triggers",
+    "no": "2. Assosiasjons gruppetriggere",
     "nl": "Triggers 2e associatie groep"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines when a command is send to the 2nd association group.",
+    "no": "Denne parameteren ({{zwaveParameterIndex}}) bestemmer når en kommandor blir sendt til 2. assosiasjonsgruppe.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer er een commando wordt verstuurd naar de 2e associatie groep."
   },
   "zwave": {

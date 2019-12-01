@@ -2,10 +2,12 @@
   "type": "dropdown",
   "label": {
     "en": "Switch type",
+    "no": "Brytertype",
     "nl": "Schakelaar type"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines what device is operating the switch.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilken enhet som styrer bryteren.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk apparaat de schakelaar bestuurt."
   },
   "value": "1",
@@ -14,6 +16,7 @@
       "id": "0",
       "label": {
         "en": "Momentary switch",
+        "no": "Momentbryter",
         "nl": "Pulsdrukschakelaar"
       }
     },
@@ -21,6 +24,7 @@
       "id": "1",
       "label": {
         "en": "Toggle switch",
+        "no": "Vekslebryter",
         "nl": "Tuimelschakelaar"
       }
     }
