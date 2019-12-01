@@ -4,10 +4,12 @@
       "id": "FGD-212_momentary",
       "title": {
         "en": "Dimmer 2 scene (momentary)",
+        "no": "Dimmer 2 scene (momentan)",
         "nl": "Dimmer 2 scene (pulsdruk)"
       },
       "hint": {
         "en": "This Flow Trigger will only get triggered if the value of the \"switch type\" setting is set to: \"Momentary switch\".",
+        "no": "Denne Flow triggeren, vil kun bli aktivert hvis bryterinnstillingen er satt til \"Momentanbryter\".",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de waarde van de \"schakelaar type\" instelling op: \"Pulsdrukschakelaar\" is ingesteld."
       },
       "args": [
@@ -19,6 +21,7 @@
               "id": "16",
               "label": {
                 "en": "Pressed left (S1) 1x",
+                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             },
@@ -26,6 +29,7 @@
               "id": "26",
               "label": {
                 "en": "Pressed right (S2) 1x",
+                "no": "Trykket høyre (S2) 1x",
                 "nl": "Rechts (S2) 1x ingedrukt"
               }
             },
@@ -33,6 +37,7 @@
               "id": "14",
               "label": {
                 "en": "Pressed left (S1) 2x",
+                "no": "Trykket venstre (S1) 2x",
                 "nl": "Links (S1) 2x ingedrukt"
               }
             },
@@ -40,6 +45,7 @@
               "id": "24",
               "label": {
                 "en": "Pressed right (S2) 2x",
+                "no": "Trykket høyre (S2) 2x",
                 "nl": "Rechts (S2) 2x ingedrukt"
               }
             },
@@ -47,6 +53,7 @@
               "id": "25",
               "label": {
                 "en": "Pressed right (S2) 3x",
+                "no": "Trykket høyre (S2) 3x",
                 "nl": "Rechts (S2) 3x ingedrukt"
               }
             },
@@ -54,6 +61,7 @@
               "id": "12",
               "label": {
                 "en": "Long press left (S1)",
+                "no": "Langt trykk venstre (S1)",
                 "nl": "Links (S1) lang drukken"
               }
             },
@@ -61,6 +69,7 @@
               "id": "22",
               "label": {
                 "en": "Long press right (S2)",
+                "no": "Langt trykk høyre (S2)",
                 "nl": "Rechts (S2) lang drukken"
               }
             },
@@ -68,6 +77,7 @@
               "id": "13",
               "label": {
                 "en": "Long press left (S1) released",
+                "no": "Langt trykk venstre (S1) sluppet",
                 "nl": "Links (S1) lang drukken gestopt"
               }
             },
@@ -75,6 +85,7 @@
               "id": "23",
               "label": {
                 "en": "Long press right (S2) released",
+                "no": "Langt trykk høyre (S2) sluppet",
                 "nl": "Rechts (S2) lang drukken gestopt"
               }
             }
@@ -86,10 +97,12 @@
       "id": "FGD-212_toggle",
       "title": {
         "en": "Dimmer 2 scene (toggle)",
+        "no": "Dimmer scene (veksle)",
         "nl": "Dimmer 2 scene (tuimel)"
       },
       "hint": {
         "en": "This Flow Trigger will only get triggered if the value of the \"switch type\" setting is set to: \"Toggle switch\".",
+        "no": "Denne Flow trigger vil kun bli aktivert hvis bryterinnstillingen er satt til \"Vekslebryter\". Ekstra innstillinger: * = Bistabil bryter: Samme retning, ** = Bistabil bryter: veksle utgang",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de waarde van de \"schakelaar type\" instelling op: \"Tuimelschakelaar\" is ingesteld."
       },
       "args": [
@@ -101,6 +114,7 @@
               "id": "11",
               "label": {
                 "en": "Left (S1) on to off",
+                "no": "Venstre (S1) på til av",
                 "nl": "Links (S1) aan naar uit"
               }
             },
@@ -108,6 +122,7 @@
               "id": "10",
               "label": {
                 "en": "Left (S1) off to on",
+                "no": "Venstre (S1) av til på",
                 "nl": "Links (S1) uit naar aan"
               }
             },
@@ -115,6 +130,7 @@
               "id": "21",
               "label": {
                 "en": "Right (S2) on to off",
+                "no": "Høyre (S2) på til av",
                 "nl": "Rechts (S2) aan naar uit"
               }
             },
@@ -122,6 +138,7 @@
               "id": "20",
               "label": {
                 "en": "Right (S2) off to on",
+                "no": "Høyre (S2) av til på",
                 "nl": "Rechts (S2) uit naar aan"
               }
             },
@@ -129,6 +146,7 @@
               "id": "14",
               "label": {
                 "en": "Switched left (S1) 2x",
+                "no": "Vekslet venstre (S1) 2x",
                 "nl": "Links (S1) 2x geschakeld"
               }
             },
@@ -136,6 +154,7 @@
               "id": "24",
               "label": {
                 "en": "Switched right (S2) 2x",
+                "no": "Vekslet høyre (S2) 2x",
                 "nl": "Rechts (S2) 2x geschakeld"
               }
             },
@@ -143,6 +162,7 @@
               "id": "25",
               "label": {
                 "en": "Switched right (S2) 3x",
+                "no": "Vekslet høyre (S2) 3x",
                 "nl": "Rechts (S2) 3x geschakeld"
               }
             }
@@ -154,10 +174,12 @@
       "id": "FGD-212_roller",
       "title": {
         "en": "Dimmer 2 scene (roller shutter)",
+        "no": "Dimmer scene (Rullegardin)",
         "nl": "Dimmer 2 scene (rolgordijn)"
       },
       "hint": {
         "en": "This Flow Trigger will only get triggered if the value of the \"switch type\" setting is set to: \"Roller shutter switch\".",
+        "no": "Denne Flow trigger vil kun bli aktivert hvis \"bryterinnstilling\" er satt til \"Rullegardin\".",
         "nl": "Deze Flow Trigger word alleen geactiveerd als de waarde van de \"schakelaar type\" instelling op: \"Rolgordijn schakelaar\" is ingesteld."
       },
       "args": [
@@ -169,6 +191,7 @@
               "id": "10",
               "label": {
                 "en": "Pressed left (S1) 1x",
+                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             },
@@ -176,6 +199,7 @@
               "id": "11",
               "label": {
                 "en": "Pressed right (S2) 1x",
+                "no": "Trykket høyre (S2) 1x",
                 "nl": "Rechts (S2) 1x ingedrukt"
               }
             },
@@ -183,6 +207,7 @@
               "id": "14",
               "label": {
                 "en": "Pressed 2x (left (S1) or right (S2))",
+                "no": "Trykket 2x (venstre S1) eller høyre (S2))",
                 "nl": "2x ingedrukt (links (S1) of rechts (S2))"
               }
             },
@@ -190,6 +215,7 @@
               "id": "15",
               "label": {
                 "en": "Pressed 3x (left (S1) or right (S2))",
+                "no": "Trykket 3x (venstre S1) eller høyre (S2))",
                 "nl": "3x ingedrukt (links (S1) of rechts (S2))"
               }
             },
@@ -197,6 +223,7 @@
               "id": "17",
               "label": {
                 "en": "Long press left (S1)",
+                "no": "Langt trykk venstre (S1)",
                 "nl": "Links (S1) lang drukken"
               }
             },
@@ -204,6 +231,7 @@
               "id": "18",
               "label": {
                 "en": "Long press right (S2)",
+                "no": "Langt trykk høyre (S2)",
                 "nl": "Rechts (S2) lang drukken"
               }
             },
@@ -211,6 +239,7 @@
               "id": "13",
               "label": {
                 "en": "Long press released (left (S1) or right (S2))",
+                "no": "Langt trykk sluppet (venstre (S1) eller høyre (S2))",
                 "nl": "Lang drukken gestopt (links (S1) of rechts (S2))"
               }
             }
@@ -225,10 +254,12 @@
       "id": "FGD-212_set_brightness",
       "title": {
         "en": "Set forced brightness",
+        "no": "Sett tvungen lysstyrke",
         "nl": "Stel geforceerde helderheid in"
       },
       "hint": {
         "en": "Change the \"set forced brightness\" parameter of your dimmer. If this parameter is active, switching on the Dimmer 2 (S1 single click) will always set this brightness level, 0 will disable this function.",
+        "no": "Endre \"sett tvungen lysstyrke\" parameter på din dimmer. Hvis denne parameter er aktiv, skru på Dimmer 2 (S1 enkelttrykk) vil alltid sette denne lysstyrken, 0 vil deaktivere denne funksjonen.",
         "nl": "Stel de \"geforceerde helderheid\" parameter van een dimmer in. Wanneer deze parameter actief is, zal bij het inschakelen van Dimmer 2 (S1 single click) altijd naar deze helderheid inschakelen, 0 schakelt deze functie uit."
       },
       "args": [
@@ -247,10 +278,12 @@
       "id": "FGD-212_dim_duration",
       "title": {
         "en": "Change brightness over time",
+        "no": "Endre lysstyrke over tid",
         "nl": "Verander helderheid over tijd"
       },
       "hint": {
         "en": "Change the brightness and specify the transition duration, 0 will change brightness instantly.",
+        "no": "Endre lysstyrken og spesifiser overgangstiden, 0 will endre lysstyrke umiddelbart.",
         "nl": "Verander de helderheid en specificeer de gewenste transitie tijdsduur, 0 is onmiddellijke verandering van helderheid."
       },
       "args": [
@@ -270,6 +303,7 @@
           "max": 127,
           "placeholder": {
             "en": "Duration",
+            "no": "Tid",
             "nl": "Tijdsduur"
           }
         },
@@ -281,6 +315,7 @@
               "id": "0",
               "label": {
                 "en": "sec",
+                "no": "sek",
                 "nl": "sec"
               }
             },
@@ -299,10 +334,12 @@
       "id": "FGD-212_set_timer",
       "title": {
         "en": "Automatically turn off after",
+        "no": "Automatisk skru av etter",
         "nl": "Stel automatisch uitschakelen in"
       },
       "hint": {
         "en": "This Flow Action determines the time after which the device will automatically power off.",
+        "no": "Denne Flow hendelsen bestemmer tiden for når enheten skal automatisk skru seg av.",
         "nl": "Deze Flow Action bepaalt de tijd waarna het apparaat zichzelf automatisch uitzet."
       },
       "args": [
@@ -318,10 +355,12 @@
       "id": "FGD-212_reset_meter",
       "title": {
         "en": "Reset meter values",
+        "no": "Reset kWh verdier",
         "nl": "Meter waarden resetten"
       },
       "hint": {
         "en": "Reset the accumulated power usage (kWh). Can not be reversed.",
+        "no": "Reset akkumulert strømforbruk (kWh). Kan ikke reverseres.",
         "nl": "Reset de stroomverbruik (kWh) waarden. Kan niet ongedaan worden gemaakt."
       },
       "args": []
