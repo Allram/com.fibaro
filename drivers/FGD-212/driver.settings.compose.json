@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Button behaviour",
+      "no": "Knappe oppførsel",
       "nl": "Gedrag knoppen"
     },
     "collapsed": false,
@@ -12,11 +13,13 @@
         "type": "checkbox",
         "label": {
           "en": "Scene activation",
+          "no": "Scene aktivering",
           "nl": "Scene activation"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) enables scene activation. Scene activation is required for using scene triggers. Enabling scene activation functionality may cause slight delay in response to external switches and sending associations.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) aktiverer scener. Scene aktivering er påkrevd for å bruke scene triggere. Aktivering av scene aktivering kan forårsake en liten forsinkelse ved bruk av eksterne brytere og sending av assosiasjoner.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) stelt de scene activation in. Scene activation moet aan staan om scene triggers te gebruiken. Scene activation aanzetten kan vertragingen veroorzaken met externe schakkelaars en bij het sturen van geassocieerde apparaten."
         },
         "zwave": {
@@ -29,11 +32,13 @@
         "type": "checkbox",
         "label": {
           "en": "Double click",
+          "no": "Dobbeltrykk",
           "nl": "Dubbel klik"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not double clicking sets the brightness level to maximum.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om dobbeltrykking skal sette lysstyrken til maksimumsnivå eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de helderheid naar maximaal wordt ingesteld bij tweemaal drukken."
         },
         "zwave": {
@@ -46,11 +51,13 @@
         "type": "checkbox",
         "label": {
           "en": "3-way switch function",
+          "no": "3-veis bryterfunksjon",
           "nl": "Hotelschakeling functie"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not input 2 additionally controls the output 2.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om inngang 2 også skal styre utgang 2 eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het schakelen van ingang 2 ook uitgang 2 bedient."
         },
         "zwave": {
@@ -63,11 +70,13 @@
         "type": "checkbox",
         "label": {
           "en": "Switch input 1 and input 2",
+          "no": "Bytt inngang 1 og inngang 2",
           "nl": "Wissel input 1 en input 2 om"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) switches the functionality of input 1 to become the functionality of input 2, and vice versa.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) endrer funksjonen på inngang 1 til å bli inngang 2 osv.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) zorgt voor het omwisselen van functionaliteit tussen ingang 1 en ingang 2."
         },
         "zwave": {
@@ -80,11 +89,13 @@
         "type": "dropdown",
         "label": {
           "en": "Switch type",
+          "no": "Brytertype",
           "nl": "Schakelaar type"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether this device behaves like a momentary switch or a toggle switch.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om denne enheten oppfører seg som en momentanbryter eller vekslebryter.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of dit apparaat zich gedraagt als een pulsdrukschakelaar of een tuimelschakelaar."
         },
         "zwave": {
@@ -96,6 +107,7 @@
             "id": "0",
             "label": {
               "en": "Momentary switch",
+              "no": "Momentanbryter",
               "nl": "Pulsdrukschakelaar"
             }
           },
@@ -103,6 +115,7 @@
             "id": "1",
             "label": {
               "en": "Toggle switch",
+              "no": "vekslebryter",
               "nl": "Tuimelschakelaar"
             }
           },
@@ -110,6 +123,7 @@
             "id": "2",
             "label": {
               "en": "Roller blind Switch (UP | DOWN)",
+              "no": "Rullegardingbryter (OPP | NED)",
               "nl": "Rolgordijn schakelaar (OP | NEER)"
             }
           }
@@ -120,6 +134,7 @@
         "type": "number",
         "label": {
           "en": "Timer functionality",
+          "no": "Timer funksjonalitet",
           "nl": "Timer automatisch uitschakelen"
         },
         "value": 0,
@@ -130,6 +145,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) allows to automatically switch off the device after specified time from switching on the light source.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) tillater å automatisk skru av enheten etter en spesifisert tid når enheten er skrudd på.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) laat de schakelaar automatisch uitschakelen na de ingestelde tijd."
         },
         "zwave": {
@@ -152,6 +168,7 @@
         "type": "number",
         "label": {
           "en": "Minimum brightness level",
+          "no": "Minimum lysstyrkenivå",
           "nl": "Minimale helderheidsniveau"
         },
         "value": 1,
@@ -161,6 +178,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the minimal brightness level.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer minste lysstyrkenivå.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het minimale helderheidsniveau."
         },
         "zwave": {
@@ -173,6 +191,7 @@
         "type": "number",
         "label": {
           "en": "Maximum brightness level",
+          "no": "Maksimum lysstyrkenivå",
           "nl": "Maximaal helderheidsniveau"
         },
         "value": 99,
@@ -182,6 +201,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the maximum brightness level.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer høyeste lysstyrkenivå.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het maximale helderheidsniveau."
         },
         "zwave": {
@@ -194,6 +214,7 @@
         "type": "number",
         "label": {
           "en": "Forced brightness",
+          "no": "Fast lysstyrke",
           "nl": "Geforceerde helderheid"
         },
         "value": 0,
@@ -203,6 +224,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not switching on the Dimmer 2 (input 1 single click) will always set this brightness level.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om trykk på Dimmer 2 skal alltid sette dette lysstyrkenivået eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het aanzetten van de Dimmer 2 (ingang 1, enkele klik) altijd dit helderheidsniveau instelt."
         },
         "zwave": {
@@ -215,6 +237,7 @@
         "type": "number",
         "label": {
           "en": "Dim step size with automatic control",
+          "no": "Dimmetrinn ved automatisk styring",
           "nl": "Stapgrootte dimmen bij automatische besturing"
         },
         "value": 1,
@@ -224,6 +247,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage of a dimming step when controlled automatically.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer dimmetrinn ved automatisk styring i prosent.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het percentage per dim stap bij automatische besturing."
         },
         "zwave": {
@@ -236,6 +260,7 @@
         "type": "number",
         "label": {
           "en": "Time of a dimming step at automatic control",
+          "no": "Tid per dimmetrinn ved automatisk styring",
           "nl": "Tijd per dim stap bij automatische besturing"
         },
         "value": 1,
@@ -245,6 +270,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time of a dimming step when controlled automatically.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tid per dimmetrinn ved automatisk kontroll.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd per dim stap bij automatische besturing."
         },
         "zwave": {
@@ -257,6 +283,7 @@
         "type": "number",
         "label": {
           "en": "The percentage of a dimming step at manual control",
+          "no": "Dimmetrinn ved manuell styring",
           "nl": "Percentage van dim stap bij handmatige bediening"
         },
         "value": 1,
@@ -266,6 +293,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage of a dimming step when controlled manually.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer dimmetrinn ved manuell styring i prosent.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het percentage per dim stap bij handmatige besturing."
         },
         "zwave": {
@@ -278,6 +306,7 @@
         "type": "number",
         "label": {
           "en": "Time of a dimming step at manual control",
+          "no": "Tid per dimmetrinn ved manuell styring",
           "nl": "Tijd per dim stap bij handmatige bediening"
         },
         "value": 5,
@@ -287,6 +316,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time of a dimming step when controlled manually.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tid per dimmetrinn ved manuell kontroll.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd per dim stap bij handmatige besturing."
         },
         "zwave": {
@@ -299,11 +329,13 @@
         "type": "checkbox",
         "label": {
           "en": "Dim function off",
+          "no": "Dimme funksjon av",
           "nl": "Dim functie uit"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines if the {{driverNameEn}} has the ability to dim.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om {{driverNameEn}} har mulighet for dimming.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} kan dimmen."
         },
         "zwave": {
@@ -317,6 +349,7 @@
     "type": "group",
     "label": {
       "en": "Power",
+      "no": "Strøm",
       "nl": "Stroom"
     },
     "collapsed": true,
@@ -334,6 +367,7 @@
         "$id": "watt_report",
         "label": {
           "en": "Wattage report threshold",
+          "no": "Watt rapportgrense",
           "nl": "Wattage rapportage drempel"
         },
         "value": 10,
@@ -352,6 +386,7 @@
         "type": "number",
         "label": {
           "en": "Wattage report interval",
+          "no": "Watt rapportintervall",
           "nl": "Wattage rapportage interval"
         },
         "zwave": {
@@ -364,6 +399,7 @@
         "$id": "kwh_report",
         "label": {
           "en": "kWh report threshold",
+          "no": "kWh rapportgrense",
           "nl": "kWh rapportage drempel"
         },
         "value": 0.1,
@@ -382,11 +418,13 @@
         "type": "checkbox",
         "label": {
           "en": "Include own usage",
+          "no": "Inkluder eget forbruk",
           "nl": "Meet eigen verbruik"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines if the usage of the {{driverNameEn}} itself is added to the kWh total.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om strømforbruket fra {{driverNameEn}} blir lagt til i kWh totalen.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het verbruik van de {{driverNameNl}} zelf wordt toegevoegd aan het kWh totaal."
         },
         "zwave": {
@@ -400,6 +438,7 @@
     "type": "group",
     "label": {
       "en": "Other",
+      "no": "Annet",
       "nl": "Overige"
     },
     "collapsed": true,
@@ -409,11 +448,13 @@
         "type": "radio",
         "label": {
           "en": "Force auto-calibration",
+          "no": "Krev auto-kalibrering",
           "nl": "Forceer auto-kalibratie"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) activates auto calibration.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) aktiverer auto kalibrering.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) activeert auto calibratie."
         },
         "zwave": {
@@ -425,6 +466,7 @@
             "id": "0",
             "label": {
               "en": "Readout",
+              "no": "Les ut",
               "nl": "Uitlezing"
             }
           },
@@ -432,6 +474,7 @@
             "id": "1",
             "label": {
               "en": "Auto-calibrate without Bypass",
+              "no": "Auto-kalibrer uten Bypass",
               "nl": "Auto-calibratie zonder Bypass"
             }
           },
@@ -439,6 +482,7 @@
             "id": "2",
             "label": {
               "en": "Auto-calibrate with Bypass",
+              "no": "Auto-kalibrer med Bypass",
               "nl": "Auto-calibratie met Bypass"
             }
           }
@@ -449,11 +493,13 @@
         "type": "dropdown",
         "label": {
           "en": "Soft-start functionality",
+          "no": "Soft-start funksjonalitet",
           "nl": "Soft-start functionaliteit"
         },
         "value": "1",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time required to warm up the filament of halogen bulb.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om enheten trenger tid til å varme opp pærene.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd nodig vor het opwarmen van het filament van een halogeen lamp."
         },
         "zwave": {
@@ -465,6 +511,7 @@
             "id": "0",
             "label": {
               "en": "No soft-start",
+              "no": "Ingen soft-start",
               "nl": "Geen soft-start"
             }
           },
@@ -472,6 +519,7 @@
             "id": "1",
             "label": {
               "en": "Short soft-start (0.1s) (default)",
+              "no": "Kort soft-start (0.1s) (standard)",
               "nl": "Korte soft-start (0.1s) (standaard)"
             }
           },
@@ -479,6 +527,7 @@
             "id": "2",
             "label": {
               "en": "Long soft-start (0.5s)",
+              "no": "Lang soft-start (0.5s)",
               "nl": "Lange soft-start (0.5s)"
             }
           }

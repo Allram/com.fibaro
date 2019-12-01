@@ -9,7 +9,7 @@
       },
       "hint": {
         "en": "This Flow Trigger will only get activated if the switch type setting is set to \"Momentary switch\".",
-        "en": "Denne Flow triggeren, vil kun bli aktivert hvis bryterinnstillingen er satt til \"Momentanbryter\".",
+        "no": "Denne Flow triggeren, vil kun bli aktivert hvis bryterinnstillingen er satt til \"Momentanbryter\".",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de instelling schakelaar type op \"Pulsdruk schakelaar\" is ingesteld."
       },
       "args": [
@@ -105,7 +105,7 @@
       "id": "FGD-211_toggle",
       "title": {
         "en": "Dimmer scene (toggle)",
-        "en": "Dimmer scene (veksle)",
+        "no": "Dimmer scene (veksle)",
         "nl": "Dimmer scene (tuimel)"
       },
       "hint": {
@@ -227,7 +227,7 @@
       },
       "hint": {
         "en": "This Flow Trigger will only get activated if the switch type setting is set to \"Roller shutter switch\".",
-        "en": "Denne Flow trigger vil kun bli aktivert hvis bryterinnstilling er satt til \"Rullegardin\".",
+        "no": "Denne Flow trigger vil kun bli aktivert hvis bryterinnstilling er satt til \"Rullegardin\".",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de instelling schakelaar type op \"Rolgordijn schakelaar\" is ingesteld."
       },
       "args": [
