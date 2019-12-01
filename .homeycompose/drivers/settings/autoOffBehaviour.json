@@ -2,10 +2,12 @@
   "type": "checkbox",
   "label": {
     "en": "Auto-off behaviour",
+    "no": "Auto-av oppførsel",
     "nl": "Automatisch uit gedrag"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines if pressing the switch a second time will immediately turn off the relays.",
+    "no": "Denne parameteren ({{zwaveParameterIndex}}) bestemmer om trykk på bryteren en gang til vil slå av reléene øyeblikkelig.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het tweemaal indrukken van de schakelaar de relais direct uitschakelt."
   },
   "value": false

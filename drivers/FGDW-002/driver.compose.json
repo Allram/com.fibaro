@@ -2,6 +2,7 @@
   "id": "FGDW-002",
   "name": {
     "en": "Door/Window sensor 2",
+    "no": "Dør/Vindussensor 2",
     "nl": "Deur/Raam sensor 2"
   },
   "class": "sensor",
@@ -43,6 +44,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your Fibaro Door/Window Sensor 2 three times.",
+        "no": "Trykk på knappen på din Fibaro Dør/Vindussensor 2 tre ganger.",
         "nl": "Druk driemaal op de knop op de Fibaro Door/Window Sensor 2."
       }
     },
@@ -52,7 +54,8 @@
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": " “Lifeline”  reports the device status and allows for assigning single device only (main controller by default)."
+          "en": " “Lifeline”  reports the device status and allows for assigning single device only (main controller by default).",
+          "no": "“Lifeline” rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard)."
         }
       }
     }

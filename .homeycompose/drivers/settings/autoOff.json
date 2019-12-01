@@ -3,10 +3,12 @@
   "type": "checkbox",
   "label": {
     "en": "Auto-off Behaviour",
+    "no": "Auto-av oppførsel",
     "nl": "Automatisch uit gedrag"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not pressing the switch a second time will immediately turn of the {{driverNameEn}}.",
+    "no": "Denne parameteren ({{zwaveParameterIndex}}) bestemmer om du trykker bryteren en gang til eller ikke vil øyeblikkelig slå av {{driverNameEn}}.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het tweemaal indrukken van de schakelaar de {{driverNameNl}} direct uitschakelt."
   },
   "zwave": {

@@ -2,6 +2,7 @@
   "type": "dropdown",
   "label": {
     "en": "LED notification triggers",
+    "no": "LED varselstrigger",
     "nl": "LED notificatie triggers"
   },
   "zwave": {
@@ -10,6 +11,7 @@
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines when the LED light indicates status changes.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer når LED lys indikerer statusendring.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer de LED aangeeft dat de status is veranderd."
   },
   "value": "0",

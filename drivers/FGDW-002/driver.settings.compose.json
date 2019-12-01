@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Contact sensor",
+      "no": "Kontaktsensor",
       "nl": "Contact sensor"
     },
     "collapsed": false,
@@ -19,6 +20,7 @@
             "id": "0",
             "label": {
               "en": "No indications",
+              "no": "Ingen indikasjon",
               "nl": "Geen indicatie"
             }
           },
@@ -26,6 +28,7 @@
             "id": "1",
             "label": {
               "en": "indication on change in opening state",
+              "no": "Inndikasjon ved endring i åpenmodus",
               "nl": "indicatie bij het openen/sluiten"
             }
           },
@@ -33,6 +36,7 @@
             "id": "2",
             "label": {
               "en": "indication on wake up",
+              "no": "Indikasjon ved oppvåkning",
               "nl": "indicatie bij het ontwaken"
             }
           },
@@ -40,6 +44,7 @@
             "id": "4",
             "label": {
               "en": "indication on device tampering",
+              "no": "Indikasjon ved sabotasje",
               "nl": "indicatie bij sabotage"
             }
           }
@@ -58,6 +63,7 @@
             "id": "0",
             "label": {
               "en": "Closed by default",
+              "no": "Lukket som standard",
               "nl": "Normaal gesloten"
             }
           },
@@ -65,6 +71,7 @@
             "id": "1",
             "label": {
               "en": "Opened by default",
+              "no": "Åpen som standard",
               "nl": "Normaal open"
             }
           }
@@ -76,6 +83,7 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
+      "no": "Temperatursensor",
       "nl": "Temperatuurssensor"
     },
     "collapsed": true,
@@ -139,10 +147,12 @@
         "value": "0",
         "label": {
           "en": "Temperature alarm reports",
+          "no": "Temperaturalarm rapporter",
           "nl": "Temperatuur alarm rapportages"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines when temperature alarms are reported to Homey.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om temperaturalarmer blir rapportert til Homey.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer er temperatuursalarmen worden verstuurd naar Homey."
         },
         "zwave": {
@@ -154,6 +164,7 @@
             "id": "0",
             "label": {
               "en": "temperature alarms disabled",
+              "no": "temperaturalarmer deaktivert",
               "nl": "temperatuursalarm uitgeschakeld"
             }
           },
@@ -161,6 +172,7 @@
             "id": "1",
             "label": {
               "en": "high temperature alarm",
+              "no": "høy temperaturalarm",
               "nl": "temperatuursalarm voor hoge temperaturen"
             }
           },
@@ -168,6 +180,7 @@
             "id": "2",
             "label": {
               "en": "low temperature alarm",
+              "no": "lav temperaturalarm",
               "nl": "temperatuursalarm voor lage temperaturen"
             }
           },
@@ -175,6 +188,7 @@
             "id": "3",
             "label": {
               "en": "high and low temperature alarms enabled",
+              "no": "høy og lav temperaturalarm aktivert",
               "nl": "temperatuursalarm voor zowel hoge als lage temperaturen"
             }
           }
@@ -187,6 +201,7 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
+      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,
@@ -218,6 +233,7 @@
     "type": "group",
     "label": {
       "en": "Commands",
+      "no": "Kommandoer",
       "nl": "Commando's"
     },
     "collapsed": true,
@@ -250,6 +266,7 @@
     "type": "group",
     "label": {
       "en": "Associations",
+      "no": "Assosiasjoner",
       "nl": "Associaties"
     },
     "collapsed": true,
@@ -261,19 +278,22 @@
           {
             "id": "0",
             "label": {
-              "en": "switch after opening and closing"
+              "en": "switch after opening and closing",
+              "no": "endre etter åpning og lukking"
             }
           },
           {
             "id": "1",
             "label": {
-              "en": "switch after opening (parameter 12)"
+              "en": "switch after opening (parameter 12)",
+              "no": "endre etter åpning (parameter 12)"
             }
           },
           {
             "id": "2",
             "label": {
-              "en": "switch after closing (parameter 13)"
+              "en": "switch after closing (parameter 13)",
+              "no": "endre etter lukking (parameter 13)"
             }
           }
         ]
@@ -289,6 +309,7 @@
             "id": "0",
             "label": {
               "en": "None of the groups are sent as secure",
+              "no": "Ingen av gruppene blir sendt som secure",
               "nl": "Geen van de groepen wordt beveiligd verstuurd"
             }
           },
@@ -296,6 +317,7 @@
             "id": "1",
             "label": {
               "en": "Association group 2, on/off sent as secure",
+              "no": "Assosiasjonsgruppe 2, av/på sendt som secure",
               "nl": "Associatie groep 2, aan/uit wordt beveiligd verstuurd"
             }
           },
@@ -303,6 +325,7 @@
             "id": "2",
             "label": {
               "en": "Association group 3, tamper sent as secure",
+              "no": "Assosiasjonsgruppe 3, sabotasje sendt som secure",
               "nl": "Associatie groep 3, trilling wordt beveiligd verstuurd"
             }
           },
@@ -310,6 +333,7 @@
             "id": "3",
             "label": {
               "en": "Association group 2 and 3 sent as secure (on/off and tamper)",
+              "no": "Assosiasjonsgruppe 2 og 3 sendt som secure (på/av og tamper)",
               "nl": "Associatie groep 2 en 3 worden beveiligd verstuurd (aan/uit and trilling)"
             }
           }

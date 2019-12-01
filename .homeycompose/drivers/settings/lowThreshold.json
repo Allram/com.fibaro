@@ -2,10 +2,12 @@
   "value": 100,
   "label": {
     "en": "Low value alarm threshold",
+    "no": "Lav alarmgrense",
     "nl": "Drempel waarde voor het te lage waarden alarm"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the threshold at which the low value alarm will go off.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer grensen for når lav alarmgrense vil aktiveres.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de drempel waaronder het lage waarden alarm afgaat."
   },
   "zwave": {

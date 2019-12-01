@@ -2,10 +2,12 @@
 	"id": "FGD-21x_dim_stopLevelChange",
 	"title": {
 		"en": "Stop dim level change",
+		"no": "Stopp endring av dimmenivå",
 		"nl": "Stop helderheid transitie"
 	},
 	"hint": {
 		"en": "This action card will trigger the stop of a dim level change.",
+		"no": "Dette kortet vil trigge stopp av endring på dimmenivå.",
 		"nl": "Deze actie kaart start een helderheids transitie in de ingestelde richting."
 	},
 	"args": [

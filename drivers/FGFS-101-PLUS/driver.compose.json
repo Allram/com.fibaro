@@ -2,6 +2,7 @@
   "id": "FGFS-101-PLUS",
   "name": {
     "en": "Flood sensor (Z-Wave Plus) {{driverId}}",
+    "no": "Lekkasjesensor (Z-Wave Plus) {{driverId}}",
     "nl": "Overstromingssensor (Z-Wave Plus) {{driverId}}"
   },
   "class": "sensor",
@@ -36,6 +37,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your Fibaro flood sensor three times.",
+        "no": "Trykk på knappen på din Fibaro Lekkasjesensor tre ganger.",
         "nl": "Druk driemaal op de knop op de Fibaro overstromingssensor."
       }
     },
@@ -46,6 +48,7 @@
       "1": {
         "hint": {
           "en": "Reports the device status and allows for assigning single device only (Homey by default).",
+          "no": "Rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard).",
           "nl": "Rapporteert de status van het apparaat, er mag maar 1 apparaat in deze groep zitten (standaard is dit Homey)."
         }
       }

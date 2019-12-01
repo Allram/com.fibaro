@@ -7,6 +7,7 @@
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the value that is send to the listed association groups.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer verdien som blir sendt til de opplistede assosiasjonsgruppene.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de waarde die wordt verzonden naar de gespecificeerde associatie groepen."
   }
 }

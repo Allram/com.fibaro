@@ -2,6 +2,7 @@
   "type": "dropdown",
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) defines which button interactions can trigger a Flow. Using the 2x and 3x pressed options introduces a slight delay in Flow triggering.",
+    "no": "Denne parameteren ({{zwaveParameterIndex}}) definerer hvilke knappinteraksjoner som kan utløse en flow. Ved bruk av alternativene 2x og 3x trykk, legges det til en forsinkelse i Flow.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welke knop interacties een Flow kunnen triggeren. Bij het gebruik van de 2x en 3x drukken ontstaat er een kleine vertraging bij het triggeren van Flows."
   },
   "value": "9",
@@ -10,6 +11,7 @@
       "id": "9",
       "label": {
         "en": "Pressed 1x and hold/release.",
+        "no": "Trykket 1x og holdt/sluppet.",
         "nl": "1x ingedrukt en lang drukken/loslaten."
       }
     },
@@ -17,6 +19,7 @@
       "id": "11",
       "label": {
         "en": "Pressed 1x, 2x and hold/released.",
+        "no": "Trykket 1x, 2x og holdt/sluppet.",
         "nl": "1x, 2x ingedrukt en lang drukken/loslaten."
       }
     },
@@ -24,6 +27,7 @@
       "id": "15",
       "label": {
         "en": "Pressed 1x, 2x, 3x and hold/released.",
+        "no": "Trykket 1x, 2x, 3x og holdt/sluppet.",
         "nl": "1x, 2x, 3x ingedrukt en lang drukken/loslaten."
       }
     }
