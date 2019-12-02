@@ -36,7 +36,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the {{driverNameEn}} 6 times",
-        "no": "Trykk på {{driverNameEn}} 6 ganger",
+        "no": "Trykk på {{driverNameNo}} 6 ganger",
         "nl": "Druk 6 keer op de {{driverNameNl}}"
       }
     },

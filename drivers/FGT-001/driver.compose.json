@@ -43,7 +43,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Use the included key to quickly triple click the button on the {{driverNameEn}}",
-        "no": "Bruk den inkluderte nøkkelen for å trippeltrykke på knappen på {{driverNameEn}}",
+        "no": "Bruk den inkluderte nøkkelen for å trippeltrykke på knappen på {{driverNameNo}}",
         "nl": "Gebruik het bijgeleverde sleuteltje om drie keer snel op de knop op de {{driverNameNl}} te drukken"
       }
     },

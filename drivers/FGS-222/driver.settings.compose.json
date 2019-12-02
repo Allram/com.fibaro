@@ -84,7 +84,7 @@
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the {{driverNameEn}} when the switch is toggled.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen på {{driverNameEn}} når bryteren er endret.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen på {{driverNameNo}} når bryteren er endret.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de {{driverNameNl}} wanneer de schakelaar omgezet wordt."
     },
     "zwave": {
