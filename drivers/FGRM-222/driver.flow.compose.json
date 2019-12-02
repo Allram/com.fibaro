@@ -4,10 +4,12 @@
       "id": "FGRM-222-momentary",
       "title": {
         "en": "Shutter scene (momentary)",
+        "no": "Lukkerscene (momentan)",
         "nl": "Rolluik scene (pulsdruk)"
       },
       "hint": {
         "en": "This Flow Card will only get triggered if the setting Switch type: \"Momentary\" is selected.",
+        "no": "Dette Flow kortet vil kun trigge hvis brytervalg er satt til: \"Momentanbryter\".",
         "nl": "Deze Flow Kaart wordt alleen geactiveerd als de instelling Schakelaar type: \"Pulsdruk\" is geselecteerd."
       },
       "args": [
@@ -19,6 +21,7 @@
               "id": "12",
               "label": {
                 "en": "Long press left (S1)",
+                "no": "Langt trykk venstre (S1)",
                 "nl": "Links (S1) lang drukken"
               }
             },
@@ -26,6 +29,7 @@
               "id": "13",
               "label": {
                 "en": "Long press left (S1) released",
+                "no": "Langt trykk venstre (S1) sluppet",
                 "nl": "Links (S1) lang drukken gestopt"
               }
             },
@@ -33,6 +37,7 @@
               "id": "14",
               "label": {
                 "en": "Pressed left (S1) 2x",
+                "no": "Trykket venstre (S1) 2x",
                 "nl": "Links (S1) 2x ingedrukt"
               }
             },
@@ -40,6 +45,7 @@
               "id": "16",
               "label": {
                 "en": "Pressed left (S1) 1x",
+                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             },
@@ -47,6 +53,7 @@
               "id": "22",
               "label": {
                 "en": "Long press right (S2)",
+                "no": "Langt trykk høyre (S2)",
                 "nl": "Rechts (S2) lang drukken"
               }
             },
@@ -54,6 +61,7 @@
               "id": "23",
               "label": {
                 "en": "Long press right (S2) released",
+                "no": "Langt trykk høyre (S2) sluppet",
                 "nl": "Rechts (S2) lang drukken gestopt"
               }
             },
@@ -61,6 +69,7 @@
               "id": "24",
               "label": {
                 "en": "Pressed right (S2) 2x",
+                "no": "Trykket høyre (S2) 2x",
                 "nl": "Rechts (S2) 2x ingedrukt"
               }
             },
@@ -68,6 +77,7 @@
               "id": "25",
               "label": {
                 "en": "Pressed right (S2) 3x",
+                "no": "Trykket høyre (S2) 3x",
                 "nl": "Rechts (S2) 3x ingedrukt"
               }
             },
@@ -75,6 +85,7 @@
               "id": "26",
               "label": {
                 "en": "Pressed right (S2) 1x",
+                "no": "Trykket høyre (S2) 1x",
                 "nl": "Rechts (S2) 1x ingedrukt"
               }
             }
@@ -86,10 +97,12 @@
       "id": "FGRM-222-toggle",
       "title": {
         "en": "Shutter scene (toggle)",
+        "no": "Lukkerscene (veksle)",
         "nl": "Rolluik scene (tuimel)"
       },
       "hint": {
         "en": "This Flow Card will only get triggered if the setting Switch type: \"Toggle\" is selected.",
+        "no": "Dette flow kort vil kun trigge om bryterinnstilling er satt til: \"Vekslebryter\".",
         "nl": "Deze Flow Kaart wordt alleen geactiveerd als de instelling Schakelaar type: \"Tuimel\" is geselecteerd."
       },
       "args": [
@@ -101,6 +114,7 @@
               "id": "10",
               "label": {
                 "en": "Left (S1) off to on *",
+                "no": "Venstre (S1) av til på *",
                 "nl": "Links (S1) uit naar aan *"
               }
             },
@@ -108,6 +122,7 @@
               "id": "11",
               "label": {
                 "en": "Left (S1) on to off *",
+                "no": "Venstre (S1) på til av *",
                 "nl": "Links (S1) aan naar uit *"
               }
             },
@@ -115,6 +130,7 @@
               "id": "14",
               "label": {
                 "en": "Switched left (S1) 2x",
+                "no": "Vekslet venstre(S1) 2x",
                 "nl": "Links (S1) 2x geschakeld"
               }
             },
@@ -122,6 +138,7 @@
               "id": "20",
               "label": {
                 "en": "Right (S2) off to on *",
+                "no": "Høyre (S2) av til på *",
                 "nl": "Rechts (S2) uit naar aan *"
               }
             },
@@ -129,6 +146,7 @@
               "id": "21",
               "label": {
                 "en": "Right (S2) on to off *",
+                "no": "Høyre (S2) på til av *",
                 "nl": "Rechts (S2) aan naar uit *"
               }
             },
@@ -136,6 +154,7 @@
               "id": "24",
               "label": {
                 "en": "Switched right (S2) 2x",
+                "no": "Vekslet høyre(S2) 2x",
                 "nl": "Rechts (S2) 2x geschakeld"
               }
             },
@@ -143,6 +162,7 @@
               "id": "25",
               "label": {
                 "en": "Switched right (S2) 3x",
+                "no": "Vekslet høyre(S2) 3x",
                 "nl": "Rechts (S2) 3x geschakeld"
               }
             }
@@ -154,10 +174,12 @@
       "id": "FGRM-222-momentary_single-gate_switch",
       "title": {
         "en": "Shutter scene (Single momentary/gate)",
+        "no": "Lukkerscene (Singel momentanbryter)",
         "nl": "Rolluik scene (Enkele pulsedruk/poort)"
       },
       "hint": {
         "en": "This Flow Card will only get triggered if the setting Switch type is \"Single momentary\" or \"Gate mode\" is selected.",
+        "no": "Dette FLow kort vil kun trigge om bryterinnstilling er satt til \"Singel momentanbryter\" eller \"Gate modus\".",
         "nl": "Deze Flow Kaart wordt alleen geactiveerd als de instelling Schakelaar type: \"Enkele pulsdruk\" of \"Poort mode\" is geselecteerd."
       },
       "args": [
@@ -169,6 +191,7 @@
               "id": "12",
               "label": {
                 "en": "Long press left (S1)",
+                "no": "Langt trykk venstre (S1)",
                 "nl": "Links (S1) lang drukken"
               }
             },
@@ -176,6 +199,7 @@
               "id": "13",
               "label": {
                 "en": "Long press left (S1) released",
+                "no": "Langt trykk venstre (S1) sluppet",
                 "nl": "Links (S1) lang drukken gestopt"
               }
             },
@@ -183,6 +207,7 @@
               "id": "14",
               "label": {
                 "en": "Pressed 2x left (S1)",
+                "no": "Trykket 2x venstre (S1)",
                 "nl": "2x ingedrukt links (S1)"
               }
             },
@@ -190,6 +215,7 @@
               "id": "16",
               "label": {
                 "en": "Pressed left (S1) 1x",
+                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             }
@@ -204,10 +230,12 @@
       "id": "FGRM-222_reset_meter",
       "title": {
         "en": "Reset meter values",
+        "no": "Reset kWh verdier",
         "nl": "Meter waarden resetten"
       },
       "hint": {
         "en": "Reset the accumulated power usage (kWh). Can not be reversed.",
+        "no": "Resetter akkumulert strømforbruk (kWh). Kan ikke reverseres.",
         "nl": "Reset de stroomverbruik (kWh) waarden. Kan niet ongedaan worden gemaakt."
       }
     }
