@@ -6,6 +6,7 @@
       "id": "FGWOF_led_on",
       "title": {
         "en": "LED Colour, on state",
+        "no": "LED farge, på modus",
         "nl": "LED Kleur wanneer aan"
       },
       "args": [
@@ -17,6 +18,7 @@
               "id": "0",
               "label": {
                   "en": "Off",
+                  "no": "Av",
                   "nl": "Uit"
               }
             },
@@ -24,6 +26,7 @@
               "id": "1",
               "label": {
                   "en": "White",
+                  "no": "Hvit",
                   "nl": "Wit"
               }
             },
@@ -31,6 +34,7 @@
               "id": "2",
               "label": {
                   "en": "Red",
+                  "no": "Rød",
                   "nl": "Rood"
               }
             },
@@ -38,6 +42,7 @@
               "id": "3",
               "label": {
                   "en": "Green",
+                  "no": "Grønn",
                   "nl": "Groen"
               }
             },
@@ -45,6 +50,7 @@
               "id": "4",
               "label": {
                   "en": "Blue",
+                  "no": "Blå",
                   "nl": "Blauw"
               }
             },
@@ -52,6 +58,7 @@
               "id": "5",
               "label": {
                   "en": "Yellow",
+                  "no": "Gul",
                   "nl": "Geel"
               }
             },
@@ -59,6 +66,7 @@
               "id": "6",
               "label": {
                   "en": "Cyan",
+                  "no": "Cyan",
                   "nl": "Cyaan"
               }
             },
@@ -66,6 +74,7 @@
               "id": "7",
               "label": {
                   "en": "Magenta",
+                  "no": "Magenta",
                   "nl": "Magenta"
               }
             },
@@ -73,6 +82,7 @@
               "id": "8",
               "label": {
                   "en": "Changes continuously according to power load using full spectrum of LED color",
+                  "no": "Endres kontinuerlig etter strømforbruk ved full spektrum LED farger",
                   "nl": "Verandert continu afhankelijk van het stroomverbruik"
               }
             },
@@ -80,6 +90,7 @@
               "id": "9",
               "label": {
                   "en": "Changes in predefined steps according to power load",
+                  "no": "Endre i predefinerte steg etter strømforbruk",
                   "nl": "Verandert in stappen afhankelijk van het stroomverbuik"
               }
             }
@@ -91,6 +102,7 @@
       "id": "FGWOF_led_off",
       "title": {
         "en": "LED Colour, off state",
+        "no": "LED farge, av modus",
         "nl": "LED Kleur wanneer uit"
       },
       "args": [
@@ -102,6 +114,7 @@
               "id": "0",
               "label": {
                   "en": "Off",
+                  "no": "Av",
                   "nl": "Uit"
               }
             },
@@ -109,6 +122,7 @@
               "id": "1",
               "label": {
                   "en": "White",
+                  "no": "Hvit",
                   "nl": "Wit"
               }
             },
@@ -116,6 +130,7 @@
               "id": "2",
               "label": {
                   "en": "Red",
+                  "no": "Rød",
                   "nl": "Rood"
               }
             },
@@ -123,6 +138,7 @@
               "id": "3",
               "label": {
                   "en": "Green",
+                  "no": "Grønn",
                   "nl": "Groen"
               }
             },
@@ -130,6 +146,7 @@
               "id": "4",
               "label": {
                   "en": "Blue",
+                  "no": "Blå",
                   "nl": "Blauw"
               }
             },
@@ -137,6 +154,7 @@
               "id": "5",
               "label": {
                   "en": "Yellow",
+                  "no": "Gul",
                   "nl": "Geel"
               }
             },
@@ -144,6 +162,7 @@
               "id": "6",
               "label": {
                   "en": "Cyan",
+                  "no": "Cyan",
                   "nl": "Cyaan"
               }
             },
@@ -151,6 +170,7 @@
               "id": "7",
               "label": {
                   "en": "Magenta",
+                  "no": "Magenta",
                   "nl": "Magenta"
               }
             }

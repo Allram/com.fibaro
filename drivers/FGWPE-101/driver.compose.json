@@ -1,6 +1,7 @@
 {
     "name": {
         "en": "Wall Plug",
+        "no": "Veggplugg",
         "nl": "Tussenstekker"
     },
     "zwave": {
@@ -16,6 +17,7 @@
             "image": "{{driverAssetsPath}}/learnmode.svg",
             "instruction": {
                 "en": "Insert the {{driverNameEn}} in a socket or press the button on your {{driverNameEn}} three times",
+                "no": "Sett inn {{driverNameEn}} i en stikkontakt eller trykk på knappen på {{driverNameEn}} tre ganger",
                 "nl": "Stop de {{driverNameNl}} in het stopcontact of druk driemaal op de knop op de {{driverNameNl}}"
             }
         },
