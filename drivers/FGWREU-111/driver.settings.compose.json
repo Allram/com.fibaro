@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Blind settings",
+      "no": "Rullegardin innstillinger",
       "nl": "Zonwering instellingen"
     },
     "collapsed": true,
@@ -59,10 +60,12 @@
         "type": "checkbox",
         "label": {
           "en": "Start calibration",
+          "no": "Start kalibrering",
           "nl": "Start kalibratie"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) starts the calibration procedure on save.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) starter kalibreringsprosedyren når du trykker på lagre.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) start de kalibratieprocedure na het opslaan."
         },
         "zwave": {
@@ -76,10 +79,12 @@
         "type": "checkbox",
         "label": {
           "en": "Invert input",
+          "no": "Inverter inngang",
           "nl": "Keer de ingangen om"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) inverts the input direction.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) inverterer inngangsretningen.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) keert de ingangsdirectie om."
         },
         "zwave": {
@@ -93,10 +98,12 @@
         "type": "checkbox",
         "label": {
           "en": "Invert output",
+          "no": "Inverter utgang",
           "nl": "Keer de uitgangen om"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) inverts the output direction.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) inverterer utgangsretningen.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) keert de uitgangsdirectie om."
         },
         "zwave": {
@@ -111,6 +118,7 @@
     "type": "group",
     "label": {
         "en": "LED Frame",
+        "no": "LED ramme",
         "nl": "LED Frame"
     },
     "collapsed": true,
@@ -120,11 +128,13 @@
           "type": "dropdown",
           "label": {
             "en": "Color when on",
+            "no": "Farge når på",
             "nl": "Kleur wanneer aan"
           },
           "value": "1",
           "hint": {
             "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in on state.",
+            "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargene på LED ringen i på modus.",
             "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat aan staat."
           },
           "zwave": {
@@ -136,6 +146,7 @@
               "id": "0",
               "label": {
                 "en": "Off",
+                "no": "Av",
                 "nl": "Uit"
               }
             },
@@ -143,6 +154,7 @@
               "id": "1",
               "label": {
                 "en": "White",
+                "no": "Hvit",
                 "nl": "Wit"
               }
             },
@@ -150,6 +162,7 @@
               "id": "2",
               "label": {
                 "en": "Red",
+                "no": "Rød",
                 "nl": "Rood"
               }
             },
@@ -157,6 +170,7 @@
               "id": "3",
               "label": {
                 "en": "Green",
+                "no": "Grønn",
                 "nl": "Groen"
               }
             },
@@ -164,6 +178,7 @@
               "id": "4",
               "label": {
                 "en": "Blue",
+                "no": "Blå",
                 "nl": "Blauw"
               }
             },
@@ -171,6 +186,7 @@
               "id": "5",
               "label": {
                 "en": "Yellow",
+                "no": "Gul",
                 "nl": "Geel"
               }
             },
@@ -178,6 +194,7 @@
               "id": "6",
               "label": {
                 "en": "Cyan",
+                "no": "Cyan",
                 "nl": "Cyaan"
               }
             },
@@ -185,6 +202,7 @@
               "id": "7",
               "label": {
                 "en": "Magenta",
+                "no": "Magenta",
                 "nl": "Magenta"
               }
             }
@@ -195,11 +213,13 @@
         "type": "dropdown",
         "label": {
           "en": "Color when off",
+          "no": "Farge når av",
           "nl": "Kleur wanneer uit"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in off state.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargene på LED ringen i av modus.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat uit staat."
         },
         "zwave": {
@@ -211,6 +231,7 @@
               "id": "0",
               "label": {
                 "en": "Off",
+                "no": "Av",
                 "nl": "Uit"
               }
             },
@@ -218,6 +239,7 @@
               "id": "1",
               "label": {
                 "en": "White",
+                "no": "Hvit",
                 "nl": "Wit"
               }
             },
@@ -225,6 +247,7 @@
               "id": "2",
               "label": {
                 "en": "Red",
+                "no": "Rød",
                 "nl": "Rood"
               }
             },
@@ -232,6 +255,7 @@
               "id": "3",
               "label": {
                 "en": "Green",
+                "no": "Grønn",
                 "nl": "Groen"
               }
             },
@@ -239,6 +263,7 @@
               "id": "4",
               "label": {
                 "en": "Blue",
+                "no": "Blå",
                 "nl": "Blauw"
               }
             },
@@ -246,6 +271,7 @@
               "id": "5",
               "label": {
                 "en": "Yellow",
+                "no": "Gul",
                 "nl": "Geel"
               }
             },
@@ -253,6 +279,7 @@
               "id": "6",
               "label": {
                 "en": "Cyan",
+                "no": "Cyan",
                 "nl": "Cyaan"
               }
             },
@@ -260,6 +287,7 @@
               "id": "7",
               "label": {
                 "en": "Magenta",
+                "no": "Magenta",
                 "nl": "Magenta"
               }
             }
@@ -270,10 +298,12 @@
         "type": "number",
         "label": {
           "en": "LED Brightness",
+          "no": "LED lysstyrke",
           "nl": "LED Helderheid"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in off state.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) definerer fargen på LED ringen i av modus.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat uit staat."
         },
         "zwave": {
@@ -292,6 +322,7 @@
     "type": "group",
     "label": {
       "en": "Power (kWh)",
+      "no": "Strøm (kWh)",
       "nl": "Stroom (kWh)"
     },
     "collapsed": false,
@@ -301,10 +332,12 @@
           "type": "checkbox",
           "label": {
               "en": "Include own power consumption",
+              "no": "Inkluder eget forbruk",
               "nl": "inclusief eigen verbruik"
           },
           "hint": {
             "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the kWh usage of the device itself is added to the power usage.",
+            "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om enhetens eget kWh forbruk skal legges til i totalforbruket.",
             "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het kWh verbruik van het apparaat bij het totaalverbruik wordt opgeteld."
           },
           "zwave": {
