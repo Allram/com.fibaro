@@ -4,10 +4,12 @@
     "type": "dropdown",
     "label": {
       "en": "Device orientation",
+      "no": "Enhetsorientering",
       "nl": "Apparaat orientatie"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines in which orientation the device is placed.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer i hvilken retning enheten er plassert.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt in welke orientatie het apparaat geplaatst is."
     },
     "zwave": {
@@ -20,6 +22,7 @@
         "id": "0",
         "label": {
           "en": "Normal",
+          "no": "Normal",
           "nl": "Normaal"
         }
       },
@@ -27,6 +30,7 @@
         "id": "1",
         "label": {
           "en": "180° (upside-Down)",
+          "no": "180° (opp-ned)",
           "nl": "180° (onderste-Boven)"
         }
       },
@@ -34,6 +38,7 @@
         "id": "2",
         "label": {
           "en": "90° clockwise",
+          "no": "90° med klokka",
           "nl": "90° met klok mee"
         }
       },
@@ -41,6 +46,7 @@
         "id": "3",
         "label": {
           "en": "90° counter clockwise",
+          "no": "90° mot klokka",
           "nl": "90° tegen klok in"
         }
       }
@@ -50,6 +56,7 @@
     "type": "group",
     "label": {
       "en": "Gestures",
+      "no": "Bevegelser",
       "nl": "Gebaren"
     },
     "collapsed": true,
@@ -59,10 +66,12 @@
         "type": "checkbox",
         "label": {
           "en": "Enter menu",
+          "no": "Åpne meny",
           "nl": "Menu openen"
         },
         "hint": {
           "en": "Determine if the {{driverNameEn}} enters the menu when you use the \"hold\" gesture.",
+          "no": "Bestemmer om {{driverNameEn}} åpner menyen når du bruker \"hold\" bevegelsen.",
           "nl": "Bepaal of de {{driverNameNl}} het menu in gaat als je het \"houd stil\" gebaar gebruikt."
         },
         "zwave": {
@@ -76,6 +85,7 @@
         "type": "checkbox",
         "label": {
           "en": "Up gesture",
+          "no": "Opp bevegelse",
           "nl": "Gebaar omhoog"
         },
         "value": true
@@ -85,6 +95,7 @@
         "type": "checkbox",
         "label": {
           "en": "Down gesture",
+          "no": "Ned bevegelse",
           "nl": "Gebaar omlaag"
         },
         "value": true
@@ -94,6 +105,7 @@
         "type": "checkbox",
         "label": {
           "en": "Left gesture",
+          "no": "Venstre bevegelse",
           "nl": "Gebaar naar links"
         },
         "value": true
@@ -103,6 +115,7 @@
         "type": "checkbox",
         "label": {
           "en": "Right gesture",
+          "no": "Høyre bevegelse",
           "nl": "Gebaar naar rechts"
         },
         "value": true
@@ -112,6 +125,7 @@
         "type": "checkbox",
         "label": {
           "en": "Clockwise",
+          "no": "Med klokka",
           "nl": "Met de klok mee"
         },
         "value": true
@@ -121,6 +135,7 @@
         "type": "checkbox",
         "label": {
           "en": "Counter clockwise",
+          "no": "Mot klokka",
           "nl": "Tegen de klok in"
         },
         "value": true
@@ -130,10 +145,12 @@
         "type": "checkbox",
         "label": {
           "en": "Double up gesture",
+          "no": "Dobbel opp bevegelse",
           "nl": "Dubbel gebaar omhoog"
         },
         "hint": {
           "en": "This disables toggle mode for association group 2. This will also lower the response time for the single gesture.",
+          "no": "Dette deaktiverer veksle modus for assosiasjonsgruppe 2. Dette vil også senke responstiden for enkle bevegelser.",
           "nl": "Dit deactiveert schakel modus voor associatie groep 2. Dit zal ook de reactietijd verlagen voor het enkele gebaar."
         },
         "value": false
@@ -143,10 +160,12 @@
         "type": "checkbox",
         "label": {
           "en": "Double down gesture",
+          "no": "Dobbel ned bevegelse",
           "nl": "Dubbel gebaar omlaag"
         },
         "hint": {
           "en": "This disables toggle mode for association group 3. This will also lower the response time for the single gesture.",
+          "no": "Dette deaktiverer veksle modus for assosiasjonsgruppe 3. Dette vil også senke responstiden for enkle bevegelser.",
           "nl": "Dit deactiveert schakel modus voor associatie groep 3. Dit zal ook de reactietijd verlagen voor het enkele gebaar."
         },
         "value": false
@@ -156,10 +175,12 @@
         "type": "checkbox",
         "label": {
           "en": "Double left gesture",
+          "no": "Dobbel venstre bevegelse",
           "nl": "Dubbel gebaar naar links"
         },
         "hint": {
           "en": "This disables toggle mode for association group 4. This will also lower the response time for the single gesture.",
+          "no": "Dette deaktiverer veksle modus for assosiasjonsgruppe 4. Dette vil også senke responstiden for enkle bevegelser.",
           "nl": "Dit deactiveert schakel modus voor associatie groep 4. Dit zal ook de reactietijd verlagen voor het enkele gebaar."
         },
         "value": false
@@ -169,10 +190,12 @@
         "type": "checkbox",
         "label": {
           "en": "Double right gesture",
+          "no": "Dobbel høyre bevegelse",
           "nl": "Dubbel gebaar naar rechts"
         },
         "hint": {
           "en": "This disables toggle mode for association group 5. This will also lower the response time for the single gesture.",
+          "no": "Dette deaktiverer veksle modus for assosiasjonsgruppe 5. Dette vil også senke responstiden for enkle bevegelser.",
           "nl": "Dit deactiveert schakel modus voor associatie groep 5. Dit zal ook de reactietijd verlagen voor het enkele gebaar."
         },
         "value": false
@@ -183,6 +206,7 @@
     "type": "group",
     "label": {
       "en": "Gesture sequences",
+      "no": "Bevegelsessekvenser",
       "nl": "Gebaren reeksen"
     },
     "collapsed": true,
@@ -192,10 +216,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 1",
+          "no": "Sekvens 1",
           "nl": "Reeks 1"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -210,10 +236,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 2",
+          "no": "Sekvens 2",
           "nl": "Reeks 2"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -228,10 +256,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 3",
+          "no": "Sekvens 3",
           "nl": "Reeks 3"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -246,10 +276,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 4",
+          "no": "Sekvens 4",
           "nl": "Reeks 4"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -264,10 +296,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 5",
+          "no": "Sekvens 5",
           "nl": "Reeks 5"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -282,10 +316,12 @@
         "type": "text",
         "label": {
           "en": "Sequence 6",
+          "no": "Sekvens 6",
           "nl": "Reeks 6"
         },
         "hint": {
           "en": "Use 2 or 3 gestures, the same gesture after each other is not allowed. Gesture numbers separated by a semicolon ( ; ). 1: up, 2: down, 3: left, 4: right, 0: disabled.",
+          "no": "Bruk 2 eller 3 bevegelser, bruk av samme bevegelse etter hverandre er ikke tillat. Bevegelsesnummer separert med semikolon ( ; ). 1: opp, 2: ned, 3: venstre, 4: høyre, 0: deaktivert.",
           "nl": "Gebruik 2 of 3 gebaren, 2 dezelfde gebaren achter elkaar is niet toegestaan. Gebaar nummers scheiden door een puntkomma ( ; ). 1: omhoog, 2: omlaag, 3: links, 4: rechts, 0: gedeactiveerd."
         },
         "zwave": {
@@ -301,6 +337,7 @@
     "type": "group",
     "label": {
       "en": "Gesture association values",
+      "no": "Bevegelse assosiasjonsverdier",
       "nl": "Gebaren associatie waarden"
     },
     "collapsed": true,
@@ -310,10 +347,12 @@
         "type": "number",
         "label": {
           "en": "Up gesture, on",
+          "no": "Bevegelse opp, på",
           "nl": "Gebaar omhoog, aan"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"on\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"på\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"aan\" commando."
         },
         "zwave": {
@@ -331,6 +370,7 @@
         "type": "number",
         "label": {
           "en": "Up gesture, off",
+          "no": "Bevegelse opp, av",
           "nl": "Gebaar omhoog, uit"
         },
         "zwave": {
@@ -339,6 +379,7 @@
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"off\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"av\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"uit\" commando."
         },
         "value": 0,
@@ -352,10 +393,12 @@
         "type": "number",
         "label": {
           "en": "Down gesture, on",
+          "no": "Bevegelse ned, på",
           "nl": "Gebaar omlaag, aan"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"on\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"på\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"aan\" commando."
         },
         "zwave": {
@@ -373,10 +416,12 @@
         "type": "number",
         "label": {
           "en": "Down gesture, off",
+          "no": "Bevegelse ned, av",
           "nl": "Gebaar omlaag, uit"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"off\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"av\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"uit\" commando."
         },
         "zwave": {
@@ -394,10 +439,12 @@
         "type": "number",
         "label": {
           "en": "Left gesture, on",
+          "no": "Bevegelse venstre, på",
           "nl": "Gebaar naar links, aan"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"on\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"på\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"aan\" commando."
         },
         "zwave": {
@@ -415,10 +462,12 @@
         "type": "number",
         "label": {
           "en": "Left gesture, off",
+          "no": "Bevegelse venstre, av",
           "nl": "Gebaar naar links, uit"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"off\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"av\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"uit\" commando."
         },
         "zwave": {
@@ -436,10 +485,12 @@
         "type": "number",
         "label": {
           "en": "Right gesture, on",
+          "no": "Bevegelse høyre, på",
           "nl": "Gebaar naar rechts, aan"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"on\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"på\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"aan\" commando."
         },
         "zwave": {
@@ -457,10 +508,12 @@
         "type": "number",
         "label": {
           "en": "right gesture, off",
+          "no": "Bevegelse høyre, av",
           "nl": "Gebaar naar rechts, uit"
         },
         "hint": {
           "en": "This parameter determines the value that is send when sending the \"off\" command.",
+          "no": "Denne parameter bestemmer verdien som blir sendt når \"av\" kommandoen sendes.",
           "nl": "Deze parameter bepaalt welke waarde er wordt verstuurd met het \"uit\" commando."
         },
         "zwave": {
@@ -479,6 +532,7 @@
     "type": "group",
     "label": {
       "en": "Power",
+      "no": "Strøm",
       "nl": "Stroom"
     },
     "collapsed": true,
@@ -488,10 +542,12 @@
         "type": "number",
         "label": {
           "en": "Power mode check",
+          "no": "Sjekk av strøm",
           "nl": "Stroom modus Check"
         },
         "hint": {
           "en": "Determine the interval (in minutes) the {{driverNameEn}} will check if it is connected to USB or powered by battery.",
+          "no": "Bestemmer intervallene (i minutter) {{driverNameEn}} vil sjekke om den er tilkoblet batteri eller USB.",
           "nl": "Bepaal het interval (in minuten) waarop de {{driverNameNl}} controleert of deze is verbonden met USB of batterij."
         },
         "zwave": {
@@ -509,10 +565,12 @@
         "type": "dropdown",
         "label": {
           "en": "Energy saving mode",
+          "no": "Energisparing",
           "nl": "Energiebespaar modus"
         },
         "hint": {
           "en": "This parameter determines what energy saving mode should be used when battery powered.",
+          "no": "Denne parameter bestemmer hvilken energisparingsmodus som skal benyttes når enheten er batteridrevet.",
           "nl": "Deze parameter bepaalt welke energiebespaar modus moet worden gebruikt wanneer de {{driverNameNl}} alleen stroom krijgt van de batterijen."
         },
         "zwave": {
@@ -525,6 +583,7 @@
             "id": "0",
             "label": {
               "en": "Standby mode, you need to unlock first",
+              "no": "Standby modus, du må låse opp først",
               "nl": "Standby modus, je moet eerst ontgrendelen"
             }
           },
@@ -532,6 +591,7 @@
             "id": "1",
             "label": {
               "en": "Simple mode, only slow gestures",
+              "no": "Simpel modus, kun saktegående bevegelser",
               "nl": "Simpele modus, alleen langzame gebaren"
             }
           },
@@ -539,6 +599,7 @@
             "id": "2",
             "label": {
               "en": "No energy saving",
+              "no": "Ingen energisparing",
               "nl": "Geen energie besparing"
             }
           }
@@ -550,6 +611,7 @@
     "type": "group",
     "label": {
       "en": "LED and acoustic notifications",
+      "no": "LED og akustiske notifikasjoner",
       "nl": "LED en akoestische notificaties"
     },
     "collapsed": true,
@@ -576,10 +638,12 @@
         "type": "dropdown",
         "label": {
           "en": "Gesture recognition buzzer",
+          "no": "Summer ved gjenkjennelse av bevegelse",
           "nl": "Buzzer herkenning gebaren"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the gesture recognition buzzer.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen til summeren når den kjenner igjen bevegelsesmønster.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van het geluid bij gebaarsherkenning."
         },
         "zwave": {
@@ -592,6 +656,7 @@
             "id": "1",
             "label": {
               "en": "On recognized gesture",
+              "no": "På kjenkjent bevegelse",
               "nl": "Bij herkend gebaar"
             }
           },
@@ -599,6 +664,7 @@
             "id": "2",
             "label": {
               "en": "On unrecognized gesture",
+              "no": "På ikke gjenkjent bevegelse",
               "nl": "Bij niet herkend gebaar"
             }
           },
@@ -606,6 +672,7 @@
             "id": "3",
             "label": {
               "en": "Any gesture",
+              "no": "Alle bevegelser",
               "nl": "Elk gebaar"
             }
           }
