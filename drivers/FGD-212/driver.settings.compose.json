@@ -69,6 +69,7 @@
         "id": "3_way_switch",
         "type": "checkbox",
         "label": {
+          "en": "3-way switch function",
           "no": "3-veis bryterfunksjon",
           "nl": "Hotelschakeling functie"
         },
