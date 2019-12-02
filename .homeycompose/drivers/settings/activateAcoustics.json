@@ -2,6 +2,7 @@
   "type": "checkbox",
   "label": {
     "en": "Enable acoustic notifications",
+    "no": "Aktiver akustiske varsler",
     "nl": "Schakel akoestische notificaties in"
   },
   "zwave": {
@@ -10,6 +11,7 @@
   },
   "hint": {
     "en": "This parameter allows you to enable/disable acoustic indications.",
+    "no": "Denne parameteren tillater deg å aktivere/deaktivere akustiske varsler.",
     "nl": "Deze parameter bepaalt of de akoestische indicatie is ingeschakelt."
   },
   "value": true

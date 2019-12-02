@@ -39,6 +39,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times, this can also be done with the S1 input.",
+        "no": "Trykk på knappen på {{driverNameNo}} tre ganger, dette kan også utføres med S1 inngangen.",
         "nl": "Druk driemaal op de knop van uw {{driverNameNl}}, dit kan ook door middel van de S1 input."
       }
     },
@@ -74,6 +75,7 @@
         "icon": "{{driverAssetsPath}}/icon.svg",
         "name": {
           "en": "Right Switch (S2/Q2)",
+          "no": "Høyre bryter (S2/Q2)",
           "nl": "Rechter Schakelaar (S2/Q2)"
         },
         "settings": []

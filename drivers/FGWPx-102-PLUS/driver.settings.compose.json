@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Power",
+      "no": "Strøm",
       "nl": "Stroom"
     },
     "collapsed": false,
@@ -26,6 +27,7 @@
     "type": "group",
     "label": {
       "en": "Power (W)",
+      "no": "Strøm (W)",
       "nl": "Stroom (W)"
     },
     "collapsed": false,
@@ -61,6 +63,7 @@
         "$id": "immediate_watt_percent_report",
         "label": {
           "en": "Report percentage threshold",
+          "no": "Rapporteringsgrense",
           "nl": "Procentuele rapportage drempel" 
         },
         "zwave": {
@@ -79,6 +82,7 @@
     "type": "group",
     "label": {
       "en": "Power (kWh)",
+      "no": "Strøm (kWh)",
       "nl": "Stroom (kWh)"
     },
     "collapsed": false,
@@ -88,10 +92,12 @@
         "type": "checkbox",
         "label": {
           "en": "Include own power consumption",
+          "no": "Inkluder eget strømforbruk",
           "nl": "inclusief eigen verbruik"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the kWh usage of the device itself is added to the power usage.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om enhetenes kWh forbruk skal legges til i totalforbruket eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het kWh verbruik van het apparaat bij het totaalverbruik wordt opgeteld."
         },
         "zwave": {
@@ -133,6 +139,7 @@
     "type": "group",
     "label": {
       "en": "LED Notifications",
+      "no": "LED varsler",
       "nl": "LED Notificaties"
     },
     "collapsed": true,
@@ -142,6 +149,7 @@
         "type": "dropdown",
         "label": {
           "en": "Color when on",
+          "no": "Farge når på",
           "nl": "Kleur wanneer aan"
         },
         "zwave": {
@@ -151,6 +159,7 @@
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in on state.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargene på LED ringen i på modus.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer het apparaat aan staat."
         },
         "values": [
@@ -158,6 +167,7 @@
             "id": "1",
             "label": {
               "en": "Changes in predefined steps according to power load",
+              "no": "Endre i predefinerte steg etter strømlast",
               "nl": "Verandert in stappen afhankelijk van het stroomverbuik"
             }
           },
@@ -165,6 +175,7 @@
             "id": "2",
             "label": {
               "en": "Changes continuously according to power load using full spectrum of LED color",
+              "no": "Endre kontinuerlig etter strømlast med fullt spektrum LED",
               "nl": "Verandert continu afhankelijk van het stroomverbruik"
             }
           },
@@ -172,6 +183,7 @@
             "id": "3",
             "label": {
               "en": "White",
+              "no": "Hvit",
               "nl": "Wit"
             }
           },
@@ -179,6 +191,7 @@
             "id": "4",
             "label": {
               "en": "Red",
+              "no": "Rød",
               "nl": "Rood"
             }
           },
@@ -186,6 +199,7 @@
             "id": "5",
             "label": {
               "en": "Green",
+              "no": "Grønn",
               "nl": "Groen"
             }
           },
@@ -193,6 +207,7 @@
             "id": "6",
             "label": {
               "en": "Blue",
+              "no": "Blå",
               "nl": "Blauw"
             }
           },
@@ -200,6 +215,7 @@
             "id": "7",
             "label": {
               "en": "Yellow",
+              "no": "Gul",
               "nl": "Geel"
             }
           },
@@ -207,6 +223,7 @@
             "id": "8",
             "label": {
               "en": "Cyan",
+              "no": "Cyan",
               "nl": "Cyaan"
             }
           },
@@ -214,6 +231,7 @@
             "id": "9",
             "label": {
               "en": "Magenta",
+              "no": "Magenta",
               "nl": "Magenta"
             }
           },
@@ -221,6 +239,7 @@
             "id": "0",
             "label": {
               "en": "Off",
+              "no": "Av",
               "nl": "Uit"
             }
           }
@@ -231,6 +250,7 @@
         "type": "dropdown",
         "label": {
           "en": "Color when off",
+          "no": "Farge når av",
           "nl": "Kleur wanneer uit"
         },
         "zwave": {
@@ -240,6 +260,7 @@
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in off state.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargene på LED ringen i av modus.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer het apparaat uit staat."
         },
         "values": [
@@ -247,6 +268,7 @@
             "id": "1",
             "label": {
               "en": "LED ring is illuminated with a color corresponding to the last measured power, before the controlled device was turned off.",
+              "no": "LED ringen lyser opp med farger som tilsvared sist målte strømforbruk før enheten ble skrudd av.",
               "nl": "LED ring is verlicht met een kleur die bij het laatst gemeten stroomverbruik hoort."
             }
           },
@@ -254,6 +276,7 @@
             "id": "3",
             "label": {
               "en": "White",
+              "no": "Hvit",
               "nl": "Wit"
             }
           },
@@ -261,6 +284,7 @@
             "id": "4",
             "label": {
               "en": "Red",
+              "no": "Rød",
               "nl": "Rood"
             }
           },
@@ -268,6 +292,7 @@
             "id": "5",
             "label": {
               "en": "Green",
+              "no": "Grønn",
               "nl": "Groen"
             }
           },
@@ -275,6 +300,7 @@
             "id": "6",
             "label": {
               "en": "Blue",
+              "no": "Blå",
               "nl": "Blauw"
             }
           },
@@ -282,6 +308,7 @@
             "id": "7",
             "label": {
               "en": "Yellow",
+              "no": "Gul",
               "nl": "Geel"
             }
           },
@@ -289,6 +316,7 @@
             "id": "8",
             "label": {
               "en": "Cyan",
+              "no": "Cyan",
               "nl": "Cyaan"
             }
           },
@@ -296,6 +324,7 @@
             "id": "9",
             "label": {
               "en": "Magenta",
+              "no": "Magenta",
               "nl": "Magenta"
             }
           },
@@ -303,6 +332,7 @@
             "id": "0",
             "label": {
               "en": "Off",
+              "no": "Av",
               "nl": "Uit"
             }
           }
@@ -314,6 +344,7 @@
     "type": "group",
     "label": {
       "en": "Associations",
+      "no": "Assosiasjoner",
       "nl": "Associaties"
     },
     "collapsed": true,
@@ -323,6 +354,7 @@
         "type": "dropdown",
         "label": {
           "en": "Control association group 2",
+          "no": "Kontroll assosiasjonsgruppe 2",
           "nl": "Controller associatie groep 2"
         },
         "zwave": {
@@ -332,6 +364,7 @@
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the devices associated to group 2 when the B-button is pressed.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen til enheter assosiert med gruppe når når B-knappen trykkes inn.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de apparaten in associatie groep 2 wanneer de B-knop ingedrukt word."
         },
         "values": [
@@ -339,6 +372,7 @@
             "id": "0",
             "label": {
               "en": "{{driverNameEn}} off, device(s) also off. {{driverNameEn}} on, device(s) also on",
+              "no": "{{driverNameNo}} av, enhet(er) også av. {{driverNameNo}} på, enhet(er) også på",
               "nl": "{{driverNameNl}} uit, apparaat(en) ook uit. {{driverNameNl}} aan, apparaat(en) ook aan"
             }
           },
@@ -346,6 +380,7 @@
             "id": "1",
             "label": {
               "en": "{{driverNameEn}} off, device(s) on. {{driverNameEn}} on, device(s) off",
+              "no": "{{driverNameNo}} av, enhet(er) på. {{driverNameNo}} på, enhet(er) av",
               "nl": "{{driverNameNl}} uit, apparaat(en) aan. {{driverNameNl}} aan, apparaat(en) uit"
             }
           }

@@ -1,7 +1,8 @@
 {
   "id": "FGRGBWM-441",
   "name": {
-    "en": "RGBW Controller"
+    "en": "RGBW Controller",
+    "no": "RGBW Kontroller"
   },
   "class": "light",
   "capabilities": [
@@ -25,24 +26,28 @@
     "measure_voltage.input1": {
       "title": {
         "en": "Input 1",
+        "no": "Inngang 1",
         "nl": "Ingang 1"
       }
     },
     "measure_voltage.input2": {
       "title": {
         "en": "Input 2",
+        "no": "Inngang 2",
         "nl": "Ingang 2"
       }
     },
     "measure_voltage.input3": {
       "title": {
         "en": "Input 3",
+        "no": "Inngang 3",
         "nl": "Ingang 3"
       }
     },
     "measure_voltage.input4": {
       "title": {
         "en": "Input 4",
+        "no": "Inngang 4",
         "nl": "Ingang 4"
       }
     }
@@ -68,6 +73,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on the {{driverNameEn}} three times.",
+        "no": "Trykk på knappen på {{driverNameNo}} tre ganger.",
         "nl": "Druk driemaal op de knop op de {{driverNameNl}}."
       }
     },
@@ -78,30 +84,35 @@
       "1": {
         "hint": {
           "en": "On/off signals from input 1",
+          "no": "På/av signaler fra inngang 1",
           "nl": "Aan/uit signalen van ingang 1"
         }
       },
       "2": {
         "hint": {
           "en": "On/off signals from input 2",
+          "no": "På/av signaler fra inngang 2",
           "nl": "Aan/uit signalen van ingang 2"
         }
       },
       "3": {
         "hint": {
           "en": "On/off signals from input 3",
+          "no": "På/av signaler fra inngang 3",
           "nl": "Aan/uit signalen van ingang 3"
         }
       },
       "4": {
         "hint": {
           "en": "On/off signals from input 4",
+          "no": "På/av signaler fra inngang 4",
           "nl": "Aan/uit signalen van ingang 4"
         }
       },
       "5": {
         "hint": {
           "en": "This is the controller group, it is not recommended to change this.",
+          "no": "Dette er gruppen til kontrolleren, det er ikke anbefalt å endre denne.",
           "nl": "Dit is de controller groep, het is niet aangeraden deze te wijzigen."
         }
       }

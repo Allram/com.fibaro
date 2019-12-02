@@ -12,6 +12,7 @@
     "id": "20",
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines determines what device triggers the switch.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilke brytere som trigger enheten.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor apparaat de schakelaar omzet."
     },
     "zwave": {
@@ -23,6 +24,7 @@
         "id": "0",
         "label": {
           "en": "Momentary Switch",
+          "no": "Momentanbryter",
           "nl": "Korstondige schakelaar"
         }
       },
@@ -30,6 +32,7 @@
         "id": "1",
         "label": {
           "en": "Toggle switch (Persistent positions)",
+          "no": "Vekslebryter (Konsekvente posisjoner)",
           "nl": "Tuimel schakelaar (Vaste posities)"
         }
       },
@@ -37,6 +40,7 @@
         "id": "2",
         "label": {
           "en": "Toggle switch (Toggle status on position change)",
+          "no": "Vekslebryter (Endre status ved bryterendring)",
           "nl": "Tuimel schakelaar (Verander status bij elke positieverandering)"
         }
       }
@@ -47,6 +51,7 @@
     "type": "group",
     "label": {
       "en": "Power",
+      "no": "Strøm",
       "nl": "Stroom"
     },
     "collapsed": true,
@@ -82,10 +87,12 @@
         "type": "number",
         "label": {
           "en": "Minimum time between wattage reports",
+          "no": "Minimum tid mellom wattmålinger",
           "nl": "Minimale tijd tussen wattage verzending"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum time between reports sent to Homey.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer minimum tid mellom rapporter som blir sendt til Homey.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum tijd tussen rapportages naar Homey."
         },
         "zwave": {
@@ -130,10 +137,12 @@
         "type": "checkbox",
         "label": {
           "en": "Include own power consumption",
+          "no": "Inkluder eget forbruk",
           "nl": "inclusief eigen verbruik"
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not the power usage of this device is included in the kWh reports.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om enhetens eget strømforbruk skal inkluderes i kWh rapportene.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het stroomverbruik van dit apparaat meegenomen wordt in de kWh rapportages."
         },
         "zwave": {

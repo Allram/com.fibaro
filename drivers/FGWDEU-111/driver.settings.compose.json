@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Button behaviour",
+      "no": "Knappeoppførsel",
       "nl": "Gedrag knoppen"
     },
     "collapsed": false,
@@ -12,11 +13,13 @@
         "type": "checkbox",
         "label": {
           "en": "Double click",
+          "no": "Dobbeltrykk",
           "nl": "Dubbel klik"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not double clicking sets the brightness level to maximum.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om dobbeltrykk skal sette lysstyrken til maksimum eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de helderheid naar maximaal wordt ingesteld bij tweemaal drukken."
         },
         "zwave": {
@@ -29,11 +32,13 @@
         "type": "checkbox",
         "label": {
           "en": "3-way switch function",
+          "no": "3-veis bryterfunksjon",
           "nl": "Hotelschakeling functie"
         },
         "value": false,
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether or not input 2 additionally controls the output 2.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om inngang 2 skal styre utgang 2 eller ikke.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of ingang 2 schakelt ook uitgang 2 bedient."
         },
         "zwave": {
@@ -46,11 +51,13 @@
         "type": "dropdown",
         "label": {
           "en": "Switch type",
+          "no": "Brytertype",
           "nl": "Schakelaar type"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines whether this device behaves like a momentary switch or a toggle switch.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer om denne enheten skal oppføre seg som en momentanbryter eller vekslebryter.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of dit apparaat zich gedraagt als een kortstondige schakelaar of een tuimelschakelaar."
         },
         "zwave": {
@@ -62,6 +69,7 @@
             "id": "0",
             "label": {
               "en": "Momentary switch",
+              "no": "Momentanbryter",
               "nl": "Pulsdruk schakelaar"
             }
           },
@@ -69,6 +77,7 @@
             "id": "1",
             "label": {
               "en": "Toggle switch",
+              "no": "Vekslebryter",
               "nl": "Tuimel schakelaar"
             }
           },
@@ -76,6 +85,7 @@
             "id": "2",
             "label": {
               "en": "Roller blind Switch (UP | DOWN)",
+              "no": "Rullegardingbryter (OPP | NED)",
               "nl": "Rolgordijn schakelaar (OP | NEER)"
             }
           }
@@ -96,6 +106,7 @@
         "type": "number",
         "label": {
           "en": "Minimum brightness level",
+          "no": "Minimum lysstyrke",
           "nl": "Minimale helderheidsniveau"
         },
         "value": 1,
@@ -105,6 +116,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the minimal brightness level.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer minste lysstyrkenivå.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het minimale helderheidsniveau."
         },
         "zwave": {
@@ -117,6 +129,7 @@
         "type": "number",
         "label": {
           "en": "Maximum brightness level",
+          "no": "Maksimumm lysstyrke",
           "nl": "Maximaal helderheidsniveau"
         },
         "value": 99,
@@ -126,6 +139,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the miniaml brightness level.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer høyeste lysstyrkenivå.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het maximale helderheidsniveau."
         },
         "zwave": {
@@ -138,6 +152,7 @@
         "type": "number",
         "label": {
           "en": "Dim step size with automatic control",
+          "no": "Dimmesteg ved automatisk kontroll",
           "nl": "Stapgrootte dimmen bij automatische besturing"
         },
         "value": 1,
@@ -147,6 +162,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage of a dimming step at automatic control.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer i prosent stegene ved automatisk dimming.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het percentage per dim stap bij automatische besturing."
         },
         "zwave": {
@@ -159,6 +175,7 @@
         "type": "number",
         "label": {
           "en": "Time of a dimming step at automatic control",
+          "no": "Tid per dimmesteg ved automatisk kontroll",
           "nl": "Tijd per dim stap bij automatische besturing"
         },
         "value": 1,
@@ -168,6 +185,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time of a dimming step at automatic control.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tiden per dimmesteg ved automatisk kontroll.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd per dim stap bij automatische besturing."
         },
         "zwave": {
@@ -180,6 +198,7 @@
         "type": "number",
         "label": {
           "en": "The percentage of a dimming step at manual control",
+          "no": "Dimmesteg ved manuell kontroll",
           "nl": "Percentage van dim stap bij handmatige bediening"
         },
         "value": 1,
@@ -189,6 +208,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the percentage of a dimming step at manual control.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer i prosent stegene ved manuell dimming.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het percentage per dim stap bij handmatige besturing."
         },
         "zwave": {
@@ -201,6 +221,7 @@
         "type": "number",
         "label": {
           "en": "Time of a dimming step at manual control",
+          "no": "Tid per dimmesteg ved manuell kontroll",
           "nl": "Tijd per dim stap bij handmatige bediening"
         },
         "value": 5,
@@ -210,6 +231,7 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time of a dimming step at manual control.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tiden per dimmesteg ved manuell kontroll.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd per dim stap bij handmatige besturing."
         },
         "zwave": {
@@ -223,6 +245,7 @@
     "type": "group",
     "label": {
       "en": "Power",
+      "no": "Strøm",
       "nl": "Stroom"
     },
     "collapsed": true,
@@ -241,6 +264,7 @@
     "type": "group",
     "label": {
         "en": "LED notifications",
+        "no": "LED varsler",
         "nl": "LED notificaties"
     },
     "collapsed": true,
@@ -250,11 +274,13 @@
             "type": "dropdown",
             "label": {
                 "en": "Color when on",
+                "no": "Farge når på",
                 "nl": "Kleur wanneer aan"
             },
             "value": "8",
             "hint": {
                 "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in on state.",
+                "no": "Denne parameter ({{zwaveParameterIndex}}) definerer fargen på LED ringen i på-modus.",
                 "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat aan staat."
             },
             "zwave": {
@@ -266,6 +292,7 @@
                     "id": "0",
                     "label": {
                         "en": "LED off",
+                        "no": "LED av",
                         "nl": "LED uit"
                     }
                 },
@@ -273,6 +300,7 @@
                     "id": "1",
                     "label": {
                         "en": "White",
+                        "no": "Hvit",
                         "nl": "Wit"
                     }
                 },
@@ -280,6 +308,7 @@
                     "id": "2",
                     "label": {
                         "en": "Red",
+                        "no": "Rød",
                         "nl": "Rood"
                     }
                 },
@@ -287,6 +316,7 @@
                     "id": "3",
                     "label": {
                         "en": "Green",
+                        "no": "Grønn",
                         "nl": "Groen"
                     }
                 },
@@ -294,6 +324,7 @@
                     "id": "4",
                     "label": {
                         "en": "Blue",
+                        "no": "Blå",
                         "nl": "Blauw"
                     }
                 },
@@ -301,6 +332,7 @@
                     "id": "5",
                     "label": {
                         "en": "Yellow",
+                        "no": "Gul",
                         "nl": "Geel"
                     }
                 },
@@ -308,6 +340,7 @@
                     "id": "6",
                     "label": {
                         "en": "Cyan",
+                        "no": "Cyan",
                         "nl": "Cyaan"
                     }
                 },
@@ -315,6 +348,7 @@
                     "id": "7",
                     "label": {
                         "en": "Magenta",
+                        "no": "Magenta",
                         "nl": "Magenta"
                     }
                 },
@@ -322,6 +356,7 @@
                     "id": "8",
                     "label": {
                         "en": "Changes continuously according to power load using full spectrum of LED color",
+                        "no": "Endre kontinuerlig avhengig av strømlast ved full spektrum LED",
                         "nl": "Verandert continu afhankelijk van het stroomverbruik"
                     }
                 },
@@ -329,6 +364,7 @@
                     "id": "9",
                     "label": {
                         "en": "Changes in predefined steps according to power load",
+                        "no": "Endre i predefinerte steg avhengig av strømlast",
                         "nl": "Verandert in stappen afhankelijk van het stroomverbuik"
                     }
                 }
@@ -339,11 +375,13 @@
             "type": "dropdown",
             "label": {
                 "en": "Color when off",
+                "no": "Farge når av",
                 "nl": "Kleur wanneer uit"
             },
             "value": "0",
             "hint": {
                 "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in off state.",
+                "no": "Denne parameter ({{zwaveParameterIndex}}) definerer fargen på LED ringen i av-modus.",
                 "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat uit staat."
             },
             "zwave": {
@@ -355,6 +393,7 @@
                     "id": "0",
                     "label": {
                         "en": "Off",
+                        "no": "Av",
                         "nl": "Uit"
                     }
                 },
@@ -362,6 +401,7 @@
                     "id": "1",
                     "label": {
                         "en": "White",
+                        "no": "Hvit",
                         "nl": "Wit"
                     }
                 },
@@ -369,6 +409,7 @@
                     "id": "2",
                     "label": {
                         "en": "Red",
+                        "no": "Rød",
                         "nl": "Rood"
                     }
                 },
@@ -376,6 +417,7 @@
                     "id": "3",
                     "label": {
                         "en": "Green",
+                        "no": "Grønn",
                         "nl": "Groen"
                     }
                 },
@@ -383,6 +425,7 @@
                     "id": "4",
                     "label": {
                         "en": "Blue",
+                        "no": "Blå",
                         "nl": "Blauw"
                     }
                 },
@@ -390,6 +433,7 @@
                     "id": "5",
                     "label": {
                         "en": "Yellow",
+                        "no": "Gul",
                         "nl": "Geel"
                     }
                 },
@@ -397,6 +441,7 @@
                     "id": "6",
                     "label": {
                         "en": "Cyan",
+                        "no": "Cyan",
                         "nl": "Cyaan"
                     }
                 },
@@ -404,6 +449,7 @@
                     "id": "7",
                     "label": {
                         "en": "Magenta",
+                        "no": "Magenta",
                         "nl": "Magenta"
                     }
                 }
@@ -414,10 +460,12 @@
             "type": "number",
             "label": {
                 "en": "LED Brightness",
+                "no": "LED lysstyrke",
                 "nl": "LED Helderheid"
             },
             "hint": {
                 "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in off state.",
+                "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargen på LED ringen i av-modus.",
                 "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer dit apparaat uit staat."
             },
             "zwave": {

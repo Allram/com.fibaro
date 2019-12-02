@@ -4,6 +4,7 @@
       "id": "RGBW_input_on",
       "title": {
         "en": "In-/output turned on",
+        "no": "Inn-/utgang skrudd på",
         "nl": "In-/uitgang aan geschakeld"
       },
       "args": [
@@ -15,6 +16,7 @@
               "id": "1",
               "label": {
                 "en": "Input 1",
+                "no": "Inngang 1",
                 "nl": "Ingang 1"
               }
             },
@@ -22,6 +24,7 @@
               "id": "2",
               "label": {
                 "en": "Input 2",
+                "no": "Inngang 2",
                 "nl": "Ingang 2"
               }
             },
@@ -29,6 +32,7 @@
               "id": "3",
               "label": {
                 "en": "Input 3",
+                "no": "Inngang 3",
                 "nl": "Ingang 3"
               }
             },
@@ -36,6 +40,7 @@
               "id": "4",
               "label": {
                 "en": "Input 4",
+                "no": "Inngang 4",
                 "nl": "Ingang 4"
               }
             }
@@ -47,6 +52,7 @@
       "id": "RGBW_input_off",
       "title": {
         "en": "In-/output turned off",
+        "no": "Inn-/utgang skrudd av",
         "nl": "In-/uitgang uit geschakeld"
       },
       "args": [
@@ -58,6 +64,7 @@
               "id": "1",
               "label": {
                 "en": "Input 1",
+                "no": "Inngang 1",
                 "nl": "Ingang 1"
               }
             },
@@ -65,6 +72,7 @@
               "id": "2",
               "label": {
                 "en": "Input 2",
+                "no": "Inngang 2",
                 "nl": "Ingang 2"
               }
             },
@@ -72,6 +80,7 @@
               "id": "3",
               "label": {
                 "en": "Input 3",
+                "no": "Inngang 3",
                 "nl": "Ingang 3"
               }
             },
@@ -79,6 +88,7 @@
               "id": "4",
               "label": {
                 "en": "Input 4",
+                "no": "Inngang 4",
                 "nl": "Ingang 4"
               }
             }
@@ -90,10 +100,12 @@
       "id": "RGBW_volt_input1",
       "title": {
         "en": "Voltage input 1 changed",
+        "no": "Spenningsinngang 1 endret",
         "nl": "Voltage ingang 1 veranderd"
       },
       "hint": {
         "en": "This will only trigger if the input type is set to analog",
+        "no": "Dette vil kun trigge om inngangstype er satt til analog",
         "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
       },
       "args": [],
@@ -112,10 +124,12 @@
       "id": "RGBW_volt_input2",
       "title": {
         "en": "Voltage input 2 changed",
+        "no": "Spenningsinngang 2 endret",
         "nl": "Voltage ingang 2 veranderd"
       },
       "hint": {
         "en": "This will only trigger if the input type is set to analog",
+        "no": "Dette vil kun trigge om inngangstype er satt til analog",
         "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
       },
       "args": [],
@@ -134,10 +148,12 @@
       "id": "RGBW_volt_input3",
       "title": {
         "en": "Voltage input 3 changed",
+        "no": "Spenningsinngang 3 endret",
         "nl": "Voltage ingang 3 veranderd"
       },
       "hint": {
         "en": "This will only trigger if the input type is set to analog",
+        "no": "Dette vil kun trigge om inngangstype er satt til analog",
         "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
       },
       "args": [],
@@ -156,10 +172,12 @@
       "id": "RGBW_volt_input4",
       "title": {
         "en": "Voltage input 4 changed",
+        "no": "Spenningsinngang 4 endret",
         "nl": "Voltage ingang 4 veranderd"
       },
       "hint": {
         "en": "This will only trigger if the input type is set to analog",
+        "no": "Dette vil kun trigge om inngangstype er satt til analog",
         "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
       },
       "args": [],
@@ -181,6 +199,7 @@
       "id": "RGBW_specific",
       "title": {
         "en": "Set specific brightness",
+        "no": "Sett spesifikk lysstyrke",
         "nl": "Stel specifieke helderheid in"
       },
       "args": [
@@ -192,6 +211,7 @@
               "id": "r",
               "label": {
                 "en": "Red output",
+                "no": "Rød utgang",
                 "nl": "Rode uitgang"
               }
             },
@@ -199,6 +219,7 @@
               "id": "g",
               "label": {
                 "en": "Green output",
+                "no": "Grønn utgang",
                 "nl": "Groene uitgang"
               }
             },
@@ -206,6 +227,7 @@
               "id": "b",
               "label": {
                 "en": "Blue output",
+                "no": "Blå utgang",
                 "nl": "Blauwe uitgang"
               }
             },
@@ -213,6 +235,7 @@
               "id": "w",
               "label": {
                 "en": "White output",
+                "no": "Hvit utgang",
                 "nl": "Witte uitgang"
               }
             }
@@ -233,10 +256,12 @@
       "id": "RGBW_animation",
       "title": {
         "en": "Choose an animation",
+        "no": "Velg en animasjon",
         "nl": "Kies een animatie"
       },
       "hint": {
         "en": "Animations only work if the mode type is set to RGB(W)",
+        "no": "Animasjoner vil kun fungere om modus er satt til RGB(W)",
         "nl": "Animaties werken alleen als de mode type is ingesteld op RGB(W)"
       },
       "args": [
@@ -248,6 +273,7 @@
               "id": "6",
               "label": {
                 "en": "Fire",
+                "no": "Brann",
                 "nl": "Vuur"
               }
             },
@@ -255,6 +281,7 @@
               "id": "7",
               "label": {
                 "en": "Storm/lightning",
+                "no": "Storm/Tordenvær",
                 "nl": "Storm/onweer"
               }
             },
@@ -262,6 +289,7 @@
               "id": "8",
               "label": {
                 "en": "Rainbow",
+                "no": "Regnbue",
                 "nl": "Regenboog"
               }
             },
@@ -269,6 +297,7 @@
               "id": "9",
               "label": {
                 "en": "Aurora",
+                "no": "Aurora",
                 "nl": "Aurora"
               }
             },
@@ -276,6 +305,7 @@
               "id": "10",
               "label": {
                 "en": "Police",
+                "no": "Politi",
                 "nl": "Politie"
               }
             },
@@ -283,6 +313,7 @@
               "id": "11",
               "label": {
                 "en": "Random animation",
+                "no": "Tilfeldig animasjon",
                 "nl": "Willekeurige animatie"
               }
             },
@@ -290,6 +321,7 @@
               "id": "1",
               "label": {
                 "en": "Stop animation",
+                "no": "Stopp animasjon",
                 "nl": "Stop animatie"
               }
             },
@@ -297,6 +329,7 @@
               "id": "0",
               "label": {
                 "en": "Stop animation, back to previous state",
+                "no": "Stopp animasjon, gå tilbake til forrige modus",
                 "nl": "Stop animatie, herstel vorige status"
               }
             }

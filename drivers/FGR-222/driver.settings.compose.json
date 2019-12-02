@@ -4,11 +4,13 @@
     "type": "dropdown",
     "label": {
       "en": "Blind position reports type",
+      "no": "Rapportering av posisjon",
       "nl": "Rolluik positie rapportage type"
     },
     "value": "0",
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines whether the values are sent in Fibar Command Class or Z-Wave Command Class mode.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer verdiene som sendes i Fibar kommandoklasse eller Z-Wave kommandoklassemodus.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of het apparaat waardes verzend in Fibar Command Class of Z-Wave Command Class modus."
     },
     "zwave": {
@@ -19,13 +21,15 @@
       {
         "id": "0",
         "label": {
-          "en": "Z-Wave Command Class"
+          "en": "Z-Wave Command Class",
+          "no": "Z-Wave kommandoklasse"
         }
       },
       {
         "id": "1",
         "label": {
-          "en": "Fibar Command Class"
+          "en": "Fibar Command Class",
+          "no": "Fibar kommandoklasse"
         }
       }
     ]
@@ -39,6 +43,7 @@
     "$id": "switch_type",
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines what switch is connected to this device.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilken type bryter som er tilkoblet enheten.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor een schakelaar het apparaat activeert."
     },
     "zwave": {
@@ -51,6 +56,7 @@
         "id": "0",
         "label": {
           "en": "Double, Momentary switch",
+          "no": "Dobbel, momentanbryter",
           "nl": "Dubbele pulsdrukschakelaar "
         }
       },
@@ -58,6 +64,7 @@
         "id": "1",
         "label": {
           "en": "Toggle switches",
+          "no": "Vekslebrytere",
           "nl": "Tuimelschakelaars"
         }
       },
@@ -65,6 +72,7 @@
         "id": "2",
         "label": {
           "en": "Single, momentary switch",
+          "no": "Singel, momentanbryter",
           "nl": "Enkele pulsdrukschakelaar"
         }
       }
@@ -101,10 +109,12 @@
     "type": "checkbox",
     "label": {
       "en": "Start calibration",
+      "no": "Start kalibrering",
       "nl": "Start kalibratie"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) starts the calibration procedure on save.",
+      "no": "Denne parameter ({{zwaveParameterIndex}}) starter kalibreringsprosedyren når du trykker på lagre.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) start de kalibratieprocedure na het opslaan."
     },
     "zwave": {
@@ -118,10 +128,12 @@
     "type": "checkbox",
     "label": {
       "en": "Invert movement",
+      "no": "Inverter bevegelse",
       "nl": "Keer de beweging om"
     },
     "hint": {
       "en": "This parameter inverts the shutter movement direction.",
+      "no": "Denne parameter inverterer bevegelsesretningen.",
       "nl": "Deze parameter keert de rolluik bewegingsdirectie om."
     },
     "value": false

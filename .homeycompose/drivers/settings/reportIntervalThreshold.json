@@ -2,10 +2,12 @@
   "value": 200,
   "label": {
     "en": "Interval report threshold",
+    "no": "Rapporteringsgrense for intervaller",
     "nl": "Interval rapportage drempel"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum value change before reporting changes to Homey when the reporting interval triggers.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer minste verdiendring før verdien rapporteres til Homey når rapportintervallene trigges.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering in waarde voordat deze naar Homey wordt gestuurt tijdens de interval rapportages."
   },
   "zwave": {

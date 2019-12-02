@@ -2,6 +2,7 @@
   "id": "FGSD-002",
   "name": {
     "en": "Smoke Detector (Z-Wave plus)",
+    "no": "Røykdetektor (Z-Wave plus)",
     "nl": "Rookmelder (Z-Wave plus)"
   },
   "class": "sensor",
@@ -36,6 +37,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times",
+        "no": "Trykk på knappen på {{driverNameNo} tre ganger",
         "nl": "Druk driemaal op de knop op de {{driverNameNl}}"
       }
     },

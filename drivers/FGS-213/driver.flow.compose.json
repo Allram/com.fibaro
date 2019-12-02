@@ -4,6 +4,7 @@
       "id": "FGS-213_S1",
       "title": {
         "en": "Left Switch (S1)",
+        "no": "Venstre bryter (S1)",
         "nl": "Linker Schakelaar (S1)"
       },
       "args": [
@@ -15,6 +16,7 @@
               "id": "Key Pressed 1 time",
               "label": {
                 "en": "Pressed/switched 1x",
+                "no": "Trykket/Vekslet 1x",
                 "nl": "1x Ingedrukt/geschakeld"
               }
             },
@@ -22,6 +24,7 @@
               "id": "Key Pressed 2 times",
               "label": {
                 "en": "Pressed/switched 2x",
+                "no": "Trykket/Vekslet 2x",
                 "nl": "2x Ingedrukt/geschakeld"
               }
             },
@@ -29,6 +32,7 @@
               "id": "Key Pressed 3 times",
               "label": {
                 "en": "Pressed/switched 3x",
+                "no": "Trykket/Vekslet 3x",
                 "nl": "3x Ingedrukt/geschakeld"
               }
             },
@@ -36,6 +40,7 @@
               "id": "Key Held Down",
               "label": {
                 "en": "Hold switch (momentary switch)",
+                "no": "Hold bryter (momentanbryter)",
                 "nl": "Lang ingedrukt (kortstondige schakelaar)"
               }
             },
@@ -43,6 +48,7 @@
               "id": "Key Released",
               "label": {
                 "en": "Hold released (momentary switch)",
+                "no": "Hold sluppet (momentanbryter)",
                 "nl": "Lang ingedrukt los (kortstondige schakelaar)"
               }
             }
@@ -54,6 +60,7 @@
       "id": "FGS-213_S2",
       "title": {
         "en": "Right Switch (S2)",
+        "no": "Høyre bryter (S2)",
         "nl": "Rechter Schakelaar (S2)"
       },
       "args": [
@@ -65,6 +72,7 @@
               "id": "Key Pressed 1 time",
               "label": {
                 "en": "Pressed/switched 1x",
+                "no": "Trykket/Vekslet 1x",
                 "nl": "1x Ingedrukt/geschakeld"
               }
             },
@@ -72,6 +80,7 @@
               "id": "Key Pressed 2 times",
               "label": {
                 "en": "Pressed/switched 2x",
+                "no": "Trykket/Vekslet 2x",
                 "nl": "2x Ingedrukt/geschakeld"
               }
             },
@@ -79,6 +88,7 @@
               "id": "Key Pressed 3 times",
               "label": {
                 "en": "Pressed/switched 3x",
+                "no": "Trykket/Vekslet 3x",
                 "nl": "3x Ingedrukt/geschakeld"
               }
             },
@@ -86,6 +96,7 @@
               "id": "Key Held Down",
               "label": {
                 "en": "Hold switch (momentary switch)",
+                "no": "Hold bryter (momentanbryter)",
                 "nl": "Lang ingedrukt (kortstondige schakelaar)"
               }
             },
@@ -93,6 +104,7 @@
               "id": "Key Released",
               "label": {
                 "en": "Hold released (momentary switch)",
+                "no": "Hold sluppet (momentanbryter)",
                 "nl": "Lang ingedrukt los (kortstondige schakelaar)"
               }
             }
@@ -107,10 +119,12 @@
       "id": "FGS-213_reset_meter",
       "title": {
         "en": "Reset meter values",
+        "no": "Reset strømmålerverdier (kWh)",
         "nl": "Meter waarden resetten"
       },
       "hint": {
         "en": "Reset the accumulated power usage (kWh). Can not be reversed.",
+        "no": "Reset akkumulert strømforbruk (kWh). Kan ikke reverseres.",
         "nl": "Reset de stroomverbruik (kWh) waarden. Kan niet ongedaan worden gemaakt."
       },
       "args": []

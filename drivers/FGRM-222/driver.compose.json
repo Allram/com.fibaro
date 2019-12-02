@@ -30,6 +30,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the B-button on your {{driverNameEn}} three times.",
+        "no": "Trykk B-knappen på {{driverNameNo}} tre ganger.",
         "nl": "Druk driemaal op de B-knop op uw {{driverNameNl}}."
       }
     },

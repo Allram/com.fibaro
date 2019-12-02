@@ -45,6 +45,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Hold your hand in front of the {{driverNameEn}} for about 7 seconds (until you hear two short beeps). Then perform a swipe up gesture.",
+        "no": "Hold hånden din foran {{driverNameNo}} i ca 7 sekunder (til du hører 2 korte beep). Så utfører du en swipe opp bevegelse.",
         "nl": "Houd uw hand voor ongeveer 7 seconden voor de {{driverNameNl}} (totdat u twee korte piepjes hoort). Maak daarna het \"Veeg omhoog\" gebaar."
       }
     },
@@ -55,36 +56,42 @@
       "1": {
         "hint": {
           "en": "This is the controller group, it is not recommended to change this.",
+          "no": "Dette er kontrollergruppen, det er ikke anbefalt å endre denne.",
           "nl": "Dit is de controller groep, het is niet aangeraden deze te wijzigen."
         }
       },
       "2": {
         "hint": {
           "en": "On/off command, up gesture",
+          "no": "På/Av kommando, swipe opp bevegelse",
           "nl": "Aan/uit commando, gebaar omhoog"
         }
       },
       "3": {
         "hint": {
           "en": "On/off command, down gesture",
+          "no": "På/Av kommando, swipe ned bevegelse",
           "nl": "Aan/uit commando, gebaar omlaag"
         }
       },
       "4": {
         "hint": {
           "en": "On/off command, left gesture",
+          "no": "På/Av kommando, swipe til venstre bevegelse",
           "nl": "Aan/uit commando, gebaar naar links"
         }
       },
       "5": {
         "hint": {
           "en": "On/off command, right gesture",
+          "no": "På/Av kommando, swipe til høyre bevegelse",
           "nl": "Aan/uit commando, gebaar naar rechts"
         }
       },
       "6": {
         "hint": {
           "en": "Start dim/stop dim command, circular gesture",
+          "no": "Start dimming/stop dimming kommando, sirkulær bevegelse",
           "nl": "Start dim/stop dim commando, rondgaand gebaar"
         }
       }

@@ -2,10 +2,12 @@
   "value": 0,
   "label": {
     "en": "Delay for deactivation command (s)",
+    "no": "Forsinkelse for deaktiveringskommando (s)",
     "nl": "Vertraging commando bij deactivatie (s)"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the duration of deactivation before the deactivation command is sent.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer forsinkelsen på deaktivering før deaktiveringskommando blir sendt.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de duur van de sensor/alarm deactivatie voordat het commando wordt verstuurd."
   },
   "zwave": {

@@ -2,10 +2,12 @@
   "value": 3600,
   "label": {
     "en": "Report interval (s)",
+    "no": "Rapportintervall (s)",
     "nl": "Rapportage interval (s)"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the time between reports to Homey, independent of value changes.",
+    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer tiden mellom rapporter som sendes til Homey, uanhengig av endringer på verdier.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wanneer de waarden naar Homey worden verzonden, ook als deze niet veranderd is."
   },
   "zwave": {
