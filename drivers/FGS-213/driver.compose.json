@@ -38,7 +38,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on, or the left switch of your {{driverNameEn}} three times",
-        "no": "Trykk på knappen på, eller venstre bryter på {{driverNameEn}} tre ganger",
+        "no": "Trykk på knappen på, eller venstre bryter på {{driverNameNo}} tre ganger",
         "nl": "Druk driemaal op de knop op de linker schakelaar van {{driverNameNl}}"
       }
     },

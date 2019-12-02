@@ -37,7 +37,7 @@
     "learnmode": {
       "instruction": {
         "en": "Press any button on the {{driverNameEn}} 3 times.",
-        "no": "Trykk hvilken som helst knapp på {{driverNameEn}} 3 ganger.",
+        "no": "Trykk hvilken som helst knapp på {{driverNameNo}} 3 ganger.",
         "nl": "Druk driemaal op een willekeurige knop op de {{driverNameNl}}."
       }
     },

@@ -248,7 +248,7 @@
         ],
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the {{driverNameEn}} with regard to its association groups.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen av {{driverNameEn}} med hensyn til assosiasjonsgruppene.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen av {{driverNameNo}} med hensyn til assosiasjonsgruppene.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de {{driverNameNl}} met betrekking tot zijn associatie groepen."
         }
       },

@@ -49,7 +49,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Insert the {{driverNameEn}} in a socket or press the button on your {{driverNameEn}} three times",
-        "no": "Sett inn {{driverNameEn}} i en stikkontakt eller trykk på knappen på {{driverNameEn}} tre ganger",
+        "no": "Sett inn {{driverNameNo}} i en stikkontakt eller trykk på knappen på {{driverNameNo}} tre ganger",
         "nl": "Stop de {{driverNameNl}} in het stopcontact of druk driemaal op de knop op de {{driverNameNl}}"
       }
     },

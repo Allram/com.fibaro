@@ -44,7 +44,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Hold your hand in front of the {{driverNameEn}} for about 7 seconds (until you hear two short beeps). Then perform a swipe up gesture.",
-        "no": "Hold hånden din foran {{driverNameEn}} i ca 7 sekunder (til du hører 2 korte beep). Så utfører du en swipe opp bevegelse.",
+        "no": "Hold hånden din foran {{driverNameNo}} i ca 7 sekunder (til du hører 2 korte beep). Så utfører du en swipe opp bevegelse.",
         "nl": "Houd uw hand voor ongeveer 7 seconden voor de {{driverNameNl}} (totdat u twee korte piepjes hoort). Maak daarna het \"Veeg omhoog\" gebaar."
       }
     },
