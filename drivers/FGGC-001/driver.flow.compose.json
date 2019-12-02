@@ -4,10 +4,12 @@
       "id": "fggc-001_swipe_direction",
       "title": {
         "en": "Gesture direction",
+        "no": "Bevegelsesretning",
         "nl": "Gebaar richting"
       },
       "hint": {
         "en": "For this Flow Trigger to work the double gesture setting needs to be enabled in the device's settings.",
+        "no": "For at denne Flow triggeren skal fungere, må doble bevegelsesinnstillinger aktiveres under enhetens innstillinger.",
         "nl": "Om deze Flow Trigger te laten werken moet het dubbele gebaar geactiveerd zijn in de apparaat instellingen."
       },
       "args": [
@@ -19,6 +21,7 @@
               "id": "1",
               "label": {
                 "en": "Up",
+                "no": "Opp",
                 "nl": "Omhoog"
               }
             },
@@ -26,6 +29,7 @@
               "id": "2",
               "label": {
                 "en": "Down",
+                "no": "ned",
                 "nl": "Omlaag"
               }
             },
@@ -33,6 +37,7 @@
               "id": "3",
               "label": {
                 "en": "Left",
+                "no": "Venstre",
                 "nl": "Links"
               }
             },
@@ -40,6 +45,7 @@
               "id": "4",
               "label": {
                 "en": "Right",
+                "no": "Høyre",
                 "nl": "Rechts"
               }
             }
@@ -53,6 +59,7 @@
               "id": "Key Pressed 1 time",
               "label": {
                 "en": "1 time",
+                "no": "1 gang",
                 "nl": "1 keer"
               }
             },
@@ -60,6 +67,7 @@
               "id": "Key Pressed 2 times",
               "label": {
                 "en": "2 times",
+                "no": "2 ganger",
                 "nl": "2 keer"
               }
             }
@@ -71,10 +79,12 @@
       "id": "fggc-001_swipe_round",
       "title": {
         "en": "Gesture circular",
+        "no": "Sirkulær bevegelse",
         "nl": "Gebaar rondgaand"
       },
       "hint": {
         "en": "When using the circular gesture it will trigger the \"Keep going round\" scene only once, and it will trigger the \"Going round stopped\" once the circular gesture is stopped.",
+        "no": "Når du benytter deg av sirkulære bevegelser, vil dette trigge \"Fortsett rundt\" scenen kun en gang, og den vil trigge \"Fortsett rundt stoppet\" med en gang bevegelsen stopper.",
         "nl": "Bij het gebruik van het rondgaande gebaar zal de \"Rond blijven gaan\" scene maar 1 keer worden geactiveerd, daarnaast activeert het uiteindelijk 1 keer de \"Rond gaan gestopt\" scene, wanneer het rondgaande gebaar wordt gestopt."
       },
       "args": [
@@ -86,6 +96,7 @@
               "id": "5",
               "label": {
                 "en": "Clockwise",
+                "no": "Klokkeretning",
                 "nl": "Met klok mee"
               }
             },
@@ -93,6 +104,7 @@
               "id": "6",
               "label": {
                 "en": "Counter clockwise",
+                "no": "Mot klokkeretningen",
                 "nl": "Tegen klok in"
               }
             }
@@ -106,6 +118,7 @@
               "id": "Key Held Down",
               "label": {
                 "en": "Keep going round",
+                "no": "Fortsett rundt",
                 "nl": "Rond blijven gaan"
               }
             },
@@ -113,6 +126,7 @@
               "id": "Key Released",
               "label": {
                 "en": "Going round stopped",
+                "no": "Fortsett rundt stoppet",
                 "nl": "Rond gaan gestopt"
               }
             }
@@ -124,10 +138,12 @@
       "id": "fggc-001_swipe_sequence",
       "title": {
         "en": "Gesture sequence",
+        "no": "Bevegelses sekvens",
         "nl": "Gebaren reeks"
       },
       "hint": {
         "en": "Set the gesture sequences in the device's settings.",
+        "no": "Sett bevegelsessekvenser i enhetens innstillinger",
         "nl": "Stel de gebaren reeksen in bij de apparaat instellingen."
       },
       "args": [
@@ -139,6 +155,7 @@
               "id": "7",
               "label": {
                 "en": "Sequence 1",
+                "no": "Sekvens 1",
                 "nl": "Reeks 1"
               }
             },
@@ -146,6 +163,7 @@
               "id": "8",
               "label": {
                 "en": "Sequence 2",
+                "no": "Sekvens 2",
                 "nl": "Reeks 2"
               }
             },
@@ -153,6 +171,7 @@
               "id": "9",
               "label": {
                 "en": "Sequence 3",
+                "no": "Sekvens 3",
                 "nl": "Reeks 3"
               }
             },
@@ -160,6 +179,7 @@
               "id": "10",
               "label": {
                 "en": "Sequence 4",
+                "no": "Sekvens 4",
                 "nl": "Reeks 4"
               }
             },
@@ -167,6 +187,7 @@
               "id": "11",
               "label": {
                 "en": "Sequence 5",
+                "no": "Sekvens 5",
                 "nl": "Reeks 5"
               }
             },
@@ -174,6 +195,7 @@
               "id": "12",
               "label": {
                 "en": "Sequence 6",
+                "no": "Sekvens 6",
                 "nl": "Reeks 6"
               }
             },
@@ -181,6 +203,7 @@
               "id": "13",
               "label": {
                 "en": "Inclusion/exlusion gesture",
+                "no": "Inkludere/ekskludere bevegelse",
                 "nl": "Voeg toe/verwijder gebaar"
               }
             }
