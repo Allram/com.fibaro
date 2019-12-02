@@ -71,7 +71,7 @@
         },
         "hint": {
           "en": "Determine if the {{driverNameEn}} enters the menu when you use the \"hold\" gesture.",
-          "no": "Bestemmer om {{driverNameEn}} åpner menyen når du bruker \"hold\" bevegelsen.",
+          "no": "Bestemmer om {{driverNameNo}} åpner menyen når du bruker \"hold\" bevegelsen.",
           "nl": "Bepaal of de {{driverNameNl}} het menu in gaat als je het \"houd stil\" gebaar gebruikt."
         },
         "zwave": {
@@ -547,7 +547,7 @@
         },
         "hint": {
           "en": "Determine the interval (in minutes) the {{driverNameEn}} will check if it is connected to USB or powered by battery.",
-          "no": "Bestemmer intervallene (i minutter) {{driverNameEn}} vil sjekke om den er tilkoblet batteri eller USB.",
+          "no": "Bestemmer intervallene (i minutter) {{driverNameNo}} vil sjekke om den er tilkoblet batteri eller USB.",
           "nl": "Bepaal het interval (in minuten) waarop de {{driverNameNl}} controleert of deze is verbonden met USB of batterij."
         },
         "zwave": {

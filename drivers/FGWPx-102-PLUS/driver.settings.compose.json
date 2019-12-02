@@ -372,7 +372,7 @@
             "id": "0",
             "label": {
               "en": "{{driverNameEn}} off, device(s) also off. {{driverNameEn}} on, device(s) also on",
-              "no": "{{driverNameEn}} av, enhet(er) også av. {{driverNameEn}} på, enhet(er) også på",
+              "no": "{{driverNameNo}} av, enhet(er) også av. {{driverNameNo}} på, enhet(er) også på",
               "nl": "{{driverNameNl}} uit, apparaat(en) ook uit. {{driverNameNl}} aan, apparaat(en) ook aan"
             }
           },
@@ -380,7 +380,7 @@
             "id": "1",
             "label": {
               "en": "{{driverNameEn}} off, device(s) on. {{driverNameEn}} on, device(s) off",
-              "no": "{{driverNameEn}} av, enhet(er) på. {{driverNameEn}} på, enhet(er) av",
+              "no": "{{driverNameNo}} av, enhet(er) på. {{driverNameNo}} på, enhet(er) av",
               "nl": "{{driverNameNl}} uit, apparaat(en) aan. {{driverNameNl}} aan, apparaat(en) uit"
             }
           }

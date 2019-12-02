@@ -15,7 +15,7 @@
             "image": "{{driverAssetsPath}}/learnmode.svg",
             "instruction": {
                 "en": "Connect the wall outlet to a power source and press the pair button on {{driverNameEn}} three times",
-                "no": "Koble stikkontakten til en strømkilde og trykk på knappen på {{driverNameEn}} tre ganger",
+                "no": "Koble stikkontakten til en strømkilde og trykk på knappen på {{driverNameNo}} tre ganger",
                 "nl": "Sluit de spanning aan op de wandcontactdoos en druk driemaal op de knop op van {{driverNameNl}}"
             }
         },
