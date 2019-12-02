@@ -2,6 +2,7 @@
   "id": "FGSS-001",
   "name": {
     "en": "Smoke Sensor",
+    "no": "Røykdetektor",
     "nl": "Rookmelder"
   },
   "class": "sensor",
@@ -34,6 +35,7 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on the {{driverNameEn}} three times",
+        "no": "Trykk på knappen på {{driverNameEn}} tre ganger",
         "nl": "Druk driemaal op de knop op de {{driverNameNl}}"
       }
     },

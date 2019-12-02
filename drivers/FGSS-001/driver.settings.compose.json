@@ -3,6 +3,7 @@
     "type": "group",
     "label": {
       "en": "Smoke sensor",
+      "no": "Røykdetektor",
       "nl": "Rookmelder"
     },
     "collapsed": false,
@@ -36,6 +37,7 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
+      "no": "Temperatursensor",
       "nl": "Temperatuursensor"
     },
     "collapsed": true,
@@ -93,6 +95,7 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
+      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,
@@ -102,11 +105,13 @@
         "type": "dropdown",
         "label": {
           "en": "Tamper alarm",
+          "no": "Sabotasjealarm",
           "nl": "Sabotage alarm"
         },
         "value": "1",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the tamper alarm.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer sabotasjealarmens oppførsel.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van het sabotage alarm."
         },
         "zwave": {
@@ -118,6 +123,7 @@
             "id": "0",
             "label": {
               "en": "Inactive",
+              "no": "Inaktiv",
               "nl": "Uitgeschakeld"
             }
           },
@@ -125,6 +131,7 @@
             "id": "1",
             "label": {
               "en": "Active, with cancellation",
+              "no": "Aktiv, med kansellering",
               "nl": "Ingeschakeld, met annulering"
             }
           },
@@ -132,6 +139,7 @@
             "id": "2",
             "label": {
               "en": "Active, without cancellation",
+              "no": "Aktiv, uten kansellering",
               "nl": "Ingeschakeld, zonder annulering"
             }
           }
@@ -143,6 +151,7 @@
     "type": "group",
     "label": {
       "en": "LED and acoustic notifications",
+      "no": "LED og akustiske notifikasjoner",
       "nl": "LED en akoestische notificaties"
     },
     "collapsed": true,
@@ -152,11 +161,13 @@
         "type": "dropdown",
         "label": {
           "en": "LED indicator and acoustic alarm",
+          "no": "LED indikator og akustiske notifikasjoner",
           "nl": "LED indicatie en akoestisch alarm"
         },
         "value": "3",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the visual and acoustic alarm when the alarm is triggerd.",
+          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen ved visuelle og akkustiske signaler når alarmen blir trigget.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de visuele en akoestische melding bij het af gaan van het alarm."
         },
         "zwave": {
@@ -168,6 +179,7 @@
             "id": "0",
             "label": {
               "en": "Acoustic and visual alarms inactive",
+              "no": "Akkustiske og visuelle alarmer inaktive",
               "nl": "Akoestisch en visueel alarm uitgeschakeld"
             }
           },
@@ -175,6 +187,7 @@
             "id": "1",
             "label": {
               "en": "Only visual alarm active",
+              "no": "Kun visuelle alarmer aktive",
               "nl": "Alleen visueel alarm ingeschakeld"
             }
           },
@@ -182,6 +195,7 @@
             "id": "2",
             "label": {
               "en": "Only acoustic alarm active",
+              "no": "Kun akkustiske alarmer aktive",
               "nl": "Alleen akoestisch alarm ingeschakeld"
             }
           },
@@ -189,6 +203,7 @@
             "id": "3",
             "label": {
               "en": "Acoustic and visual alarms active",
+              "no": "Akkustiske og visuelle alarmer aktive",
               "nl": "Akoestisch en visueel alarm ingeschakeld"
             }
           }
