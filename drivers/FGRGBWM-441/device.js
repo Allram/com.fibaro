@@ -144,14 +144,10 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
         if (typeof args.brightness !== 'number') return false;
         args.brightness = Math.round(args.brightness * 100);
 
-        if (args.color === 'r' && this.stripType.includes('r')) return this.sendColors({ red: args.brightness * 2.55 });
-        if (args.color === 'g' && this.stripType.includes('g')) return this.sendColors({ green: args.brightness * 2.55 });
-        if (args.color === 'b' && this.stripType.includes('b')) return this.sendColors({ blue: args.brightness * 2.55 });
-        if (args.color === 'w' && (this.stripType.includes('w') || this.stripType === 'cct')) {
-            return this.sendColors({ white: args.brightness * 2.55 });
-        }
-
-        return new Error('invalid_led_type');
+        if (args.color === 'r') return this.sendColors({ red: args.brightness * 2.55 });
+        if (args.color === 'g') return this.sendColors({ green: args.brightness * 2.55 });
+        if (args.color === 'b') return this.sendColors({ blue: args.brightness * 2.55 });
+        if (args.color === 'w') return this.sendColors({ white: args.brightness * 2.55 });
     }
 
     async animationRunListener(args, state) {

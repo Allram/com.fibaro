@@ -210,33 +210,33 @@
             {
               "id": "r",
               "label": {
-                "en": "Red output",
-                "no": "Rød utgang",
-                "nl": "Rode uitgang"
+              	"en": "Red / output 1",
+              	"no": "Rød / Utgang 1",
+                "nl": "Rood / uitgang 1"
               }
             },
             {
               "id": "g",
               "label": {
-                "en": "Green output",
-                "no": "Grønn utgang",
-                "nl": "Groene uitgang"
+              	"en": "Green / output 2",
+              	"no": "Grønn / utgang 2",
+                "nl": "Groen / uitgang 2"
               }
             },
             {
               "id": "b",
               "label": {
-                "en": "Blue output",
-                "no": "Blå utgang",
-                "nl": "Blauwe uitgang"
+              	"en": "Blue / output 3",
+              	"no": "Blå / utgang 3",
+                "nl": "Blauw / uitgang 3"
               }
             },
             {
               "id": "w",
               "label": {
-                "en": "White output",
-                "no": "Hvit utgang",
-                "nl": "Witte uitgang"
+              	"en": "White / output 4",
+              	"no": "Hvit / utgang 4",
+                "nl": "Wit / uitgang 4"
               }
             }
           ]
