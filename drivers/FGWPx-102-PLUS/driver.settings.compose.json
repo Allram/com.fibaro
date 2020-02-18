@@ -156,7 +156,7 @@
           "index": 41,
           "size": 1
         },
-        "value": "0",
+        "value": "1",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in on state.",
           "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer fargene på LED ringen i på modus.",

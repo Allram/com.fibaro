@@ -332,29 +332,29 @@
               {
                 "id": "r",
                 "label": {
-                  "en": "Red output",
-                  "nl": "Rode uitgang"
+                  "en": "Red / output 1",
+                  "nl": "Rood / uitgang 1"
                 }
               },
               {
                 "id": "g",
                 "label": {
-                  "en": "Green output",
-                  "nl": "Groene uitgang"
+                  "en": "Green / output 2",
+                  "nl": "Groen / uitgang 2"
                 }
               },
               {
                 "id": "b",
                 "label": {
-                  "en": "Blue output",
-                  "nl": "Blauwe uitgang"
+                  "en": "Blue / output 3",
+                  "nl": "Blauw / uitgang 3"
                 }
               },
               {
                 "id": "w",
                 "label": {
-                  "en": "White output",
-                  "nl": "Witte uitgang"
+                  "en": "White / output 4",
+                  "nl": "Wit / uitgang 4"
                 }
               }
             ]
@@ -16417,7 +16417,7 @@
                 "index": 41,
                 "size": 1
               },
-              "value": "0",
+              "value": "1",
               "hint": {
                 "en": "This parameter (41) defines the color of the LED ring in on state.",
                 "nl": "Deze parameter (41) bepaalt de kleur van de LED ring wanneer het apparaat aan staat."
