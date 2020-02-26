@@ -5,11 +5,9 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 const CONFIGURED_MULTI_CHANNEL_ASSOCIATION = 'configuredMCAssociation';
 
-// TODO: Flow card are displayed on wrong devices
 class FibaroDoubleSwitchTwoDevice extends ZwaveDevice {
 
 	async onMeshInit() {
-
 		// If not multi channel node this is the main node, use multi channel node 1 for that
 		if (!this.node.isMultiChannelNode) {
 
