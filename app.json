@@ -5,7 +5,7 @@
   },
   "brandColor": "#000000",
   "sdk": 2,
-  "version": "2.2.8",
+  "version": "2.2.9",
   "compatibility": ">=2.4.0",
   "description": {
     "en": "Fibaro devices for Homey"
@@ -5160,11 +5160,6 @@
             "id": 23,
             "size": 1,
             "value": 0
-          },
-          {
-            "id": 28,
-            "size": 1,
-            "value": 1
           }
         ]
       },
@@ -5184,7 +5179,7 @@
                 "en": "Scene activation",
                 "nl": "Scene activation"
               },
-              "value": true,
+              "value": false,
               "hint": {
                 "en": "This parameter (28) enables scene activation. Scene activation is required for using scene triggers. Enabling scene activation functionality may cause slight delay in response to external switches and sending associations.",
                 "nl": "Deze parameter (28) stelt de scene activation in. Scene activation moet aan staan om scene triggers te gebruiken. Scene activation aanzetten kan vertragingen veroorzaken met externe schakkelaars en bij het sturen van geassocieerde apparaten."
@@ -5208,23 +5203,6 @@
               },
               "zwave": {
                 "index": 23,
-                "size": 1
-              }
-            },
-            {
-              "id": "force_no_dim",
-              "type": "checkbox",
-              "label": {
-                "en": "Dim function off",
-                "nl": "Dim functie uit"
-              },
-              "value": false,
-              "hint": {
-                "en": "This parameter (32) determines if the Dimmer 2 has the ability to dim.",
-                "nl": "Deze parameter (32) bepaalt of de Dimmer 2 kan dimmen."
-              },
-              "zwave": {
-                "index": 32,
                 "size": 1
               }
             },
@@ -5303,27 +5281,6 @@
               ]
             },
             {
-              "id": "forced_brightness_level",
-              "type": "number",
-              "label": {
-                "en": "Forced brightness",
-                "nl": "Geforceerde helderheid"
-              },
-              "value": 0,
-              "attr": {
-                "min": 0,
-                "max": 99
-              },
-              "hint": {
-                "en": "This parameter (19) determines whether or not switching on the Dimmer 2 (input 1 single click) will always set this brightness level.",
-                "nl": "Deze parameter (19) bepaalt of het aanzetten van de Dimmer 2 (ingang 1, enkele klik) altijd dit helderheidsniveau instelt."
-              },
-              "zwave": {
-                "index": 19,
-                "size": 1
-              }
-            },
-            {
               "id": "timer_functionality",
               "type": "number",
               "label": {
@@ -5333,7 +5290,8 @@
               "value": 0,
               "attr": {
                 "min": 0,
-                "max": 32767
+                "max": 32767,
+                "step": 1
               },
               "hint": {
                 "en": "This parameter (10) allows to automatically switch off the device after specified time from switching on the light source.",
@@ -5393,6 +5351,27 @@
               },
               "zwave": {
                 "index": 2,
+                "size": 1
+              }
+            },
+            {
+              "id": "forced_brightness_level",
+              "type": "number",
+              "label": {
+                "en": "Forced brightness",
+                "nl": "Geforceerde helderheid"
+              },
+              "value": 0,
+              "attr": {
+                "min": 0,
+                "max": 99
+              },
+              "hint": {
+                "en": "This parameter (19) determines whether or not switching on the Dimmer 2 (input 1 single click) will always set this brightness level.",
+                "nl": "Deze parameter (19) bepaalt of het aanzetten van de Dimmer 2 (ingang 1, enkele klik) altijd dit helderheidsniveau instelt."
+              },
+              "zwave": {
+                "index": 19,
                 "size": 1
               }
             },
@@ -5478,6 +5457,23 @@
               "zwave": {
                 "index": 8,
                 "size": 2
+              }
+            },
+            {
+              "id": "force_no_dim",
+              "type": "checkbox",
+              "label": {
+                "en": "Dim function off",
+                "nl": "Dim functie uit"
+              },
+              "value": false,
+              "hint": {
+                "en": "This parameter (32) determines if the Dimmer 2 has the ability to dim.",
+                "nl": "Deze parameter (32) bepaalt of de Dimmer 2 kan dimmen."
+              },
+              "zwave": {
+                "index": 32,
+                "size": 1
               }
             }
           ]
@@ -13157,6 +13153,7 @@
             "nl": "Druk driemaal op de knop op de Relais Schakelaar 2"
           },
           "associationGroups": [
+            1,
             3
           ],
           "multiChannelNodes": {
