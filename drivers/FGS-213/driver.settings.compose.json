@@ -11,14 +11,15 @@
     "$extends": "operatingDevice",
     "id": "20",
     "hint": {
-      "en": "This parameter ({{zwaveParameterIndex}}) determines determines what device triggers the switch.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilke brytere som trigger enheten.",
-      "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor apparaat de schakelaar omzet."
+    	"en": "This parameter ({{zwaveParameterIndex}}) determines what kind of switch is attached to the module.",
+    	"no": "Denne parameter ({{zwaveParameterIndex}}) definerer hvilken bryter som er tilkoblet modulen.",
+      	"nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt welk type schakelaar is verbonden aan de module."
     },
     "zwave": {
       "index": 20,
       "size": 1
     },
+    "value": "2",
     "values": [
       {
         "id": "0",
@@ -44,8 +45,7 @@
           "nl": "Tuimel schakelaar (Verander status bij elke positieverandering)"
         }
       }
-    ],
-    "value": "2"
+    ]
   },
   {
     "type": "group",

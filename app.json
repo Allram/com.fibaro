@@ -13357,13 +13357,14 @@
         {
           "id": "20",
           "hint": {
-            "en": "This parameter (20) determines determines what device triggers the switch.",
-            "nl": "Deze parameter (20) bepaalt wat voor apparaat de schakelaar omzet."
+            "en": "This parameter (20) determines what kind of switch is attached to the module.",
+            "nl": "Deze parameter (20) bepaalt welk type schakelaar is verbonden aan de module."
           },
           "zwave": {
             "index": 20,
             "size": 1
           },
+          "value": "2",
           "values": [
             {
               "id": "0",
@@ -13387,7 +13388,6 @@
               }
             }
           ],
-          "value": "2",
           "type": "radio",
           "label": {
             "en": "Switch type",
