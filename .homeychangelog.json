@@ -1,8 +1,11 @@
 {
-    "2.2.9": {
-        "en": "Change FGWPx-102 default LED parameters, thanks to Caseda for notifying us. Fixed a value issue for the FGD-212 brightness parameters, thanks to Thorarin for his fix."
-    },
-    "2.2.8": {
-        "en": "Fix RGBW light temperature mode. Thanks to aartse for contributing his fix."
-    }
+  "2.2.9": {
+    "en": "Change FGWPx-102 default LED parameters, thanks to Caseda for notifying us. Fixed a value issue for the FGD-212 brightness parameters, thanks to Thorarin for his fix."
+  },
+  "2.2.8": {
+    "en": "Fix RGBW light temperature mode. Thanks to aartse for contributing his fix."
+  },
+  "2.2.10": {
+    "en": "Fixed FGD-212, FGS-212, FGS-213, FGS-223, LED Mode for Plug 102"
+  }
 }

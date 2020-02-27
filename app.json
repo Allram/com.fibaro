@@ -13171,8 +13171,8 @@
             ],
             "icon": "/drivers/FGS-212/assets/icon-2.svg",
             "name": {
-              "en": "Relay 2 (S2)",
-              "nl": "Relais 2 (S2)"
+              "en": "Switch 2 (S2)",
+              "nl": "Switch 2 (S2)"
             },
             "settings": []
           }
