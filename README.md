@@ -1,9 +1,6 @@
 # Fibaro
 This app adds support for Fibaro devices in Homey.
 
-## Known issues
-The FGRGBWM-441 - RGBW controller has issues regarding the white channel
-
 ## Battery powered sensors
 Should you experience problems with battery powered sensors, please remove those devices and re-add them to Homey.
 
@@ -52,15 +49,14 @@ This device has no wake up interval. After changing settings, wake up the device
 Main Device = Also Relay/Switch 1 (S1/Q1)
 Relay/Switch 2 = Relay/Switch 2 (S2/Q2)
 
-### FGS-223:
-Scene cards only triggers with the "Main Node" as device.
-The "Right Switch (S2)" as device doesn't work.
-
 ### FGPB-101:
 When the app has just started, it can take up to 2 minutes before it reacts.
 If it takes longer you (probably) need to restart your homey.
 
 ## Change Log:
+### v 2.2.10
+Fix settings and Flows for FGD-212, FGS-212, FGS-223.
+
 ### v 2.2.8
 Fix RGBW light temperature mode. Thanks to aartse for contributing his fix.
 
