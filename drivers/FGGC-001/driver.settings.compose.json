@@ -492,7 +492,7 @@
         },
         "hint": {
           "en": "Determine the interval (in minutes) the {{driverNameEn}} will check if it is connected to USB or powered by battery.",
-          "nl": "Bepaal het interval (in minuten) waarop de {{driverNameNl}} controleert of hij is verbonden met USB of batterij."
+          "nl": "Bepaal het interval (in minuten) waarop de {{driverNameNl}} controleert of deze is verbonden met USB of batterij."
         },
         "zwave": {
           "index": 5,
@@ -508,7 +508,7 @@
         "id": "power_save",
         "type": "dropdown",
         "label": {
-          "en": "Energie saving mode",
+          "en": "Energy saving mode",
           "nl": "Energiebespaar modus"
         },
         "hint": {
@@ -531,14 +531,14 @@
           {
             "id": "1",
             "label": {
-              "en": "Simpel mode, only slow gestures",
+              "en": "Simple mode, only slow gestures",
               "nl": "Simpele modus, alleen langzame gebaren"
             }
           },
           {
             "id": "2",
             "label": {
-              "en": "No energie saving",
+              "en": "No energy saving",
               "nl": "Geen energie besparing"
             }
           }

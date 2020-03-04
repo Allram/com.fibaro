@@ -12,6 +12,14 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
+  "energy": {
+    "batteries": [
+      "AA",
+      "AA",
+      "AA",
+      "AA"
+    ] 
+  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": [
@@ -80,6 +88,13 @@
           "nl": "Start dim/stop dim commando, rondgaand gebaar"
         }
       }
-    }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 10,
+        "size": 1,
+        "value": 63
+      }
+    ]
   }
 }

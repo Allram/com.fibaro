@@ -55,61 +55,11 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
-  "mobile": {
-    "components": [
-      {
-        "id": "icon",
-        "capabilities": []
-      },
-      {
-        "id": "sensor",
-        "capabilities": [
-          "alarm_generic.contact1",
-          "alarm_generic.contact2",
-          "measure_temperature.sensor1",
-          "measure_temperature.sensor2",
-          "measure_temperature.sensor3",
-          "measure_temperature.sensor4"
-        ],
-        "options": {
-          "icons": {
-            "alarm_generic.contact1": "{{driverAssetsPath}}/switch.svg",
-            "alarm_generic.contact2": "{{driverAssetsPath}}/switch.svg"
-          },
-          "alarm_generic.contact1": {
-            "noblink": true,
-            "label": {
-              "true": {
-                "en": "Open",
-                "nl": "Open"
-              },
-              "false": {
-                "en": "Closed",
-                "nl": "Gesloten"
-              }
-            }
-          },
-          "alarm_generic.contact2": {
-            "noblink": true,
-            "label": {
-              "true": {
-                "en": "Open",
-                "nl": "Open"
-              },
-              "false": {
-                "en": "Closed",
-                "nl": "Gesloten"
-              }
-            }
-          }
-        }
-      }
-    ]
-  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": 1281,
     "productId": [
+      258,
       265,
       4098,
       8194,

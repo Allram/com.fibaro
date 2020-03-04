@@ -11,6 +11,9 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
+  "energy": {
+    "batteries": [ "CR2450" ]
+  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": [

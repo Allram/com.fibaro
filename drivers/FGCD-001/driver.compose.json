@@ -15,6 +15,9 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
+  "energy": {
+    "batteries": [ "CR123A" ] 
+  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": [
@@ -63,6 +66,13 @@
           "en": "“Lifeline” reports the device status and allows for assigning single device only (main controller by default)."
         }
       }
-    }
+    },
+    "defaultConfiguration": [
+      {
+        "id": 2,
+        "size": 1,
+        "value": 3
+      }
+    ]
   }
 }

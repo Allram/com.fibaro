@@ -59,6 +59,10 @@
       {
         "$extends": "reportThreshold",
         "$id": "immediate_watt_percent_report",
+        "label": {
+          "en": "Report percentage threshold",
+          "nl": "Procentuele rapportage drempel" 
+        },
         "zwave": {
           "index": 10,
           "size": 1
@@ -144,7 +148,7 @@
           "index": 41,
           "size": 1
         },
-        "value": "0",
+        "value": "1",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) defines the color of the LED ring in on state.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de kleur van de LED ring wanneer het apparaat aan staat."

@@ -38,5 +38,8 @@
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "energy": {
+    "batteries": [ "LS14250" ] 
   }
 }

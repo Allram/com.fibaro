@@ -20,7 +20,7 @@
   ],
   "capabilitiesOptions": {
     "onoff": {
-      "setOnDim": false
+      "setOnDim": true
     },
     "measure_voltage.input1": {
       "title": {
@@ -50,31 +50,6 @@
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
-  },
-  "mobile": {
-    "components": [
-      {
-        "id": "icon",
-        "capabilities": [
-          "onoff"
-        ]
-      },
-      {
-        "id": "slider",
-        "capabilities": [
-          "dim"
-        ]
-      },
-      {
-        "id": "color",
-        "capabilities": [
-          "light_hue",
-          "light_saturation",
-          "light_temperature",
-          "light_mode"
-        ]
-      }
-    ]
   },
   "zwave": {
     "manufacturerId": 271,

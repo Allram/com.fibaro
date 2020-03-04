@@ -93,66 +93,77 @@ class FibaroUniversalBinarySensor extends ZwaveDevice {
          Mapping measure_temperature capabilities to sensor multilevel commands
     	=========================================================================
          */
-		this.registerCapability('measure_temperature.sensor1', 'SENSOR_MULTILEVEL', {
-			multiChannelNodeId: 3,
-			get: 'SENSOR_MULTILEVEL_GET',
-			getOpts: {
-				getOnStart: true,
-			},
-			getParser: () => ({
-				'Sensor Type': 'Temperature (version 1)',
-				Properties1: {
-					Scale: 0,
+		if (this.node.MultiChannelNodes['3']) {
+			this.registerCapability('measure_temperature.sensor1', 'SENSOR_MULTILEVEL', {
+				multiChannelNodeId: 3,
+				get: 'SENSOR_MULTILEVEL_GET',
+				getOpts: {
+					getOnStart: true,
 				},
-			}),
-			report: 'SENSOR_MULTILEVEL_REPORT',
-			reportParser: (report) => this._temperatureReportParser(report, 1),
-		});
-		this.registerCapability('measure_temperature.sensor2', 'SENSOR_MULTILEVEL', {
-			multiChannelNodeId: 4,
-			get: 'SENSOR_MULTILEVEL_GET',
-			getOpts: {
-				getOnStart: true,
-			},
-			getParser: () => ({
-				'Sensor Type': 'Temperature (version 1)',
-				Properties1: {
-					Scale: 0,
+				getParser: () => ({
+					'Sensor Type': 'Temperature (version 1)',
+					Properties1: {
+						Scale: 0,
+					},
+				}),
+				report: 'SENSOR_MULTILEVEL_REPORT',
+				reportParser: (report) => this._temperatureReportParser(report, 1),
+			});
+		}
+		
+		if (this.node.MultiChannelNodes['4']) {
+			this.registerCapability('measure_temperature.sensor2', 'SENSOR_MULTILEVEL', {
+				multiChannelNodeId: 4,
+				get: 'SENSOR_MULTILEVEL_GET',
+				getOpts: {
+					getOnStart: true,
 				},
-			}),
-			report: 'SENSOR_MULTILEVEL_REPORT',
-			reportParser: (report) => this._temperatureReportParser(report, 2),
-		});
-		this.registerCapability('measure_temperature.sensor3', 'SENSOR_MULTILEVEL', {
-			multiChannelNodeId: 5,
-			get: 'SENSOR_MULTILEVEL_GET',
-			getOpts: {
-				getOnStart: true,
-			},
-			getParser: () => ({
-				'Sensor Type': 'Temperature (version 1)',
-				Properties1: {
-					Scale: 0,
+				getParser: () => ({
+					'Sensor Type': 'Temperature (version 1)',
+					Properties1: {
+						Scale: 0,
+					},
+				}),
+				report: 'SENSOR_MULTILEVEL_REPORT',
+				reportParser: (report) => this._temperatureReportParser(report, 2),
+			});
+		}
+
+		if (this.node.MultiChannelNodes['5']) {
+			this.registerCapability('measure_temperature.sensor3', 'SENSOR_MULTILEVEL', {
+				multiChannelNodeId: 5,
+				get: 'SENSOR_MULTILEVEL_GET',
+				getOpts: {
+					getOnStart: true,
 				},
-			}),
-			report: 'SENSOR_MULTILEVEL_REPORT',
-			reportParser: (report) => this._temperatureReportParser(report, 3),
-		});
-		this.registerCapability('measure_temperature.sensor4', 'SENSOR_MULTILEVEL', {
-			multiChannelNodeId: 6,
-			get: 'SENSOR_MULTILEVEL_GET',
-			getOpts: {
-				getOnStart: true,
-			},
-			getParser: () => ({
-				'Sensor Type': 'Temperature (version 1)',
-				Properties1: {
-					Scale: 0,
+				getParser: () => ({
+					'Sensor Type': 'Temperature (version 1)',
+					Properties1: {
+						Scale: 0,
+					},
+				}),
+				report: 'SENSOR_MULTILEVEL_REPORT',
+				reportParser: (report) => this._temperatureReportParser(report, 3),
+			});
+		}
+
+		if (this.node.MultiChannelNodes['6']) {
+			this.registerCapability('measure_temperature.sensor4', 'SENSOR_MULTILEVEL', {
+				multiChannelNodeId: 6,
+				get: 'SENSOR_MULTILEVEL_GET',
+				getOpts: {
+					getOnStart: true,
 				},
-			}),
-			report: 'SENSOR_MULTILEVEL_REPORT',
-			reportParser: (report) => this._temperatureReportParser(report, 4),
-		});
+				getParser: () => ({
+					'Sensor Type': 'Temperature (version 1)',
+					Properties1: {
+						Scale: 0,
+					},
+				}),
+				report: 'SENSOR_MULTILEVEL_REPORT',
+				reportParser: (report) => this._temperatureReportParser(report, 4),
+			});
+		}
 
 		this.registerSetting('12', (newValue) => new Buffer([Math.round(newValue / 16 * 255)]));
 	}

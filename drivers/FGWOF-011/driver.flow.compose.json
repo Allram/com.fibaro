@@ -1,0 +1,162 @@
+{
+  "triggers": [],
+  "conditions": [],
+  "actions": [
+    {
+      "id": "FGWOF_led_on",
+      "title": {
+        "en": "LED Colour, on state",
+        "nl": "LED Kleur wanneer aan"
+      },
+      "args": [
+        {
+          "name": "color",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                  "en": "White",
+                  "nl": "Wit"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                  "en": "Red",
+                  "nl": "Rood"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                  "en": "Green",
+                  "nl": "Groen"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                  "en": "Blue",
+                  "nl": "Blauw"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                  "en": "Yellow",
+                  "nl": "Geel"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                  "en": "Cyan",
+                  "nl": "Cyaan"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                  "en": "Magenta",
+                  "nl": "Magenta"
+              }
+            },
+            {
+              "id": "8",
+              "label": {
+                  "en": "Changes continuously according to power load using full spectrum of LED color",
+                  "nl": "Verandert continu afhankelijk van het stroomverbruik"
+              }
+            },
+            {
+              "id": "9",
+              "label": {
+                  "en": "Changes in predefined steps according to power load",
+                  "nl": "Verandert in stappen afhankelijk van het stroomverbuik"
+              }
+            }
+        ]
+        }
+      ]
+    },
+    {
+      "id": "FGWOF_led_off",
+      "title": {
+        "en": "LED Colour, off state",
+        "nl": "LED Kleur wanneer uit"
+      },
+      "args": [
+        {
+          "name": "color",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "0",
+              "label": {
+                  "en": "Off",
+                  "nl": "Uit"
+              }
+            },
+            {
+              "id": "1",
+              "label": {
+                  "en": "White",
+                  "nl": "Wit"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                  "en": "Red",
+                  "nl": "Rood"
+              }
+            },
+            {
+              "id": "3",
+              "label": {
+                  "en": "Green",
+                  "nl": "Groen"
+              }
+            },
+            {
+              "id": "4",
+              "label": {
+                  "en": "Blue",
+                  "nl": "Blauw"
+              }
+            },
+            {
+              "id": "5",
+              "label": {
+                  "en": "Yellow",
+                  "nl": "Geel"
+              }
+            },
+            {
+              "id": "6",
+              "label": {
+                  "en": "Cyan",
+                  "nl": "Cyaan"
+              }
+            },
+            {
+              "id": "7",
+              "label": {
+                  "en": "Magenta",
+                  "nl": "Magenta"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

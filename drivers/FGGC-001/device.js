@@ -32,7 +32,7 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newSettings.gesture_cw) gestureValue += 16;
 			if (newSettings.gesture_ccw) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 		this.registerSetting('gesture_down', (newValue, newSettings) => {
 			let gestureValue = 0;
@@ -43,7 +43,7 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newSettings.gesture_cw) gestureValue += 16;
 			if (newSettings.gesture_ccw) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 		this.registerSetting('gesture_left', (newValue, newSettings) => {
 			let gestureValue = 0;
@@ -54,7 +54,7 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newSettings.gesture_cw) gestureValue += 16;
 			if (newSettings.gesture_ccw) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 		this.registerSetting('gesture_right', (newValue, newSettings) => {
 			let gestureValue = 0;
@@ -65,7 +65,7 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newSettings.gesture_cw) gestureValue += 16;
 			if (newSettings.gesture_ccw) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 
 		/*
@@ -82,7 +82,7 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newValue) gestureValue += 16;
 			if (newSettings.gesture_ccw) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 		this.registerSetting('gesture_ccw', (newValue, newSettings) => {
 			let gestureValue = 0;
@@ -93,9 +93,21 @@ class FibaroSwipeDevice extends ZwaveDevice {
 			if (newSettings.gesture_cw) gestureValue += 16;
 			if (newValue) gestureValue += 32;
 
-			return new Buffer([gestureValue]);
+			return gestureValue;
 		});
 
+		/*
+       ===================================================================
+       Registering settings parsing for gesture sequences
+       ===================================================================
+        */
+		this.registerSetting('sequence_1', this.parseSequence.bind(this));
+		this.registerSetting('sequence_2', this.parseSequence.bind(this));
+		this.registerSetting('sequence_3', this.parseSequence.bind(this));
+		this.registerSetting('sequence_4', this.parseSequence.bind(this));
+		this.registerSetting('sequence_5', this.parseSequence.bind(this));
+		this.registerSetting('sequence_6', this.parseSequence.bind(this));
+	
 		/*
        ===================================================================
        Interception of scene reports to trigger Flows
@@ -155,48 +167,55 @@ class FibaroSwipeDevice extends ZwaveDevice {
 		return super.onSettings(oldSettings, newSettings, changedKeys);
 	}
 
-	parseSequence(sequence) {
-		if (sequence === 0) return new Buffer([0, 0]);
+	/*
+	===================================================================
+	Sequence settings parser
+	===================================================================
+    */
+	parseSequence(sequence, settings) {
+		if (!sequence) return null;
 
-		const gesture = sequence.split(';').map(Number);
-		if (gesture.length === 2) gesture.push(0);
-		return new Buffer([gesture[0], gesture[1] * 16 + gesture[2]]);
+		// Split the gesture sequence to individual numbers
+		const gestures = sequence.split(';').map(Number);
+		if (gestures.length === 2) gestures.push(0); // Add 0 to act as the third gesture
+
+		// Check if there are no repeated gestures next to each other.
+		if (gestures[0] === gestures[1] || gestures[1] === gestures[2]) return new Error('invalid_sequence');
+
+		const result = (gestures[0] * 256) + (gestures[1] * 16) + (gestures[2]);
+		if (typeof(result) === 'NaN') return new Error('invalid_sequence');
+
+		return result;
 	}
 
-	directionRunListener(args, state) {
-		if (state && args &&
+	async directionRunListener(args, state) {
+		return (state && args &&
 			state.hasOwnProperty('direction') &&
 			state.hasOwnProperty('scene') &&
 			args.hasOwnProperty('direction') &&
 			args.hasOwnProperty('scene') &&
 			state.direction === args.direction &&
-			state.scene === args.scene) {
-            return Promise.resolve();
-		}
-        return Promise.reject();
+			state.scene === args.scene
+		);
 	}
 
-    roundRunListener(args, state) {
-        if (state && args &&
+    async roundRunListener(args, state) {
+        return (state && args &&
             state.hasOwnProperty('direction') &&
             state.hasOwnProperty('scene') &&
             args.hasOwnProperty('direction') &&
             args.hasOwnProperty('scene') &&
             state.direction === args.direction &&
-            state.scene === args.scene) {
-            return Promise.resolve();
-        }
-        return Promise.reject();
+			state.scene === args.scene
+		);
     }
 
-    sequenceRunListener(args, state) {
-        if (state && args &&
+    async sequenceRunListener(args, state) {
+        return (state && args &&
             state.hasOwnProperty('direction') &&
             args.hasOwnProperty('direction') &&
-            state.direction === args.direction) {
-            return Promise.resolve();
-        }
-        return Promise.reject();
+			state.direction === args.direction
+		);
 	}
 }
 

@@ -15,6 +15,9 @@
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"
   },
+  "energy": {
+    "batteries": [ "LS14250" ] 
+  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": [
@@ -39,7 +42,7 @@
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
-        "en": "press the button on your Fibaro Door/Window Sensor 2 three times.",
+        "en": "Press the button on your Fibaro Door/Window Sensor 2 three times.",
         "nl": "Druk driemaal op de knop op de Fibaro Door/Window Sensor 2."
       }
     },

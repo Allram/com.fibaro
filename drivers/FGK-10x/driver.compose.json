@@ -3,6 +3,20 @@
     "en": "Door/Window Sensor (Z-Wave plus)",
     "nl": "Deur/Raam Sensor (Z-Wave plus)"
   },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_contact",
+    "alarm_tamper",
+    "measure_temperature",
+    "measure_battery"
+  ],
+  "images": {
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "small": "{{driverAssetsPath}}/images/small.png"
+  },
+  "energy": {
+    "batteries": [ "LS14250" ] 
+  },
   "zwave": {
     "manufacturerId": 271,
     "productTypeId": [
@@ -34,16 +48,5 @@
       1,
       2
     ]
-  },
-  "class": "sensor",
-  "capabilities": [
-    "alarm_contact",
-    "alarm_tamper",
-    "measure_temperature",
-    "measure_battery"
-  ],
-  "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
   }
 }

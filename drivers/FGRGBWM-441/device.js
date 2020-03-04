@@ -1,296 +1,74 @@
-'use strict';
+'use strict'
 
-// Athom includes
-const Homey = require('homey');
 const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
-const utils = require('homey-meshdriver').Util;
+const ZwaveUtils = require('homey-meshdriver').Util;
 
-// Third party includes
 const tinyGradient = require('tinygradient');
 
-class FibaroRGBWControllerDevice extends ZwaveDevice {
+const multiChannelNodeToColorMap = {
+    red:    2,
+    green:  3,
+    blue:   4,
+    white:  5
+}
 
+class FibaroRGBWControllerDevice extends ZwaveDevice {
     onMeshInit() {
-        this.currentRGB = {
-            r: 0,
-            g: 0,
-            b: 0,
-            a: 0,
-        };
-        this.realInputConfigs = {
-            input1: null,
-            input2: null,
-            input3: null,
-            input4: null,
-        };
+        // Color gradient for color_temperature
         this.temperatureGradient = tinyGradient([
             '#80c5fc',
             '#ffffff',
             '#ffe68b',
         ]);
 
-        if (this.getSetting('strip_type') === 'cct' && this.getCapabilityValue('light_mode') !== 'temperature') {
+        // Color 'master', should always match with Homey's capabiliy values
+        this.currentHSV = {
+            hue: this.getCapabilityValue('light_hue'),
+            saturation: this.getCapabilityValue('light_saturation'),
+            value: this.getCapabilityValue('dim')
+        }
+
+        // Used to calculate the report RGB values back to HSV for capability values.
+        this.currentRGB = ZwaveUtils.convertHSVToRGB(this.currentHSV);
+        this.stripType = this.getSetting('strip_type');
+
+        this.driver = this.getDriver();
+
+        // Check on which mode the controller is configured, then set the capability corresponding
+        if (this.stripType === 'cct' && this.getCapabilityValue('light_mode') !== 'temperature') {
             this.setCapabilityValue('light_mode', 'temperature');
         } else if (this.getCapabilityValue('light_mode') !== 'color') {
             this.setCapabilityValue('light_mode', 'color');
         }
 
-        this._reloadRealInputConfig();
-
-        /*
-        ================================================================
-        Registering Flows
-        ================================================================
-         */
-        this._onFlowTrigger = this.getDriver().onFlowTrigger;
-        this._offFlowTrigger = this.getDriver().offFlowTrigger;
-
-        this._input1FlowTrigger = this.getDriver().input1FlowTrigger;
-        this._input2FlowTrigger = this.getDriver().input2FlowTrigger;
-        this._input3FlowTrigger = this.getDriver().input3FlowTrigger;
-        this._input4FlowTrigger = this.getDriver().input4FlowTrigger;
-
-        this._resetMeterAction = this.getDriver().resetMeterAction;
-
-        this._randomColorAction = this.getDriver().randomColorAction;
-        this._specificColorAction = this.getDriver().specificColorAction;
-        this._animationAction = this.getDriver().animationAction;
-
-        /*
-        ================================================================
-        Registering on/off and dim
-        ================================================================
-        */
-        this.registerCapability('onoff', 'SWITCH_MULTILEVEL', {
-            multiChannelNodeId: 1,
-        });
-
+        // Register capabilities & command classes
+        this.registerCapability('onoff', 'SWITCH_MULTILEVEL', {  multiChannelNodeId: 1, });
         this.registerCapability('dim', 'SWITCH_MULTILEVEL');
 
-        /*
-        ================================================================
-        Registering light_hue and light_saturation
-        ================================================================
-        */
         this.registerMultipleCapabilityListener(['light_saturation', 'light_hue'], async (newValues, opts) => {
-            if (this.getSetting('strip_type') === 'cct') return Promise.reject('no_color_for_cct');
-            let red,
-               green,
-               blue,
-               white;
+            if (typeof newValues.light_hue === 'number') this.currentHSV.hue = newValues.light_hue;
+            if (typeof newValues.light_saturation === 'number') this.currentHSV.saturation = newValues.light_saturation;
+            this.currentHSV.value = this.getCapabilityValue('dim');
 
-            let hue = (this.getCapabilityValue('light_hue') * 360) || 0;
-            let saturation = (this.getCapabilityValue('light_saturation') * 100) || 0;
-            const dim = this.getCapabilityValue('dim') * 100;
-            const stripType = this.getSetting('strip_type');
-
-            if (typeof newValues.light_hue === 'number') hue = (newValues.light_hue * 360);
-            if (typeof newValues.light_saturation === 'number') saturation = (newValues.light_saturation * 100);
-
-            const hsv = {h: hue, s: saturation, v: dim};
-            const rgb = this._convertHSVToRGB(hsv);
-            const rgbw = this._convertRGBtoRGBW(rgb);
-
-            if (stripType === 'rgbw') {
-                red = (rgbw.r / 255) * 99;
-                green = (rgbw.g / 255) * 99;
-                blue = (rgbw.b / 255) * 99;
-                white = (rgbw.w / 255) * 99;
-            } else {
-                red = (rgb.r / 255) * 99;
-                green = (rgb.g / 255) * 99;
-                blue = (rgb.b / 255) * 99;
-            }
-
-            try {
-                await this._sendColor(red, 2);
-                this.currentRGB.r = red;
-                await this._sendColor(green, 3);
-                this.currentRGB.g = green;
-                await this._sendColor(blue, 4);
-                this.currentRGB.b = blue;
-
-                if (typeof white === 'number') {
-                    await this._sendColor(white, 5);
-                    this.currentRGB.a = white;
-                }
-            } catch (err) {
-                return Promise.reject(err);
-            }
-
-            return Promise.resolve();
+            let rgbColors = ZwaveUtils.convertHSVToRGB(this.currentHSV);
+            rgbColors.white = 0;
+            this.sendColors(rgbColors);
         });
 
-        /*
-        ================================================================
-        Registering light_temperature
-        ================================================================
-         */
         this.registerCapabilityListener('light_temperature', async (value, opts) => {
-            let red,
-                green,
-                blue,
-                white;
-            const dim = this.getCapabilityValue('dim');
-            const stripType = this.getSetting('strip_type');
-
-            if (stripType === 'cct') {
-                red = 0;
-                green = 0;
-                blue = Math.round(dim * (1 - value) * 99);
-                white = Math.round(dim * value * 99);
-
-            } else {
-                let HSV = this.temperatureGradient.hsvAt(value).toHsv();
-                HSV.s *= 100;
-                HSV.v = dim * 100;
-
-                const rgb = this._convertHSVToRGB(HSV);
-                const rgbw = this._convertRGBtoRGBW(rgb);
-
-                if (stripType === 'rgbw') {
-                    red = (rgbw.r / 255) * 99;
-                    green = (rgbw.g / 255) * 99;
-                    blue = (rgbw.b / 255) * 99;
-                    white = (rgbw.w / 255) * 99;
-                } else {
-                    red = (rgb.r / 255) * 99;
-                    green = (rgb.g / 255) * 99;
-                    blue = (rgb.b / 255) * 99;
-                }
+            const colorTempValues = {
+                blue: Math.round((1 - value) * 255  * this.getCapabilityValue('dim')), // In temperature mode mix in blue to imitate cool white mode
+                red: 0, // Set red to zero since we don't want colors
+                green: 0, // Set red to zero since we don't want colors
+                white: Math.round(255 * this.getCapabilityValue('dim')),
             }
 
-            try {
-                await this._sendColor(red, 2);
-                this.currentRGB.r = red;
-                await this._sendColor(green, 3);
-                this.currentRGB.g = green;
-                await this._sendColor(blue, 4);
-                this.currentRGB.b = blue;
-
-                if (typeof white === 'number') {
-                    await this._sendColor(white, 5);
-                    this.currentRGB.a = white;
-                }
-
-                return Promise.resolve();
-            } catch (err) {
-                return Promise.reject(err);
-            }
+            if (this.stripType === 'cct' || this.stripType === 'rgbw') {
+                this.sendColors(colorTempValues);
+            } else  return new Error('temperature_mode_not_supported');
         });
 
-        this.registerCapabilityListener('light_mode', async (value, opts) => {
-            const stripType = this.getSetting('strip_type');
-
-            if (value === 'color') {
-                if (stripType === 'cct') return Promise.reject('no_color_for_cct');
-                let red,
-                    green,
-                    blue,
-                    white;
-
-                const hue = this.getCapabilityValue('light_hue') * 360 || 0;
-                const saturation = this.getCapabilityValue('light_saturation') * 100 || 0;
-                const value = this.getCapabilityValue('dim') * 100;
-                const rgb = this._convertHSVToRGB({h: hue, s: saturation, v: value});
-                const rgbw = this._convertRGBtoRGBW(rgb);
-
-                if (stripType === 'rgbw') {
-                    red = (rgbw.r / 255) * 99;
-                    green = (rgbw.g / 255) * 99;
-                    blue = (rgbw.b / 255) * 99;
-                    white = (rgbw.w / 255) * 99;
-                } else {
-                    red = (rgb.r / 255) * 99;
-                    green = (rgb.g / 255) * 99;
-                    blue = (rgb.b / 255) * 99;
-                }
-
-                try {
-                    await this._sendColor(red, 2);
-                    this.currentRGB.r = red;
-                    await this._sendColor(green, 3);
-                    this.currentRGB.g = green;
-                    await this._sendColor(blue, 4);
-                    this.currentRGB.b = blue;
-
-                    if (typeof white === 'number') {
-                        await this._sendColor(white, 5);
-                        this.currentRGB.a = white;
-                    }
-
-                    return Promise.resolve();
-                } catch (err) {
-                    return Promise.reject(err);
-                }
-
-            } else if (value === 'temperature') {
-                let red,
-                    green,
-                    blue,
-                    white;
-                const dim = this.getCapabilityValue('dim');
-                const temperature = this.getCapabilityValue('light_temperature');
-
-                if (stripType === 'cct') {
-                    red = 0;
-                    green = 0;
-                    blue = Math.round(dim * (1 - temperature) * 99);
-                    white = Math.round(dim * temperature * 99);
-
-                } else {
-                    let HSV = this.temperatureGradient.hsvAt(temperature).toHsv();
-                    HSV.s *= 100;
-                    HSV.v = dim * 100;
-
-                    const rgb = this._convertHSVToRGB(HSV);
-                    const rgbw = this._convertRGBtoRGBW(rgb);
-
-                    if (stripType === 'rgbw') {
-                        red = (rgbw.r / 255) * 99;
-                        green = (rgbw.g / 255) * 99;
-                        blue = (rgbw.b / 255) * 99;
-                        white = (rgbw.w / 255) * 99;
-                    } else {
-                        red = (rgb.r / 255) * 99;
-                        green = (rgb.g / 255) * 99;
-                        blue = (rgb.b / 255) * 99;
-                    }
-                }
-
-                try {
-                    await this._sendColor(red, 2);
-                    this.currentRGB.r = red;
-                    await this._sendColor(green, 3);
-                    this.currentRGB.g = green;
-                    await this._sendColor(blue, 4);
-                    this.currentRGB.b = blue;
-
-                    if (typeof white === 'number') {
-                        await this._sendColor(white, 5);
-                        this.currentRGB.a = white;
-                    }
-
-                    return Promise.resolve();
-                } catch (err) {
-                    return Promise.reject(err);
-                }
-            }
-        });
-
-        /*
-        ================================================================
-        Registering meter_power and measure_power
-        ================================================================
-         */
-        this.registerCapability('meter_power', 'METER');
-        this.registerCapability('measure_power', 'SENSOR_MULTILEVEL');
-
-        /*
-        ================================================================
-        Registering measure_voltage.input
-        ================================================================
-         */
+        // Input/ report
         this.registerCapability('measure_voltage.input1', 'SWITCH_MULTILEVEL', {
             multiChannelNodeId: 2,
           	get: 'SWITCH_MULTILEVEL_GET',
@@ -298,8 +76,9 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
           		getOnStart: true,
           	},
             report: 'SWITCH_MULTILEVEL_REPORT',
-            reportParser: (report) => this._reportParser(report, 2),
+            reportParser: (report) => this.multiChannelNodeReportParser(report, 2),
         });
+
         this.registerCapability('measure_voltage.input2', 'SWITCH_MULTILEVEL', {
             multiChannelNodeId: 3,
           	get: 'SWITCH_MULTILEVEL_GET',
@@ -307,8 +86,9 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
           		getOnStart: true,
           	},
             report: 'SWITCH_MULTILEVEL_REPORT',
-            reportParser: (report) => this._reportParser(report, 3),
+            reportParser: (report) => this.multiChannelNodeReportParser(report, 3),
         });
+
         this.registerCapability('measure_voltage.input3', 'SWITCH_MULTILEVEL', {
             multiChannelNodeId: 4,
           	get: 'SWITCH_MULTILEVEL_GET',
@@ -316,8 +96,9 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
           		getOnStart: true,
           	},
             report: 'SWITCH_MULTILEVEL_REPORT',
-            reportParser: (report) => this._reportParser(report, 4),
+            reportParser: (report) => this.multiChannelNodeReportParser(report, 4),
         });
+
         this.registerCapability('measure_voltage.input4', 'SWITCH_MULTILEVEL', {
             multiChannelNodeId: 5,
           	get: 'SWITCH_MULTILEVEL_GET',
@@ -325,434 +106,57 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
           		getOnStart: true,
           	},
             report: 'SWITCH_MULTILEVEL_REPORT',
-            reportParser: (report) => this._reportParser(report, 5),
+            reportParser: (report) => this.multiChannelNodeReportParser(report, 5),
         });
 
-        /*
-        ================================================================
-        Registering settings with custom parsers
-        ================================================================
-         */
+        // Power capabilities
+        this.registerCapability('meter_power', 'METER');
+        this.registerCapability('measure_power', 'SENSOR_MULTILEVEL');
+
+        // Register settings
         this.registerSetting('strip_type', (value, settings) => {
-            if (value === 'cct' && this.getCapabilityValue('light_mode') !== 'temperature') {
-                this.setCapabilityValue('light_mode', 'temperature');
-            } else if (this.getCapabilityValue('light_mode') !== 'color') {
-                this.setCapabilityValue('light_mode', 'color');
-            }
-
-            if (this._reloadRealInputConfig()) {
-                return new Buffer([
-                    this.realInputConfigs.input1 * 16 + this.realInputConfigs.input2,
-                    this.realInputConfigs.input3 * 16 + this.realInputConfigs.input4,
-                ]);
-            }
+            this.log('New LED strip mode', value);
+            if (value === 'cct') this.setCapabilityValue('light_mode', 'temperature');
+            else if (value === 'rgb' || value === 'rgbw') this.setCapabilityValue('light_mode', 'color');
+            this.stripType = value;
         });
-        // Both connected to the same index
-        this.registerSetting('mode2_range', (value, settings) => {
-            if (zwaveObj.mode2_transition_time === '0') return 0;
-            return new Buffer([value + zwaveObj.mode2_transition_time]);
-        });
-        this.registerSetting('mode2_transition_time', (value, settings) => {
-            if (value === '0') return 0;
-            return new Buffer([value + zwaveObj.mode2_transition_time]);
-        });
-        // Handles Z-Wave sending in parser method as multiple inputs end up at the same index
-        this.registerSetting('input_config_1', (value, settings) => this._inputSettingParser(1, value, settings));
-        this.registerSetting('input_config_2', (value, settings) => this._inputSettingParser(2, value, settings));
-        this.registerSetting('input_config_3', (value, settings) => this._inputSettingParser(3, value, settings));
-        this.registerSetting('input_config_4', (value, settings) => this._inputSettingParser(4, value, settings));
-        this.registerSetting('input_threshold', value => new Buffer([value * 10]));
-        this.registerSetting('kwh_threshold', value => new Buffer([value * 100]));
+
+        // Get flows from driver
+        this._onFlowTrigger = this.driver.onFlowTrigger;
+        this._offFlowTrigger = this.driver.offFlowTrigger;
+
+        this.inputFlowTriggers = {
+            1: this.driver.input1FlowTrigger,
+            2: this.driver.input2FlowTrigger,
+            3: this.driver.input3FlowTrigger,
+            4: this.driver.input4FlowTrigger
+        };
+        
+        this._specificColorAction = this.driver.specificColorAction;
+        this._animationAction = this.driver.animationAction;
     }
 
-    /*
-    Conversion methods
-     */
-
-    /**
-     * Converts HSV values to RGB
-     * @param h the hue between 0 - 360
-     * @param s the saturation between 0 - 100
-     * @param v the value between 0 - 100
-     * @returns RGB Red, Green and Blue values between 0 - 255
-     * @private
-     */
-    _convertHSVToRGB({h, s, v}) {
-        // Normalise hue, saturation and value
-        let workingHue = h / 60;
-        let workingSat = s / 100;
-        let workingVal = v / 100;
-
-        // Calculate the in between products needed for RGB conversion
-        let chroma = workingVal * workingSat;
-        let X = chroma * (1 - Math.abs(workingHue % 2 - 1));
-        let m = workingVal - chroma;
-
-        let tempRGB;
-
-        // Depending on the hue assign RGB values
-        if (workingHue >= 0 && workingHue < 1) tempRGB = {r: chroma, g: X, b: 0};
-        if (workingHue >= 1 && workingHue < 2) tempRGB = {r: X, g: chroma, b: 0};
-        if (workingHue >= 2 && workingHue < 3) tempRGB = {r: 0, g: chroma, b: X};
-        if (workingHue >= 3 && workingHue < 4) tempRGB = {r: 0, g: X, b: chroma};
-        if (workingHue >= 4 && workingHue < 5) tempRGB = {r: X, g: 0, b: chroma};
-        if (workingHue >= 5 && workingHue < 6) tempRGB = {r: chroma, g: 0, b: X};
-
-        // Return values to 0 - 255 value space
-        let rgb = {};
-        rgb.r = Math.round((tempRGB.r + m) * 255);
-        rgb.g = Math.round((tempRGB.g + m) * 255);
-        rgb.b = Math.round((tempRGB.b + m) * 255);
-
-        return rgb;
-    }
-
-    /**
-     * Converts RGB values to HSV values
-     * @param r the value for the red channel between 0 - 255
-     * @param g the value for the green channel between 0 - 255
-     * @param b the value for the blue channel between 0 - 255
-     * @returns {Object} Hue between 0 - 360, saturation between 0 - 100, value between 0 - 100
-     * @private
-     */
-    _convertRGBToHSV({r, g, b}) {
-        this.log('================================================================================');
-        this.log(`Input values: r:${r}, g:${g}, b:${b}`);
-
-        let normalized = this.normalizeRGBValues({r, g, b});
-
-        this.log('================================================================================');
-        this.log(`Normalized input values: r:${normalized.r}, g:${normalized.g}, b:${normalized.b}`);
-
-        // Determine the minimum and maximum value between R, G, B
-        let colorMin = Math.min(normalized.r, normalized.g, normalized.b);
-        let colorMax = Math.max(normalized.r, normalized.g, normalized.b);
-        let colorDelta = colorMax - colorMin;
-
-        let HSV = {};
-
-        // Calculate the hue based on which colour has the highest intensity
-        if (colorDelta === 0) HSV.h = 0;
-        else if (colorMax === normalized.r) {
-            HSV.h = this.calculateHue(normalized.g, normalized.b, colorDelta, 0);
-        } else if (colorMax === normalized.g) {
-            HSV.h = this.calculateHue(normalized.b, normalized.r, colorDelta, 120);
-        } else if (colorMax === normalized.b) {
-            HSV.h = this.calculateHue(normalized.r, normalized.g, colorDelta, 240);
-        }
-
-        colorMax === 0 ? HSV.s = 0 : HSV.s = (colorDelta/colorMax) * 100;
-        HSV.v = colorMax * 100;
-
-        this.log('================================================================================');
-        this.log(`Output values: H:${HSV.h}, S:${HSV.s}, V:${HSV.v}`);
-        this.log('================================================================================\n\n');
-        return HSV;
-    }
-
-    /**
-     * Converts RGB colors to RGBW colors
-     * @param r the value for the red channel between 0 - 255
-     * @param g the value for the green channel between 0 - 255
-     * @param b the value for the blue channel between 0 - 255
-     * @returns {Object} Red, Green, Blue and White values between 0 - 255
-     * @private
-     */
-    _convertRGBtoRGBW({r, g, b}) {
-        this.log('================================================================================');
-        this.log(`Input values: r:${r}, g:${g}, b:${b}`);
-
-        let normalized = this.normalizeRGBValues({r, g, b});
-
-        this.log('================================================================================');
-        this.log(`Normalized input values: r:${normalized.r}, g:${normalized.g}, b:${normalized.b}`);
-
-        let colorMax = Math.max(normalized.r, normalized.g, normalized.b);
-        if (colorMax === 0) return {r, g, b, w: 0};
-
-        let multiplier = 1 / colorMax;
-
-        let hueRed = normalized.r * multiplier;
-        let hueGreen = normalized.g * multiplier;
-        let hueBlue = normalized.b * multiplier;
-
-        let maxHue = Math.max(hueRed, hueGreen, hueBlue);
-        let minHue = Math.min(hueRed, hueGreen, hueBlue);
-
-        let normalizedW = ((maxHue + minHue) / 2 - .5) * 2 / multiplier;
-
-        this.log('================================================================================');
-        this.log(`Normalized output values: r:${normalized.r}, g:${normalized.g}, b:${normalized.b}, w:${normalizedW}`);
-        let white = normalizedW * 255;
-        let red = (normalized.r - normalizedW) * 255;
-        let green = (normalized.g - normalizedW) * 255;
-        let blue = (normalized.b - normalizedW) * 255;
-
-        red = this._toRGBSpace(red);
-        green = this._toRGBSpace(green);
-        blue = this._toRGBSpace(blue);
-        white = this._toRGBSpace(white);
-
-        this.log('================================================================================');
-        this.log(`Output values: r:${red}, g:${green}, b:${blue}, w:${white}`);
-        this.log('================================================================================\n\n');
-        return {r: red, g: green, b: blue, w: white};
-    }
-
-    /**
-     * Normalizes RGB values from 0 - 255 to 0 - 1
-     * @param r the value for the red channel between 0 - 255
-     * @param g the value for the green channel between 0 - 255
-     * @param b the value for the blue channel between 0 - 255
-     * @returns {Object} Red, green and blue values between 0 - 1
-     */
-    normalizeRGBValues({r, g, b}) {
-        return {r: r/255, g: g/255, b: b/255}
-    }
-
-    /**
-     * Calculates the hue value given the products to do so
-     * @param segment1 Base for the segment calculation
-     * @param segment2 Number to be substracted from the segment base
-     * @param colorDelta The delta between brightest and lowest colour
-     * @param baseDegrees The base segment degrees
-     * @returns {Number} The hue calculated with the input
-     */
-    calculateHue(segment1, segment2, colorDelta, baseDegrees) {
-        let segment = (segment1 - segment2) / colorDelta;
-        // 0 degrees for red hue, divided by 360 / 6
-        let shift = baseDegrees / 60;
-        if (segment < 0) shift = 360/60;
-        return (segment + shift) * 60;
-    }
-
-    /**
-     * Limits a value between 0 - 255
-     * @param number The number to limit
-     * @returns {Number} A number within range 0 - 255
-     * @private
-     */
-    _toRGBSpace(number) {
-        return number > 255 ? 255 : number < 0 ? 0 : number;
-    }
-
-    /*
-    ================================================================
-    Flow related methods
-    ================================================================
-     */
-    onOffFlowRunListener(args, state) {
-        if (args && args.hasOwnProperty('input') &&
-            state && state.hasOwnProperty('input') &&
-            args.input === state.input) {
-            return true;
-        }
-        return false;
-    }
-
-    resetMeterRunListener(args, state) {
-        if (this.node && typeof this.node.CommandClass.COMMAND_CLASS_METER !== 'undefined') {
-            this.node.CommandClass.COMMAND_CLASS_METER.METER_RESET({}, (err, result) => {
-                if (err) throw new Error(err);
-                return false;
-                if (result === 'TRANSMIT_COMPLETE_OK') return true;
-                return false;
-            });
-        }
-    }
-
-    async randomColorRunListener(args, state) {
-        if (this.getSetting('strip_type').indexOf('rgb') < 0) return Promise.reject('Random colors only available in RGB(W) mode');
-        if (args.hasOwnProperty('range')) {
-            let dim = this.getCapabilityValue('dim');
-            let stripType = this.getSetting('strip_type');
-            let rgb = this._convertHSVToRGB({
-                h: Math.round(Math.random() * 360),
-                s: 100,
-                v: dim * 100,
-            });
-            let rgbw = this._convertRGBtoRGBW(rgb);
-
-            // Adjust color values to 0 - 100 scale
-            rgbw.red = (rgbw.r / 255) * 99;
-            rgbw.green = (rgbw.g / 255) * 99;
-            rgbw.blue = (rgbw.b / 255) * 99;
-            rgbw.white = (rgbw.w / 255) * 99;
-
-            rgb.red = (rgb.r / 255) * 99;
-            rgb.green = (rgb.g / 255) * 99;
-            rgb.blue = (rgb.b / 255) * 99;
-
-            try {
-                if (args.range === 'rgb') {
-                    await this._sendColor(rgb.red, 2);
-                    await this._sendColor(rgb.green, 3);
-                    await this._sendColor(rgb.blue, 4);
-                } else if (args.range === 'rgbw' && stripType === 'rgbw') {
-                    await this._sendColor(rgbw.red, 2);
-                    await this._sendColor(rgbw.green, 3);
-                    await this._sendColor(rgbw.blue, 4);
-                    await this._sendColor(rgbw.white, 5);
-                } else if (args.range === 'rgb-w' && stripType === 'rgbw') {
-                    const randomDecision = Math.round(Math.random());
-
-                    if (randomDecision !== 0) {
-                        await this._sendColor(0, 2);
-                        await this._sendColor(0, 3);
-                        await this._sendColor(0, 4);
-                        await this._sendColor(rgbw.white, 5);
-                    } else {
-                        await this._sendColor(rgb.red, 2);
-                        await this._sendColor(rgb.green, 3);
-                        await this._sendColor(rgb.blue, 4);
-                    }
-
-                } else if (args.range.indexOf('r-g-b') >= 0) {
-                    let option;
-
-                    args.range.indexOf('w') >= 0 ? option = Math.round(Math.random() * 4) : option = Math.round(Math.random() * 3);
-
-                    switch (option) {
-                        case 0:
-                            rgb.red = 99 * dim;
-                            await this._sendColor(rgb.red, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 1:
-                            rgb.green = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(rgb.green, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 2:
-                            rgb.blue = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(rgb.blue, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 3:
-                            rgbw.white = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(rgbw.white, 5);
-                            break;
-                    }
-                } else if (args.range.indexOf('r-y-g-c-b-m') >= 0) {
-                    let option,
-                        hue;
-
-                    args.range.indexOf('w') >= 0 ? option = Math.round(Math.random() * 7) : option = Math.round(Math.random() * 6);
-
-                    switch (option) {
-                        case 0:
-                            rgb.red = 99 * dim;
-                            await this._sendColor(rgb.red, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 1:
-                            hue = 0.125;
-                            break;
-                        case 2:
-                            rgb.green = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(rgb.green, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 3:
-                            hue = 0.5;
-                            break;
-                        case 4:
-                            rgb.blue = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(rgb.blue, 4);
-                            await this._sendColor(0, 5);
-                            break;
-                        case 5:
-                            hue = 0.875;
-                            break;
-                        case 6:
-                            rgbw.white = 99 * dim;
-                            await this._sendColor(0, 2);
-                            await this._sendColor(0, 3);
-                            await this._sendColor(0, 4);
-                            await this._sendColor(rgbw.white, 5);
-                            break;
-                    }
-
-                    if (hue) {
-                        rgb = this._convertHSVToRGB({h: hue * 360, s: 100, v: dim * 100});
-                        rgbw = this._convertRGBtoRGBW(rgb);
-
-                        await this._sendColor((rgbw.r / 255) * 99, 2);
-                        await this._sendColor((rgbw.g / 255) * 99, 3);
-                        await this._sendColor((rgbw.b / 255) * 99, 4);
-                        await this._sendColor((rgbw.w / 255) * 99, 5);
-                    }
-                }
-            } catch (err) {
-                return Promise.reject(err);
-            }
-        }
-    }
-
+    // Flow methods
     async specificColorRunListener(args, state) {
-        if (args && args.hasOwnProperty('color') && args.hasOwnProperty('brightness')) {
-            let multiChannel;
-            const stripType = this.getSetting('strip_type');
+        // Unfortunately the old flow args used r,g,b,w instead of red, green, blue, white
+        // because of this, the colorname has to be parsed
+        if (!args.hasOwnProperty('color') && !args.hasOwnProperty('brightness')) return new Error('invalid_args');
+        if (typeof args.brightness !== 'number') return false;
+        args.brightness = Math.round(args.brightness * 100);
 
-            switch (args.color) {
-                case 'r':
-                    multiChannel = 2;
-                    break;
-                case 'g':
-                    multiChannel = 3;
-                    break;
-                case 'b':
-                    multiChannel = 4;
-                    break;
-                case 'w':
-                    multiChannel = 5;
-                    break;
-            }
-
-            if (stripType.indexOf('sc') >= 0 && args.color !== stripType.slice(2)) return Promise.reject('Color not in use');
-            if (stripType.indexOf('cct') >= 0 && (args.color === 'r' || args.color === 'g')) return Promise.reject('Color not in use');
-            if (stripType === 'rgb' && args.color === 'w') return Promise.reject('Color not in use');
-
-            return await this._sendColor(Math.round(args.brightness * 99), multiChannel);
-        }
+        if (args.color === 'r') return this.sendColors({ red: args.brightness * 2.55 });
+        if (args.color === 'g') return this.sendColors({ green: args.brightness * 2.55 });
+        if (args.color === 'b') return this.sendColors({ blue: args.brightness * 2.55 });
+        if (args.color === 'w') return this.sendColors({ white: args.brightness * 2.55 });
     }
 
     async animationRunListener(args, state) {
-        if (this.getSetting('strip_type').indexOf('rgb') < 0) return Promise.reject('Animations only available in RGB(W) mode');
-        if ((this.realInputConfigs.input1 || this.realInputConfigs.input2 || this.realInputConfigs.input3 || this.realInputConfigs.input4) > 8) {
-            return Promise.reject('Animations only available without analog input');
-        }
+        if (!this.stripType.includes('rgb')) return Promise.reject('Animations only available in RGB(W) mode');
 
         if (args && args.hasOwnProperty('animation')) {
-            if (args.animation === '0') {
-                try {
-                    await this._sendColor(this.currentRGB.r, 2);
-                    await this._sendColor(this.currentRGB.g, 3);
-                    await this._sendColor(this.currentRGB.b, 4);
-                    await this._sendColor(this.currentRGB.a, 5);
-                    return Promise.resolve();
-                } catch (err) {
-                    return Promise.reject(err);
-                }
-            }
-            if (args.animation === '11') {
-                args.animation = Math.round(Math.random() * (10 - 6) + 6);
-            }
+            this.log('Setting animation to', args.animation);
+            if (args.animation === '0') return this.sendColors(ZwaveUtils.convertHSVToRGB(this.currentHSV));
+            if (args.animation === '11') args.animation = Math.round(Math.random() * (10 - 6) + 6);
 
             try {
                 return await this.configurationSet({
@@ -765,126 +169,61 @@ class FibaroRGBWControllerDevice extends ZwaveDevice {
         }
     }
 
+    multiChannelNodeReportParser(report, multiChannelNodeId) {
+        // Determine if the report contains a color value or a voltage value.
+        this.log('Report for multiChannelNode', multiChannelNodeId);
+        const inputNumber = multiChannelNodeId-1;
+        if (this.getSetting(`input_config_${inputNumber}`) === '8') {
+            // The report has a value of 0-99, 100 levels. 0-10V input, so divide by 10.
+            const voltageValue = Math.round((report['Value (Raw)'].readUIntBE(0, 1) / 99) * 10);
+            this.log('Voltage mode', voltageValue);
 
-    /*
-    ================================================================
-    Helper methods
-    ================================================================
+            this.inputFlowTriggers[inputNumber].trigger(this, null), { volt: voltageValue };
+
+            return voltageValue;
+        } else {
+            this.log('Color report received');
+            // Get the associated color channel from the multichannelnode number
+            let color = Object.keys(multiChannelNodeToColorMap).find(key => {
+                return multiChannelNodeToColorMap[key] === multiChannelNodeId;
+            });
+
+            this.currentRGB[color] = Math.round((report['Value (Raw)'].readUIntBE(0, 1) /99) * 255);
+            const tempHSV = ZwaveUtils.convertRGBToHSV(this.currentRGB);
+
+            //overwrite tempHSV.value for dim level when lightmode is temperature
+            if (typeof this.currentRGB['white'] !== 'undefined' && this.currentRGB['white'] > 0) {
+                tempHSV.value = this.currentRGB['white'] / 255;
+            }
+            
+            // Debounce timeout to prevent glitches in the Homey UI.
+            if (this.colorChangeReportTimeout) clearTimeout(this.colorChangeReportTimeout);
+            this.colorChangeReportTimeout = setTimeout(() => {
+                this.log('Setting colors from report to', tempHSV);
+                this.setCapabilityValue('light_hue', tempHSV.hue);
+                this.setCapabilityValue('light_saturation', tempHSV.saturation);
+                this.setCapabilityValue('dim', tempHSV.value);   
+            }, 2000);
+
+            // TODO Instead of returning 0, remove the capability when not in voltage mode.
+            return 0;
+        }
+    }
+    
+    /**
+     * Function to send a object with color values to the correct multichannel node
+     * The multichannelnodes are defined in the const multiChannelNodeToColorMap
+     * @param {Object} colorObject Object with the color values to send, values in range 0-255.
      */
-    _valueToVolt(value) {
-        return Math.round(value / 99 * 100) / 10;
-    }
+    async sendColors(colorObject) {
+        if (!colorObject) return;
 
-    _reloadRealInputConfig() {
-        const newInputConfig = {};
-
-        newInputConfig.input1 = parseInt(this.getSetting('input_config_1') || 1);
-        newInputConfig.input2 = parseInt(this.getSetting('input_config_2') || 1);
-        newInputConfig.input3 = parseInt(this.getSetting('input_config_3') || 1);
-        newInputConfig.input4 = parseInt(this.getSetting('input_config_4') || 1);
-
-        if (this.getSetting('strip_type') !== 'cct' && this.getSetting('strip_type').indexOf('rgb') < 0) {
-            newInputConfig.input1 += 8;
-            newInputConfig.input2 += 8;
-            newInputConfig.input3 += 8;
-            newInputConfig.input4 += 8;
-        }
-
-        if (newInputConfig.input1 !== this.realInputConfigs.input1 ||
-            newInputConfig.input2 !== this.realInputConfigs.input2 ||
-            newInputConfig.input3 !== this.realInputConfigs.input3 ||
-            newInputConfig.input4 !== this.realInputConfigs.input4) {
-            this.realInputConfigs = newInputConfig;
-            return true;
-        }
-        return false;
-    }
-
-    async _sendColor(value, multiChannel) {
-        return await this.node.MultiChannelNodes[multiChannel].CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_SET({Value: Math.round(value)});
-    }
-
-    _inputSettingParser(inputNumber, value, newSettings) {
-        this.realInputConfigs[`input${inputNumber}`] = parseInt(value) || 1;
-
-        if (newSettings && newSettings.strip_type.indexOf('rgb') < 0 && newSettings.strip_type !== 'cct') {
-            this.realInputConfigs[`input${inputNumber}`] += 8;
-        }
-
-        const zwaveValue = new Buffer([
-            (this.realInputConfigs.input1 * 16 +
-                this.realInputConfigs.input2),
-            (this.realInputConfigs.input3 * 16 +
-                this.realInputConfigs.input4),
-        ]);
-
-        try {
-            this.configurationSet({
-                index: 14,
-                size: 2,
-            }, zwaveValue);
-        } catch (err) {
-            this.log(err);
-        }
-    }
-
-    _reportParser(report, channel) {
-        let red,
-            green,
-            blue,
-            white;
-        const inputNumber = channel - 1;
-
-        switch (channel) {
-            case 2:
-                red = report['Value (Raw)'][0];
-                break;
-            case 3:
-                green = report['Value (Raw)'][0];
-                break;
-            case 4:
-                blue = report['Value (Raw)'][0];
-                break;
-            case 5:
-                white = report['Value (Raw)'][0];
-                break;
-        }
-
-        // Check if we should trigger an on/off flow for inputs
-        if (this.currentRGB.r === 0 && red > 0 ||
-            this.currentRGB.g === 0 && green > 0 ||
-            this.currentRGB.b === 0 && blue > 0 ||
-            this.currentRGB.a === 0 && white > 0) {
-            this._onFlowTrigger.trigger(this, null, {input: inputNumber});
-        } else if (this.currentRGB.r > 0 && red === 0 ||
-            this.currentRGB.g > 0 && green === 0 ||
-            this.currentRGB.b > 0 && blue === 0 ||
-            this.currentRGB.a > 0 && white === 0) {
-            this._offFlowTrigger.trigger(this, null, {input: inputNumber});
-        }
-
-        if (typeof red === 'number') this.currentRGB.r = red;
-        if (typeof green === 'number') this.currentRGB.g = green;
-        if (typeof blue === 'number') this.currentRGB.b = blue;
-        if (typeof white === 'number') this.currentRGB.a = white;
-
-        // Calculate the new HSV value
-        const newColour = this._convertRGBToHSV({
-            r: this.currentRGB.r / 99 * 255,
-            g: this.currentRGB.g / 99 * 255,
-            b: this.currentRGB.b / 99 * 255
+        Object.keys(colorObject).forEach(async (key) => {
+            this.log(`Sending value: ${colorObject[key]} to node: ${multiChannelNodeToColorMap[key]}`);
+            // Get the node matching with the color, then send the color value divided by 2.55 (0-99 range)
+            await this.node.MultiChannelNodes[multiChannelNodeToColorMap[key]].CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL.SWITCH_MULTILEVEL_SET({Value: Math.round((colorObject[key] / 255)*99)});
         });
-
-        if (this.getCapabilityValue('light_mode') === 'color') {
-            this.setCapabilityValue('light_hue', Math.round(newColour.h) / 360);
-            this.setCapabilityValue('light_saturation', Math.round(newColour.s) / 100);
-        }
-
-        if (this.realInputConfigs[`input${inputNumber}`] === 8) {
-            this[`_input${inputNumber}FlowTrigger`].trigger(this, {volt: this._valueToVolt(report['Value (Raw)'][0])}, null);
-        }
-
-        return this._valueToVolt(report['Value (Raw)'][0]);
+        return true;
     }
 }
 

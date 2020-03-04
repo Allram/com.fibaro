@@ -6,7 +6,8 @@ class FibaroSwipeDeviceDriver extends Homey.Driver {
     onInit() {
         super.onInit();
 
-        this.directionTrigger = new Homey.FlowCardTriggerDevice('fggc-001_swipe_direction').register()
+        this.directionTrigger = new Homey.FlowCardTriggerDevice('fggc-001_swipe_direction')
+            .register()
             .registerRunListener((args, state) => {
                 return args.device.directionRunListener(args, state);
             });

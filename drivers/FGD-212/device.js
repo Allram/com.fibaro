@@ -20,8 +20,8 @@ class FibaroDimmerTwoDevice extends ZwaveDevice {
 		this.registerCapability('measure_power', 'SENSOR_MULTILEVEL');
 		this.registerCapability('meter_power', 'METER');
 
-		this.registerSetting('force_no_dim', value => new Buffer([value ? 2 : 0]));
-		this.registerSetting('kwh_report', value => new Buffer([value * 100]));
+		this.registerSetting('force_no_dim', value => value ? 2 : 0);
+		this.registerSetting('kwh_report', value => value * 100);
 
 		this.registerReportListener('SCENE_ACTIVATION', 'SCENE_ACTIVATION_SET', (report) => {
 			if (report.hasOwnProperty('Scene ID')) {
@@ -50,18 +50,17 @@ class FibaroDimmerTwoDevice extends ZwaveDevice {
 		if (args.set_forced_brightness_level > 1) return Promise.reject('forced_brightness_level_out_of_range');
 
 		try {
+			let brightnessLevel = Math.round(args.set_forced_brightness_level * 99);
 			let result = await this.configurationSet({
 				id: 'forced_brightness_level'
-			}, Math.round(args.set_forced_brightness_level * 99));
+			}, brightnessLevel);
 			return this.setSettings({
-				'forced_brightness_level': args.set_forced_brightness_level
+				'forced_brightness_level': brightnessLevel 
 			});
 		}
 		catch (error) {
 			return Promise.reject(error.message);
 		}
-		return Promise.reject('unknown_error');
-
 	}
 
 	async dimDurationRunListener(args, state) {
@@ -104,7 +103,6 @@ class FibaroDimmerTwoDevice extends ZwaveDevice {
 		catch (error) {
 			return Promise.reject(error.message);
 		}
-		return Promise.reject('unknown_error');
 	}
 
 	async resetMeterRunListener(args, state) {

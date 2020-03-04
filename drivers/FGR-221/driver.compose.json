@@ -5,7 +5,9 @@
     "nl": "Rolluik"
   },
   "class": "windowcoverings",
-  "capabilities": [],
+  "capabilities": [
+    "dim"
+  ],
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
     "small": "{{driverAssetsPath}}/images/small.png"

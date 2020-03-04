@@ -24,21 +24,23 @@ class FibaroSingleSwitchTwoDevice extends ZwaveDevice {
 			if (report.hasOwnProperty('Properties1') &&
                 report.Properties1.hasOwnProperty('Key Attributes') &&
                 report.hasOwnProperty('Scene Number')) {
-				const data = {
+				const state = {
 					scene: report.Properties1['Key Attributes'],
 				};
 
 				if (report['Scene Number'] === 1) {
-					this._S1Trigger.trigger(this, null, data);
+					this._S1Trigger.trigger(this, null, state);
 				} else if (report['Scene Number'] === 2) {
-					this._S2Trigger.trigger(this, null, data);
+					this._S2Trigger.trigger(this, null, state);
 				}
 			}
 		});
 	}
 
 	switchTriggerRunListener(args, state) {
-		return state.scene === args.scene;
+		return (state && args &&
+			state.hasOwnProperty('scene') && args.hasOwnProperty('scene') &&
+			state.scene === args.scene);
 	}
 
 	resetMeterRunListener(args, state) {

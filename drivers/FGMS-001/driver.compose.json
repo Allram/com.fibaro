@@ -3,13 +3,29 @@
       "en": "Motion Sensor",
       "nl": "Bewegingssensor"
     },
+    "class": "sensor",
+    "capabilities": [
+      "measure_battery",
+      "measure_luminance",
+      "measure_temperature",
+      "alarm_motion",
+      "alarm_tamper"
+    ],
+    "images": {
+      "large": "{{driverAssetsPath}}/images/large.png",
+      "small": "{{driverAssetsPath}}/images/small.png"
+    },
+    "energy": {
+      "batteries": [ "CR123A" ] 
+    },
     "zwave": {
       "manufacturerId": 271,
       "productTypeId": [
         2048
       ],
       "productId": [
-        4097
+        4097,
+        12289
       ],
       "includeSecure": false,
       "zwaveAllianceProductId": 1048,
@@ -30,17 +46,5 @@
           "value": 1
         }
       ]
-    },
-    "class": "sensor",
-    "capabilities": [
-      "measure_battery",
-      "measure_luminance",
-      "measure_temperature",
-      "alarm_motion",
-      "alarm_tamper"
-    ],
-    "images": {
-      "large": "{{driverAssetsPath}}/images/large.png",
-      "small": "{{driverAssetsPath}}/images/small.png"
     }
   }
