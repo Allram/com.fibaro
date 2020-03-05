@@ -5,8 +5,8 @@
   },
   "brandColor": "#000000",
   "sdk": 2,
-  "version": "2.2.10",
-  "compatibility": ">=2.4.0",
+  "version": "2.3.0",
+  "compatibility": ">=3.2.0",
   "description": {
     "en": "Fibaro devices for Homey"
   },
@@ -14956,10 +14956,8 @@
             "nl": "Druk driemaal op een knop van uw Walli Dimmer"
           }
         },
-        "associationGroupsMultiChannel": [
-          1
-        ],
         "associationGroups": [
+          1,
           2,
           3
         ]

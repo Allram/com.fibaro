@@ -1,4 +1,8 @@
 {
+  "2.3.0": {
+    "en": "Added RGBW 2 controller (FGRGBW-442).",
+    "nl": "RGBW 2 controller (FGRGBW-442) toegevoegd."
+  },
   "2.2.9": {
     "en": "Change FGWPx-102 default LED parameters, thanks to Caseda for notifying us. Fixed a value issue for the FGD-212 brightness parameters, thanks to Thorarin for his fix."
   },
