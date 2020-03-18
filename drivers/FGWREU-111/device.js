@@ -4,9 +4,19 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 
 class FibaroRollerShutterDevice extends ZwaveDevice {
 	onMeshInit() {
-		if (this.node.CommandClass.COMMAND_CLASS_SWITCH_MULTILEVEL) {
-			this.registerCapability('dim', 'SWITCH_MULTILEVEL');
-		}
+        this.printNode();
+        this.enableDebug();
+
+        this.registerCapability(
+            'windowcoverings_set',
+            'SWITCH_MULTILEVEL'
+        );
+        
+        this.registerCapability(
+            'windowcoverings_tilt_set',
+            'SWITCH_MULTILEVEL',
+            {  multiChannelNodeId: 2, }
+        );
 
 		this.registerSetting('start_calibration', (newValue) => {
 			if (newValue) {
@@ -16,8 +26,15 @@ class FibaroRollerShutterDevice extends ZwaveDevice {
 			}
 
 			return new Buffer([newValue ? 2 : 0]);
-		});
-	}
+        });
+        
+        this.registerSetting('blind_type', (newValue) => {
+            this.log('Blind type', newValue);
+            if (newValue === 1) this.addCapability('windowcoverings_tilt_set');
+            else this.removeCapability('windowcoverings_tilt_set');
+            return new Buffer([newValue]);
+        })
+    }
 
 	async ledOnRunListener(args, state) {
         if (args.hasOwnProperty('color')) {

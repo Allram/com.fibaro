@@ -9,6 +9,53 @@
     "collapsed": true,
     "children": [
       {
+        "id": "blind_type",
+        "type": "dropdown",
+        "label": {
+          "en": "Blind type",
+          "nl": "Type zonwering"
+        },
+        "value": "1",
+        "hint": {
+          "en": "This parameter ({{zwaveParameterIndex}}) defines what type of blind is connected to the device.",
+          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor type zonwering is aangesloten op het apparaat."
+        },
+        "zwave": {
+          "index": 151,
+          "size": 1
+        },
+        "values": [
+          {
+            "id": "1",
+            "label": {
+              "en": "Roller blind mode, with positioning",
+              "nl": "Rolluik modus, met positionering"
+            }
+          },
+          {
+            "id": "2",
+            "label": {
+              "en": "Venetian blind mode, with positioning",
+              "nl": "Jaloezie modus, met positionering"
+            }
+          },
+          {
+            "id": "5",
+            "label": {
+              "en": "Roller blind mode, with built-in driver",
+              "nl": "Rolluik modus, met ingebouwde driver"
+            }
+          },
+          {
+            "id": "6",
+            "label": {
+              "en": "Roller blind mode, with built-in driver (impulse)",
+              "nl": "Rolluik modus, met ingebouwde driver (pulserend)"
+            }
+          }
+        ]
+      },
+      {
         "id": "start_calibration",
         "type": "checkbox",
         "label": {

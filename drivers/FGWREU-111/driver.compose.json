@@ -1,5 +1,4 @@
 {
-  "deprecated": true,
   "id": "FGWREU-111",
   "name": {
     "en": "Walli Roller Shutter",
@@ -7,7 +6,8 @@
   },
   "class": "windowcoverings",
   "capabilities": [
-    "dim"
+    "windowcoverings_set",
+    "windowcoverings_tilt_set"
   ],
   "images": {
     "large": "{{driverAssetsPath}}/images/large.png",
@@ -28,21 +28,6 @@
         "nl": "Druk driemaal op een knop op uw {{driverNameNl}}."
       }
     },
-    "associationGroups": [ 1,2 ],
-    "associationGroupsMultiChannel": [ 1,2 ],
-    "multiChannelNodes": {
-      "2": {
-        "class": "windowcoverings",
-        "capabilities": [
-          "dim"
-        ],
-        "icon": "{{driverAssetsPath}}/icon.svg",
-        "name": {
-          "en": "Walli Rollershutter Tilt",
-          "nl": "Walli Rollershutter Hoek"
-        },
-        "settings": []
-      }
-    }
+    "associationGroupsMultiChannel": [ 0, 1 ]
   }
 }
