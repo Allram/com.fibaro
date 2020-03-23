@@ -5,7 +5,7 @@
   },
   "brandColor": "#000000",
   "sdk": 2,
-  "version": "2.3.1",
+  "version": "2.4.0",
   "compatibility": ">=3.2.0",
   "description": {
     "en": "Fibaro devices for Homey"
@@ -2138,6 +2138,74 @@
             "example": 25
           }
         ]
+      },
+      {
+        "id": "walli_switch_button_scenes",
+        "title": {
+          "en": "Button scenes",
+          "nl": "Knoppen scenes"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=FGWDSEU-221"
+          },
+          {
+            "name": "button",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "Button 1",
+                  "nl": "Knop 1"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "Button 2",
+                  "nl": "Knop 2"
+                }
+              }
+            ]
+          },
+          {
+            "name": "presses",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "1",
+                "label": {
+                  "en": "1x",
+                  "nl": "1x"
+                }
+              },
+              {
+                "id": "2",
+                "label": {
+                  "en": "2x",
+                  "nl": "2x"
+                }
+              },
+              {
+                "id": "3",
+                "label": {
+                  "en": "3x",
+                  "nl": "3x"
+                }
+              },
+              {
+                "id": "4",
+                "label": {
+                  "en": "Hold",
+                  "nl": "Vasthouden"
+                }
+              }
+            ]
+          }
+        ]
       }
     ],
     "actions": [
@@ -2784,26 +2852,6 @@
             "type": "device",
             "name": "device",
             "filter": "driver_id=FGWDSEU-221"
-          },
-          {
-            "name": "output",
-            "type": "dropdown",
-            "values": [
-              {
-                "id": "1",
-                "label": {
-                  "en": "Output 1",
-                  "nl": "Uitgang 1"
-                }
-              },
-              {
-                "id": "2",
-                "label": {
-                  "en": "Output 2",
-                  "nl": "Uitgang 2"
-                }
-              }
-            ]
           }
         ]
       },
@@ -15821,8 +15869,8 @@
               "id": "button_2_scenes",
               "type": "number",
               "label": {
-                "en": "Button 1 scenes",
-                "nl": "Scenes knop 1"
+                "en": "Button 2 scenes",
+                "nl": "Scenes knop 2"
               },
               "hint": {
                 "en": "This parameter (41) determines which scenes are sent for button 2.",

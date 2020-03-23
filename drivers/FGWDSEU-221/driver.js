@@ -7,51 +7,48 @@ class FibaroWalliSwitchDriver extends Homey.Driver {
         super.onInit();
 
         this.outputOnAction = new Homey.FlowCardAction('walli_switch_turn_on')
-            .register()
             .registerRunListener((args, state) => {
                 return args.device.setOutputRunListener(args, state, true);
-            });
+            })
+            .register();
 
         this.outputOffAction = new Homey.FlowCardAction('walli_switch_turn_off')
-            .register()
             .registerRunListener((args, state) => {
                 return args.device.setOutputRunListener(args, state, false);
-            });
+            })
+            .register();
 
         this.outputToggleAction = new Homey.FlowCardAction('walli_switch_toggle')
-            .register()
             .registerRunListener((args, state) => {
-                this.log(!args.device.getCapabilityValue(`onoff.output${args.output}`));
-
+                this.log('Changing state to:', !args.device.getCapabilityValue(`onoff.output${args.output}`));
                 return args.device.setOutputRunListener(args, state,
                     !args.device.getCapabilityValue(`onoff.output${args.output}`));
-            });
+            })
+            .register()
 
         this.ledOnAction = new Homey.FlowCardAction('walli_led_on')
-            .register()
             .registerRunListener((args, state) => {
                 return args.device.ledOnRunListener(args, state);
-            });
+            })
+            .register();
         this.ledOffAction = new Homey.FlowCardAction('walli_led_off')
-            .register()
             .registerRunListener((args, state) => {
                 return args.device.ledOffRunListener(args, state);
-            });
+            })
+            .register();
 
         this.buttonSceneTrigger = new Homey.FlowCardTriggerDevice('walli_switch_button_scenes')
-            .register()
-            // .registerRunListener((args, state) => {
-            //     this.log('in scene runlistener');
-            //     return args.button === state.button && args.presses === state.presses;
-            // });
-
+            .registerRunListener((args, state) => {
+                return args.button == state.button && args.presses == state.presses;
+            })
+            .register();
+        
         this.powerChangedTrigger = new Homey.FlowCardTriggerDevice('walli_switch_power_changed')
-            .register()
             .registerRunListener((args, state) => {
                 this.log(args, state);
-                return true;
-                // return args.output === state.output;
-            });
+                return args.output == state.output;
+            })
+            .register();
     }
 }
 

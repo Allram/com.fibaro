@@ -168,49 +168,6 @@
           ]
         }
       ]
-    },
-    {
-      "id": "walli_switch_scenes_button2",
-      "title": {
-        "en": "Button 2 scenes",
-        "nl": "Scenes knop 2"
-      },
-      "args": [
-        {
-          "name": "output",
-          "type": "dropdown",
-          "values": [
-            {
-              "id": "1",
-              "label": {
-                "en": "1x",
-                "nl": "1x"
-              }
-            },
-            {
-              "id": "2",
-              "label": {
-                "en": "2x",
-                "nl": "2x"
-              }
-            },
-            {
-              "id": "3",
-              "label": {
-                "en": "3x",
-                "nl": "3x"
-              }
-            },
-            {
-              "id": "4",
-              "label": {
-                "en": "Hold",
-                "nl": "Vasthouden"
-              }
-            }
-          ]
-        }
-      ]
     }
   ]
 }

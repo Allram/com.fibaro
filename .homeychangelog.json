@@ -1,4 +1,8 @@
 {
+  "2.4.0": {
+    "en": "Added Walli Switch and Walli Rollershutter",
+    "nl": "Walli schakelaar en Walli rolluikschakelaar toegevoegd."
+  },
   "2.3.0": {
     "en": "Added RGBW 2 controller (FGRGBW-442).",
     "nl": "RGBW 2 controller (FGRGBW-442) toegevoegd."

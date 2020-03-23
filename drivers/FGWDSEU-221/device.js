@@ -5,10 +5,9 @@ const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
 class FibaroWalliSwitchDevice extends ZwaveDevice {
 
 	onMeshInit() {
-        // this.enableDebug();
+        this.enableDebug();
 
         this.driver = this.getDriver();
-        this.driver.momentaryTrigger;
 
         this.registerCapability('onoff.output1', 'BASIC');
         this.registerCapability('onoff.output2', 'BASIC', { multiChannelNodeId: 2 });
@@ -25,8 +24,8 @@ class FibaroWalliSwitchDevice extends ZwaveDevice {
                 report.Properties2.hasOwnProperty('Scale bits 10') &&
                 report.Properties2['Scale bits 10'] === 2) {
                     this.driver.powerChangedTrigger.trigger(this,
+                        { power: report['Meter Value (Parsed)'] },
                         { output: 1 },
-                        { power: report['Meter Value (Parsed)'] }
                     );
                     return report['Meter Value (Parsed)'];
                 }
@@ -47,8 +46,8 @@ class FibaroWalliSwitchDevice extends ZwaveDevice {
                     report.Properties2.hasOwnProperty('Scale bits 10') &&
                     report.Properties2['Scale bits 10'] === 2) {
                         this.driver.powerChangedTrigger.trigger(this,
+                            { power: report['Meter Value (Parsed)'] },
                             { output: 2 },
-                            { power: report['Meter Value (Parsed)'] }
                         );
                         return report['Meter Value (Parsed)'];
                     }
@@ -63,15 +62,11 @@ class FibaroWalliSwitchDevice extends ZwaveDevice {
                 report.Properties1.hasOwnProperty('Key Attributes')) {
                     const button = Number(report['Scene Number']);
                     const presses = Number(report.Properties1['Key Attributes'].match(/\d+/)[0]);
-                    this.getDriver().buttonSceneTrigger.trigger(this, { button,  presses }, null);
+                    this.getDriver().buttonSceneTrigger.trigger(this, {}, { button, presses });
                     this.log(`Triggered flow with parameters button ${button} presses ${presses}`);
                 }
         });
 
-    }
-
-	switchTriggersRunListener(args, state) {
-		return state && args && state.scene === args.scene;
     }
     
     async setOutputRunListener(args, state, value) {
