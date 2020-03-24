@@ -61,16 +61,23 @@ class FibaroWalliSwitchDevice extends ZwaveDevice {
                 report.hasOwnProperty('Scene Number') &&
                 report.Properties1.hasOwnProperty('Key Attributes')) {
                     const button = Number(report['Scene Number']);
-                    const presses = Number(report.Properties1['Key Attributes'].match(/\d+/)[0]);
+                    let presses;
+                    if (report.Properties1['Key Attributes'] == 'Key Held Down') {
+                        presses = 4;
+                    } else if (report.Properties1['Key Attributes'] == 'Key Released') {
+                        return;
+                    } else {
+                        const parsedVal = Number(report.Properties1['Key Attributes'].match(/\d+/));
+                        if (parsedVal) presses = parsedVal[0];
+                    }
                     this.getDriver().buttonSceneTrigger.trigger(this, {}, { button, presses });
-                    this.log(`Triggered flow with parameters button ${button} presses ${presses}`);
                 }
         });
 
     }
     
     async setOutputRunListener(args, state, value) {
-        if (!args.output || !value) return new Error('Missing arguments');
+        if (!args.output) return new Error('Missing arguments');
 
         const output = Number(args.output);
         if (output === 1) {

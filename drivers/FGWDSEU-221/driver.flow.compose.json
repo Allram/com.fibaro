@@ -5,7 +5,29 @@
       "title": {
         "en": "Turn on",
         "nl": "Zet aan"
-      }
+      },
+      "args": [
+        {
+          "name": "output",
+          "type": "dropdown",
+          "values": [
+            {
+              "id": "1",
+              "label": {
+                "en": "Output 1",
+                "nl": "Uitgang 1"
+              }
+            },
+            {
+              "id": "2",
+              "label": {
+                "en": "Output 2",
+                "nl": "Uitgang 2"
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "walli_switch_turn_off",
