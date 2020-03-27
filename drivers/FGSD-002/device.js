@@ -6,17 +6,19 @@ class FibaroSmokeDetectorDevice extends ZwaveDevice {
 
 	onMeshInit() {
 		this.registerCapability('alarm_smoke', 'SENSOR_ALARM');
-        this.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT', report => {
+        this.registerReportListener('alarm_smoke', 'NOTIFICATION', report => {
             if (report && report['Notification Type'] === 'Smoke') {
-                this.setCapabilityValue('alarm_smoke', report['Event'] === 1 || report['Event'] === 2 || report['Event'] === 3);
+                return report['Event'] === 1 || report['Event'] === 2 || report['Event'] === 3;
             }
+            return null;
 		});
 
         this.registerCapability('alarm_heat', 'SENSOR_ALARM');
-        this.registerReportListener('NOTIFICATION', 'NOTIFICATION_REPORT', report => {
+        this.registerReportListener('alarm_heat', 'NOTIFICATION', report => {
             if (report && report['Notification Type'] === 'Heat') {
-                this.setCapabilityValue('alarm_heat', report['Event'] === 1 || report['Event'] === 2 || report['Event'] === 3 || report['Event'] === 4 || report['Event'] === 7);
+                return report['Event'] === 1 || report['Event'] === 2 || report['Event'] === 3 || report['Event'] === 4 || report['Event'] === 7;
             }
+            return null;
 		});
 
 		this.registerCapability('measure_temperature', 'SENSOR_MULTILEVEL');

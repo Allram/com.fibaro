@@ -2314,11 +2314,19 @@
               {
                 "id": "1",
                 "label": {
-                  "en": "min",
-                  "nl": "min"
+
                 }
               }
             ]
+          },
+          {
+            "name": "brightness",
+            "type": "range",
+            "min": 0,
+            "max": 1,
+            "step": 0.01,
+            "label": "%",
+            "labelMultiplier": 100
           }
         ]
       },
@@ -2336,7 +2344,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=FGD-212"
+            "filter": "driver_id=FGRGBWM-441"
           },
           {
             "name": "set_timer_functionality",
@@ -2870,7 +2878,6 @@
                 }
               },
               {
-                "id": "6",
                 "label": {
                   "en": "Cyan",
                   "nl": "Cyaan"
@@ -3292,7 +3299,6 @@
                 }
               },
               {
-                "id": "6",
                 "label": {
                   "en": "Cyan",
                   "nl": "Cyaan"
@@ -14950,8 +14956,10 @@
             "nl": "Druk driemaal op een knop van uw Walli Dimmer"
           }
         },
+        "associationGroupsMultiChannel": [
+          1
+        ],
         "associationGroups": [
-          1,
           2,
           3
         ]

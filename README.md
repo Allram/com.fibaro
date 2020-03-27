@@ -140,6 +140,13 @@ Enhancements to the FGSD-002 Smoke Detector
 Fixes always on setting for FGWPE-101 (not Z-Wave plus)
 Contains fixes for the Fibaro Double Switch 2, measure and meter power on S2 have been brought back
 
+### v 2.1.30
+Enhancements to the FGSD-002 Smoke Detector
+
+### v 2.1.29
+Fixes always on setting for FGWPE-101 (not Z-Wave plus)
+Contains fixes for the Fibaro Double Switch 2, measure and meter power on S2 have been brought back
+
 ### v 2.1.26 - 2.1.28
 Important MeshDriver updates
 Fixes to the FGRGBWM-441

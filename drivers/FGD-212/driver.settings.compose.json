@@ -210,10 +210,11 @@
         }
       },
       {
-        "id": "forced_brightness_level",
+              "id": "forced_brightness_level",
         "type": "number",
         "label": {
           "en": "Forced brightness",
+          "no": "Fast lysstyrke",
           "nl": "Geforceerde helderheid"
         },
         "value": 0,
@@ -321,23 +322,7 @@
           "index": 8,
           "size": 2
         }
-      },
-      {
-        "id": "force_no_dim",
-        "type": "checkbox",
-        "label": {
-          "en": "Dim function off",
-          "nl": "Dim functie uit"
-        },
-        "value": false,
-        "hint": {
-          "en": "This parameter ({{zwaveParameterIndex}}) determines if the {{driverNameEn}} has the ability to dim.",
-          "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de {{driverNameNl}} kan dimmen."
-        },
-        "zwave": {
-          "index": 32,
-          "size": 1
-        }
+
       }
     ]
   },
