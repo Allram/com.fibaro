@@ -32,14 +32,12 @@
       40960,
       45056
     ],
-    "includeSecure": false,
     "zwaveAllianceProductId": 1734,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1734/FGS-2x3-EN-T-v1.0 06.06.2016.pdf",
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on, or the left switch of your {{driverNameEn}} three times",
-        "no": "Trykk på knappen på, eller venstre bryter på {{driverNameNo}} tre ganger",
         "nl": "Druk driemaal op de knop op de linker schakelaar van {{driverNameNl}}"
       }
     },
@@ -61,8 +59,7 @@
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": " “Lifeline” reports the device status and allows for assigning single device only (main controller by default).",
-          "no": "“Lifeline” rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard)."
+          "en": " “Lifeline” reports the device status and allows for assigning single device only (main controller by default)."
         }
       }
     }

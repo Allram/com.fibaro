@@ -22,12 +22,10 @@
       8194,
       12290
     ],
-    "includeSecure": false,
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times",
-        "no": "Trykk på knappen på {{driverNameNo}} tre ganger",
         "nl": "Druk driemaal op de knop op de {{driverNameNl}}"
       }
     },
@@ -43,7 +41,6 @@
         "icon": "{{driverAssetsPath}}/icon-2.svg",
         "name": {
           "en": "Switch 2 (S2)",
-          "no": "Switch 2 (S2)",
           "nl": "Switch 2 (S2)"
         },
         "settings": []

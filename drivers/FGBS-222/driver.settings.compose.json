@@ -3,7 +3,6 @@
 		"type": "group",
 		"label": {
 			"en": "Input configuration",
-			"no": "Inngangskonfigurasjon",
 			"nl": "Ingang configuratie"
 		},
 		"collapsed": false,
@@ -13,7 +12,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Type input 1",
-					"no": "Type inngang 1",
 					"nl": "Type ingang 1"
 				},
 				"zwave": {
@@ -25,7 +23,6 @@
 						"id": "0",
 						"label": {
 							"en": "Normally closed contact",
-							"no": "Normalt lukket kontakt (NC)",
 							"nl": "Normaal gesloten contact"
 						}
 					},
@@ -33,7 +30,6 @@
 						"id": "1",
 						"label": {
 							"en": "Normally open contact",
-							"no": "Normalt åpen kontakt (NO)",
 							"nl": "Normaal open contact"
 						}
 					},
@@ -41,7 +37,6 @@
 						"id": "2",
 						"label": {
 							"en": "Push button / momentary button",
-							"no": "Trykknapp / momentanbryter",
 							"nl": "Puls knop / tijdelijk contact"
 						}
 					},
@@ -49,7 +44,6 @@
 						"id": "3",
 						"label": {
 							"en": "Toggle button / Bistable button",
-							"no": "Vekslebryter / Bistabilbryter",
 							"nl": "Schakelaar / dubbel contact"
 						}
 					},
@@ -57,7 +51,6 @@
 						"id": "4",
 						"label": {
 							"en": "Analog input without internal pull-up",
-							"no": "Analog inngang uten intern pull-up",
 							"nl": "Analoge ingang zonder interne pull-up"
 						}
 					},
@@ -65,7 +58,6 @@
 						"id": "5",
 						"label": {
 							"en": "Analog input with internal pull-up",
-							"no": "Analog inngang med intern pull-up",
 							"nl": "Analoge ingang met interne pull-up"
 						}
 					}
@@ -77,7 +69,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Type input 2",
-					"no": "Type inngang 2",
 					"nl": "Type ingang 2"
 				},
 				"zwave": {
@@ -89,7 +80,6 @@
 						"id": "0",
 						"label": {
 						"en": "Normally closed contact",
-						"no": "Normalt lukket kontakt (NC)",
 						"nl": "Normaal gesloten contact"
 						}
 					},
@@ -97,7 +87,6 @@
 						"id": "1",
 						"label": {
 						"en": "Normally open contact",
-						"no": "Normalt åpen kontakt (NO)",
 						"nl": "Normaal open contact"
 						}
 					},
@@ -105,7 +94,6 @@
 						"id": "2",
 						"label": {
 						"en": "Push button / momentary button",
-						"no": "Trykknapp / momentanbryter",
 						"nl": "Puls knop / tijdelijk contact"
 						}
 					},
@@ -113,7 +101,6 @@
 						"id": "3",
 						"label": {
 						"en": "Toggle button / Bistable button",
-						"no": "Vekslebryter / Bistabilbryter",
 						"nl": "Schakelaar / dubbel contact"
 						}
 					},
@@ -121,7 +108,6 @@
 						"id": "4",
 						"label": {
 							"en": "Analog input without internal pull-up",
-							"no": "Analog inngang uten intern pull-up",
 							"nl": "Analoge ingang zonder interne pull-up"
 						}
 					},
@@ -129,7 +115,6 @@
 						"id": "5",
 						"label": {
 							"en": "Analog input with internal pull-up",
-							"no": "Analog inngang med intern pull-up",
 							"nl": "Analoge ingang met interne pull-up"
 						}
 					}
@@ -141,7 +126,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Input orientation",
-					"no": "Inngansorientering",
 					"nl": "Ingang orientatie"
 				},
 				"zwave": {
@@ -150,7 +134,6 @@
 				},
 				"hint": {
 					"en": "This parameter ({{zwaveParameterIndex}}) inverts the inputs. When inverted, physical input 1 will trigger input 2 and vice versa.",
-					"no": "Denne parameter ({{zwaveParameterIndex}}) inverterer inngangene. Når invertert, vil inngang 1 trigge utgang 2 osv.",
 					"nl": "Deze parameter ({{zwaveParameterIndex}}) inverteerd de ingangen. Wanneer geïnverteerd zal fysieke ingang 1 triggeren naar ingang 2 en andersom."
 				},
 				"values": [
@@ -158,7 +141,6 @@
 						"id": "0",
 						"label": {
 						"en": "Default",
-						"no": "Standard",
 						"nl": "Standaard"
 						}
 					},
@@ -166,7 +148,6 @@
 						"id": "1",
 						"label": {
 						"en": "Inverted",
-						"no": "Invertert",
 						"nl": "Geïnverteerd"
 						}
 					}
@@ -178,7 +159,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Input 1 scenes",
-					"no": "Inngang 1 scener",
 					"nl": "Ingang 1 scenes"
 				},
 				"zwave": {
@@ -190,7 +170,6 @@
 						"id": "0",
 						"label": {
 							"en": "No scenes sent",
-							"no": "Ingen scener sendt",
 							"nl": "Geen scenes verzenden"
 						}
 					},
@@ -198,7 +177,6 @@
 						"id": "1",
 						"label": {
 							"en": "Key pressed 1 time",
-							"no": "Knapp presset 1 gang",
 							"nl": "Knop 1 keer indrukken"
 						}
 					},
@@ -206,7 +184,6 @@
 						"id": "2",
 						"label": {
 							"en": "Key pressed 2 times",
-							"no": "Knapp presset 2 ganger",
 							"nl": "Knop 2 keer indrukken"
 						}
 					},
@@ -214,7 +191,6 @@
 						"id": "3",
 						"label": {
 							"en": "Key pressed 3 times",
-							"no": "Knapp presset 3 ganger",
 							"nl": "Knop 3 keer indrukken"
 						}
 					},
@@ -222,7 +198,6 @@
 						"id": "4",
 						"label": {
 							"en": "Key hold down",
-							"no": "Knapp holdt nede",
 							"nl": "Knop ingedrukt houden"
 						}
 					}
@@ -234,7 +209,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Input 2 scenes",
-					"no": "Inngang 2 scener",
 					"nl": "Ingang 2 scenes"
 				},
 				"zwave": {
@@ -246,7 +220,6 @@
 						"id": "0",
 						"label": {
 							"en": "No scenes sent",
-							"no": "Ingen scener sendt",
 							"nl": "Geen scenes verzenden"
 						}
 					},
@@ -254,7 +227,6 @@
 						"id": "1",
 						"label": {
 							"en": "Key pressed 1 time",
-							"no": "Knapp presset 1 gang",
 							"nl": "Knop 1 keer indrukken"
 						}
 					},
@@ -262,7 +234,6 @@
 						"id": "2",
 						"label": {
 							"en": "Key pressed 2 times",
-							"no": "Knapp presset 2 ganger",
 							"nl": "Knop 2 keer indrukken"
 						}
 					},
@@ -270,7 +241,6 @@
 						"id": "3",
 						"label": {
 							"en": "Key pressed 3 times",
-							"no": "Knapp presset 3 ganger",
 							"nl": "Knop 3 keer indrukken"
 						}
 					},
@@ -278,7 +248,6 @@
 						"id": "4",
 						"label": {
 							"en": "Key hold down",
-							"no": "Knapp holdt nede",
 							"nl": "Knop ingedrukt houden"
 						}
 					}
@@ -290,12 +259,10 @@
 				"$id": "63",
 				"label": {
 					"en": "Analog input report threshold",
-					"no": "Analog inngangs rapporteringsgrense",
 					"nl": "Analoge ingang rapportage drempel"
 				},
 				"hint": {
 					"en": "This parameter ({{zwaveParameterIndex}}) sets the minimum voltage change to trigger a report. Only available when Input 1 or 2 is set to analog input.",
-					"no": "Denne parameter ({{zwaveParameterIndex}}) setter minste spenning for å trigge en rapport. Kun tilgjengelig når Inngang 1 eller 2 er satt til analog inngang.",
 					"nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het minimale spanningsverschil om een rapport te verzenden. Alleen beschikbaar wanneer ingang 1 of 2 op analoge modus staat."
 				},
 				"zwave": {
@@ -315,12 +282,10 @@
 				"$id": "64",
 				"label": {
 					"en": "Analog input periodical report",
-					"no": "Analog inngang periodisk rapport",
 					"nl": "Analoge ingang periodieke raportage"
 				},
 				"hint": {
 					"en": "This parameter ({{zwaveParameterIndex}}) sets the time between sending a report with the analog measure values. Only available when Input 1 or 2 is set to analog input.",
-					"no": "Denne parameter ({{zwaveParameterIndex}}) setter tiden mellom sending av rapporter med analoge måleverdier. Kun tilgjengelig når Inngang 1 eller 2 er satt til analog.",
 					"nl": "Deze parameter ({{zwaveParameterIndex}}) zet de tijd tussen de rapporten met analoge sensorwaarden. Alleen beschikbaar wanneer ingang 1 of 2 op analoge modus staat."
 				},
 				"zwave": {
@@ -340,7 +305,6 @@
 		"type": "group",
 		"label": {
 			"en": "Output configuration",
-			"no": "Utgangskonfigurasjon",
 			"nl": "Uitgang configuratie"
 		},
 		"collapsed": false,
@@ -350,7 +314,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Output 1 mode",
-					"no": "Utgang 1 modus",
 					"nl": "Modus uitgang 1"
 				},
 				"zwave": {
@@ -362,7 +325,6 @@
 						"id": "0",
 						"label": {
 						"en": "Normally open contact, closed when active",
-						"no": "Normalt åpen kontakt, lukket når aktiv",
 						"nl": "Normaal open contact, gesloten wanneer actief"
 						}
 					},
@@ -370,7 +332,6 @@
 						"id": "1",
 						"label": {
 						"en": "Normally closed contact, opened when active",
-						"no": "Normalt lukket kontakt, åpen når aktiv",
 						"nl": "Normaal gesloten contact, geopend wanneer actief"
 						}
 					}
@@ -382,7 +343,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Output 2 mode",
-					"no": "Utgang 2 modus",
 					"nl": "Modus uitgang 2"
 				},
 				"zwave": {
@@ -394,7 +354,6 @@
 						"id": "0",
 						"label": {
 						"en": "Normally open contact, closed when active",
-						"no": "Normalt åpen kontakt, lukket når aktiv",
 						"nl": "Normaal open contact, gesloten wanneer actief"
 						}
 					},
@@ -402,7 +361,6 @@
 						"id": "1",
 						"label": {
 						"en": "Normally closed contact, opened when active",
-						"no": "Normalt lukket kontakt, åpen når aktiv",
 						"nl": "Normaal gesloten contact, geopend wanneer actief"
 						}
 					}
@@ -414,7 +372,6 @@
 				"type": "dropdown",
 				"label": {
 					"en": "Output orientation",
-					"no": "Utgangsorientering",
 					"nl": "Uitgang orientatie"
 				},
 				"zwave": {
@@ -423,7 +380,6 @@
 				},
 				"hint": {
 					"en": "This parameter ({{zwaveParameterIndex}}) inverts the outputs. When inverted, physical output 1 will trigger when output 1 is controlled and vice versa.",
-					"no": "Denne parameter ({{zwaveParameterIndex}}) inverterer utgangene. Når invertert, vil utgang 1 trigge når utgang 2 er kontroller osv.",
 					"nl": "Deze parameter ({{zwaveParameterIndex}}) inverteerd de uitgangen. Wanneer geïnverteerd zal fysieke uitgang 1 worden bestuurd via uitgang 2 en andersom."
 				},
 				"values": [
@@ -431,7 +387,6 @@
 						"id": "0",
 						"label": {
 						"en": "Default",
-						"no": "Standard",
 						"nl": "Standaard"
 						}
 					},
@@ -439,7 +394,6 @@
 						"id": "1",
 						"label": {
 						"en": "Inverted",
-						"no": "Invertert",
 						"nl": "Omgedraaid"
 						}
 					}
@@ -452,7 +406,6 @@
 		"type": "group",
 		"label": {
 			"en": "Internal temperature sensor",
-			"no": "Intern temperatursensor",
 			"nl": "Interne temperatuurssensor"
 		},
 		"collapsed": false,
@@ -492,7 +445,6 @@
 		"type": "group",
 		"label": {
 			"en": "External temperature sensor(s)",
-			"no": "Ekstern(e) temperatursensor(er)",
 			"nl": "Externe temperatuurssensor(en)"
 		},
 		"collapsed": false,

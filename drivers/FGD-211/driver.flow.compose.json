@@ -4,12 +4,10 @@
       "id": "FGD-211_momentary",
       "title": {
         "en": "Dimmer scene (momentary)",
-        "no": "Dimmer scene (momentan)",
         "nl": "Dimmer scene (pulsdruk)"
       },
       "hint": {
         "en": "This Flow Trigger will only get activated if the switch type setting is set to \"Momentary switch\".",
-        "no": "Denne Flow triggeren, vil kun bli aktivert hvis bryterinnstillingen er satt til \"Momentanbryter\".",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de instelling schakelaar type op \"Pulsdruk schakelaar\" is ingesteld."
       },
       "args": [
@@ -21,7 +19,6 @@
               "id": "16",
               "label": {
                 "en": "Pressed left (S1) 1x",
-                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             },
@@ -29,7 +26,6 @@
               "id": "26",
               "label": {
                 "en": "Pressed right (S2) 1x",
-                "no": "Trykket høyre (S2) 1x",
                 "nl": "Rechts (S2) 1x ingedrukt"
               }
             },
@@ -37,7 +33,6 @@
               "id": "14",
               "label": {
                 "en": "Pressed left (S1) 2x",
-                "no": "Trykket venstre (S1) 2x",
                 "nl": "Links (S1) 2x ingedrukt"
               }
             },
@@ -45,7 +40,6 @@
               "id": "24",
               "label": {
                 "en": "Pressed right (S2) 2x",
-                "no": "Trykket høyre (S2) 2x",
                 "nl": "Rechts (S2) 2x ingedrukt"
               }
             },
@@ -53,7 +47,6 @@
               "id": "15",
               "label": {
                 "en": "Pressed left (S1) 3x",
-                "no": "Trykket venstre (S1) 3x",
                 "nl": "Links (S1) 3x ingedrukt"
               }
             },
@@ -61,7 +54,6 @@
               "id": "25",
               "label": {
                 "en": "Pressed right (S2) 3x",
-                "no": "Trykket høyre (S2) 3x",
                 "nl": "Rechts (S2) 3x ingedrukt"
               }
             },
@@ -69,7 +61,6 @@
               "id": "12",
               "label": {
                 "en": "Long press left (S1)",
-                "no": "Langt trykk venstre (S2)",
                 "nl": "Links (S1) lang drukken"
               }
             },
@@ -77,7 +68,6 @@
               "id": "22",
               "label": {
                 "en": "Long press right (S2)",
-                "no": "Langt trykk høyre (S2)",
                 "nl": "Rechts (S2) lang drukken"
               }
             },
@@ -85,7 +75,6 @@
               "id": "13",
               "label": {
                 "en": "Long press left (S1) released",
-                "no": "Langt trykk venstre (S1) sluppet",
                 "nl": "Links (S1) lang drukken gestopt"
               }
             },
@@ -93,7 +82,6 @@
               "id": "23",
               "label": {
                 "en": "Long press right (S2) released",
-                "no": "Langt trykk høyre (S2) sluppet",
                 "nl": "Rechts (S2) lang drukken gestopt"
               }
             }
@@ -105,12 +93,10 @@
       "id": "FGD-211_toggle",
       "title": {
         "en": "Dimmer scene (toggle)",
-        "no": "Dimmer scene (veksle)",
         "nl": "Dimmer scene (tuimel)"
       },
       "hint": {
         "en": "This Flow Trigger will only get activated if the switch type setting is set to \"Toggle Switch\". Extra setting options: * = Bistable switch: same direction, ** = Bistable switch: toggle output",
-        "no": "Denne Flow trigger vil kun bli aktivert hvis bryterinnstillingen er satt til \"Vekslebryter\". Ekstra innstillinger: * = Bistabil bryter: Samme retning, ** = Bistabil bryter: veksle utgang",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de instelling schakelaar type op \"Tuimel Schakelaar\" is ingesteld. Extra instelling opties: * = Bistabiele schakelaar: zelfde richting, ** = Bistabiele schakelaar: schakelt uitgang"
       },
       "args": [
@@ -122,7 +108,6 @@
               "id": "11",
               "label": {
                 "en": "Left (S1) on to off *",
-                "no": "Venstre (S1) på til av *",
                 "nl": "Links (S1) aan naar uit *"
               }
             },
@@ -130,7 +115,6 @@
               "id": "10",
               "label": {
                 "en": "Left (S1) off to on *",
-                "no": "Venstre (S1) av til på *",
                 "nl": "Links (S1) uit naar aan *"
               }
             },
@@ -138,7 +122,6 @@
               "id": "12",
               "label": {
                 "en": "Left (S1) lamp on **",
-                "no": "Venstre (S1) lampe på **",
                 "nl": "Links (S1) lamp aan **"
               }
             },
@@ -146,7 +129,6 @@
               "id": "13",
               "label": {
                 "en": "Left (S1) lamp off **",
-                "no": "Venstre (S1) lampe av **",
                 "nl": "Links (S1) lamp uit **"
               }
             },
@@ -154,7 +136,6 @@
               "id": "21",
               "label": {
                 "en": "Right (S2) on to off *",
-                "no": "Høyre (S1) på til av *",
                 "nl": "Rechts (S2) aan naar uit *"
               }
             },
@@ -162,7 +143,6 @@
               "id": "20",
               "label": {
                 "en": "Right (S2) off to on *",
-                "no": "Høyre (S2) av til på *",
                 "nl": "Rechts (S2) uit naar aan *"
               }
             },
@@ -170,7 +150,6 @@
               "id": "22",
               "label": {
                 "en": "Right (S2) lamp on **",
-                "no": "Høyre (S2) lampe på **",
                 "nl": "Rechts (S2) lamp aan **"
               }
             },
@@ -178,7 +157,6 @@
               "id": "23",
               "label": {
                 "en": "Right (S2) lamp off **",
-                "no": "Høyre (S2) lampe av **",
                 "nl": "Rechts (S2) lamp uit **"
               }
             },
@@ -186,7 +164,6 @@
               "id": "14",
               "label": {
                 "en": "Switched left (S1) 2x",
-                "no": "Trykket venstre (S1) 2x",
                 "nl": "Links (S1) 2x geschakeld"
               }
             },
@@ -194,7 +171,6 @@
               "id": "24",
               "label": {
                 "en": "Switched right (S2) 2x",
-                "no": "Trykket høyre (S2) 2x",
                 "nl": "Rechts (S2) 2x geschakeld"
               }
             },
@@ -202,7 +178,6 @@
               "id": "15",
               "label": {
                 "en": "Switched left (S1) 3x",
-                "no": "Trykket venstre (S1) 3x",
                 "nl": "Links (S1) 3x feschakeld"
               }
             },
@@ -210,7 +185,6 @@
               "id": "25",
               "label": {
                 "en": "Switched right (S2) 3x",
-                "no": "Trykket høyre (S2) 3x",
                 "nl": "Rechts (S2) 3x geschakeld"
               }
             }
@@ -222,12 +196,10 @@
       "id": "FGD-211_roller",
       "title": {
         "en": "Dimmer scene (roller Shutter)",
-        "en": "Dimmer scene (Rullegardin)",
         "nl": "Dimmer scene (rolgordijn)"
       },
       "hint": {
         "en": "This Flow Trigger will only get activated if the switch type setting is set to \"Roller shutter switch\".",
-        "no": "Denne Flow trigger vil kun bli aktivert hvis bryterinnstilling er satt til \"Rullegardin\".",
         "nl": "Deze Flow Trigger wordt alleen geactiveerd als de instelling schakelaar type op \"Rolgordijn schakelaar\" is ingesteld."
       },
       "args": [
@@ -239,7 +211,6 @@
               "id": "10",
               "label": {
                 "en": "Pressed left (S1) 1x",
-                "no": "Trykket venstre (S1) 1x",
                 "nl": "Links (S1) 1x ingedrukt"
               }
             },
@@ -247,7 +218,6 @@
               "id": "11",
               "label": {
                 "en": "Pressed right (S2) 1x",
-                "no": "Trykket høyre (S2) 1x",
                 "nl": "Rechts (S2) 1x ingedrukt"
               }
             },
@@ -255,7 +225,6 @@
               "id": "14",
               "label": {
                 "en": "Pressed 2x left (S1)",
-                "no": "Trykket 2x venstre (S1)",
                 "nl": "2x ingedrukt links (S1)"
               }
             },
@@ -263,7 +232,6 @@
               "id": "15",
               "label": {
                 "en": "Pressed 3x left (S1)",
-                "no": "Trykket 3x venstre (S1)",
                 "nl": "Links (S1) 3x ingedrukt"
               }
             },
@@ -271,7 +239,6 @@
               "id": "25",
               "label": {
                 "en": "Pressed 3x right (S2)",
-                "no": "Trykket 3x høyre (S2)",
                 "nl": "Rechts (S2) 3x ingedrukt"
               }
             },
@@ -279,7 +246,6 @@
               "id": "17",
               "label": {
                 "en": "Long press left (S1)",
-                "no": "Langt trykk venstre (S1)",
                 "nl": "Links (S2) lang drukken"
               }
             },
@@ -287,7 +253,6 @@
               "id": "18",
               "label": {
                 "en": "Long press right (S2)",
-                "no": "Langt trykk høyre (S2)",
                 "nl": "Rechts (S2) lang drukken"
               }
             },
@@ -295,7 +260,6 @@
               "id": "13",
               "label": {
                 "en": "Long press released (left (S1) or right (S2))",
-                "no": "Langt trykk sluppet (venstre (S1) eller høyre (S2))",
                 "nl": "Lang drukken gestopt (links (S1) of rechts (S2))"
               }
             }

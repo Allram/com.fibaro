@@ -2,12 +2,10 @@
   "type": "number",
   "label": {
     "en": "Auto-off delay",
-    "no": "Auto-av forsinkelse",
     "nl": "Vertraging automatisch uitschakelen"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the time after which the {{driverNameEn}} will automatically turn off.",
-    "no": "Denne parameteren ({{zwaveParameterIndex}}) bestemmer tiden etter {{driverNameEn}} automatisk vil skru seg av.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd waarna de {{driverNameNl}} automatisch uit gaat."
   },
   "attr": {

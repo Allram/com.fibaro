@@ -6,7 +6,6 @@
       "id": "FGWPx-102-PLUS_led_on",
       "title": {
         "en": "LED Colour, On State",
-        "no": "LED farge, På modus",
         "nl": "LED Kleur, Aan Status"
       },
       "args": [
@@ -18,7 +17,6 @@
               "id": "1",
               "label": {
                 "en": "Power: Predefined Colours",
-                "no": "Strøm: Predefinerte farger",
                 "nl": "Energie: Vooringestelde Kleuren"
               }
             },
@@ -26,7 +24,6 @@
               "id": "2",
               "label": {
                 "en": "Power: Full Colour Spectrum",
-                "no": "Strøm: Fullt fargespekter",
                 "nl": "Energie: Volledig Kleuren Spectrum"
               }
             },
@@ -34,7 +31,6 @@
               "id": "3",
               "label": {
                 "en": "White",
-                "no": "Hvit",
                 "nl": "Wit"
               }
             },
@@ -42,7 +38,6 @@
               "id": "4",
               "label": {
                 "en": "Red",
-                "no": "Rød",
                 "nl": "Rood"
               }
             },
@@ -50,7 +45,6 @@
               "id": "5",
               "label": {
                 "en": "Green",
-                "no": "Grønn",
                 "nl": "Groen"
               }
             },
@@ -58,7 +52,6 @@
               "id": "6",
               "label": {
                 "en": "Blue",
-                "no": "Blå",
                 "nl": "Blauw"
               }
             },
@@ -66,7 +59,6 @@
               "id": "7",
               "label": {
                 "en": "Yellow",
-                "no": "Gul",
                 "nl": "Geel"
               }
             },
@@ -74,7 +66,6 @@
               "id": "8",
               "label": {
                 "en": "Cyan",
-                "no": "Cyan",
                 "nl": "Cyaan"
               }
             },
@@ -82,7 +73,6 @@
               "id": "9",
               "label": {
                 "en": "Magenta",
-                "no": "Magenta",
                 "nl": "Magenta"
               }
             },
@@ -90,7 +80,6 @@
               "id": "0",
               "label": {
                 "en": "LED Off",
-                "no": "LED av",
                 "nl": "LED Uit"
               }
             }
@@ -102,7 +91,6 @@
       "id": "FGWPx-102-PLUS_led_off",
       "title": {
         "en": "LED Colour, Off State",
-        "no": "LED farge, Av modus",
         "nl": "LED Kleur, Uit Status"
       },
       "args": [
@@ -114,7 +102,6 @@
               "id": "1",
               "label": {
                 "en": "Last Colour before off",
-                "no": "Siste farge før av",
                 "nl": "Laatste Kleur voor uit"
               }
             },
@@ -122,7 +109,6 @@
               "id": "3",
               "label": {
                 "en": "White",
-                "no": "Hvit",
                 "nl": "Wit"
               }
             },
@@ -130,7 +116,6 @@
               "id": "4",
               "label": {
                 "en": "Red",
-                "no": "Rød",
                 "nl": "Rood"
               }
             },
@@ -138,7 +123,6 @@
               "id": "5",
               "label": {
                 "en": "Green",
-                "no": "Grønn",
                 "nl": "Groen"
               }
             },
@@ -146,7 +130,6 @@
               "id": "6",
               "label": {
                 "en": "Blue",
-                "no": "Blå",
                 "nl": "Blauw"
               }
             },
@@ -154,7 +137,6 @@
               "id": "7",
               "label": {
                 "en": "Yellow",
-                "no": "Gul",
                 "nl": "Geel"
               }
             },
@@ -162,7 +144,6 @@
               "id": "8",
               "label": {
                 "en": "Cyan",
-                "no": "Cyan",
                 "nl": "Cyaan"
               }
             },
@@ -170,7 +151,6 @@
               "id": "9",
               "label": {
                 "en": "Magenta",
-                "no": "Magenta",
                 "nl": "Magenta"
               }
             },
@@ -178,7 +158,6 @@
               "id": "0",
               "label": {
                 "en": "LED Off",
-                "no": "LED av",
                 "nl": "LED Uit"
               }
             }

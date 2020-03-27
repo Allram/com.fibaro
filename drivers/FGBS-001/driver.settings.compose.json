@@ -3,7 +3,6 @@
 		"type": "group",
 		"label": {
 			"en": "Input configuration",
-			"no": "Inngangskonfigurasjon",
 			"nl": "Ingang configuratie"
 		},
 		"collapsed": false,
@@ -13,7 +12,6 @@
 				"$id": "3",
 				"label": {
 					"en": "Type input 1",
-					"no": "Type inngang 1",
 					"nl": "Type ingang 1"
 				},
 				"zwave": {
@@ -26,7 +24,6 @@
 				"$id": "4",
 				"label": {
 					"en": "Type input 2",
-					"no": "Type inngang 1",
 					"nl": "Type ingang 2"
 				},
 				"zwave": {
@@ -40,7 +37,6 @@
 		"type": "group",
 		"label": {
 			"en": "Temperature sensor",
-			"no": "Temperatursensor",
 			"nl": "Temperatuurssensor"
 		},
 		"collapsed": false,

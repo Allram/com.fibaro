@@ -1,7 +1,6 @@
 {
     "name": {
       "en": "Motion Sensor",
-      "no": "Bevegelsesmelder",
       "nl": "Bewegingssensor"
     },
     "class": "sensor",
@@ -28,13 +27,11 @@
         4097,
         12289
       ],
-      "includeSecure": false,
       "zwaveAllianceProductId": 1048,
       "learnmode": {
         "image": "{{driverAssetsPath}}/learnmode.svg",
         "instruction": {
           "en": "Press the button on your Fibaro Motion Sensor three times",
-          "no": "Trykk på knappen på din Fibaro Bevegelsesmelder tre ganger",
           "nl": "Druk driemaal op de knop op de Fibaro Bewegingssensor"
         }
       },

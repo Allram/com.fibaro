@@ -1,7 +1,6 @@
 {
   "name": {
     "en": "Wall plug (Z-Wave plus)",
-    "no": "Veggplugg (Z-Wave plus)",
     "nl": "Tussenstekker (Z-Wave plus)"
   },
   "class": "socket",
@@ -43,14 +42,12 @@
       45057,
       45059
     ],
-    "includeSecure": false,
     "zwaveAllianceProductId": 1653,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1653/FGWPx-102-EN-A-v2.0 29.01.2016-3.pdf",
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Insert the {{driverNameEn}} in a socket or press the button on your {{driverNameEn}} three times",
-        "no": "Sett inn {{driverNameNo}} i en stikkontakt eller trykk på knappen på {{driverNameNo}} tre ganger",
         "nl": "Stop de {{driverNameNl}} in het stopcontact of druk driemaal op de knop op de {{driverNameNl}}"
       }
     },
@@ -60,8 +57,7 @@
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": "“Lifeline” reports the device status and allows\r\nfor assigning single device only (main controller by default).",
-          "no": "“Lifeline” rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard)."
+          "en": "“Lifeline” reports the device status and allows\r\nfor assigning single device only (main controller by default)."
         }
       }
     }

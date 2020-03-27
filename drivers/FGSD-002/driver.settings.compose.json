@@ -3,7 +3,6 @@
     "type": "group",
     "label": {
       "en": "Smokesensor",
-      "no": "Røykdetektor",
       "nl": "Rookmelder"
     },
     "collapsed": false,
@@ -13,13 +12,11 @@
         "type": "dropdown",
         "label": {
           "en": "Smoke sensitivity",
-          "no": "Røyksensitivitet",
           "nl": "Rook gevoeligheid"
         },
         "value": "2",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the sensitivity of the smoke alarm. It is not recommended to change this value.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer sensitiviteten på røykdetektoren. Det er ikke anbefalt å endre denne verdien.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de gevoeligheid van het rookalarm. Het is niet aan te raden om deze waarde te veranderen."
         },
         "zwave": {
@@ -31,7 +28,6 @@
             "id": "1",
             "label": {
               "en": "Low",
-              "no": "Lav",
               "nl": "Laag"
             }
           },
@@ -39,7 +35,6 @@
             "id": "2",
             "label": {
               "en": "Middle",
-              "no": "Medium",
               "nl": "Middel"
             }
           },
@@ -47,7 +42,6 @@
             "id": "3",
             "label": {
               "en": "High",
-              "no": "Høy",
               "nl": "Hoog"
             }
           }
@@ -59,7 +53,6 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
-      "no": "Temperatursensor",
       "nl": "Temperatuursensor"
     },
     "collapsed": false,
@@ -109,7 +102,6 @@
     "type": "group",
     "label": {
       "en": "Visual and acoustic notifications",
-      "no": "Visuelle og akustiske notifikasjoner",
       "nl": "Visuele en akoestische notificaties"
     },
     "collapsed": false,
@@ -119,13 +111,11 @@
         "type": "dropdown",
         "label": {
           "en": "Visual notification",
-          "no": "Visuelle notifikasjoner",
           "nl": "Visuele meldingen"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the LED.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen på LED.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de LED."
         },
         "zwave": {
@@ -137,7 +127,6 @@
             "id": "0",
             "label": {
               "en": "No notifications",
-              "no": "Ingen varsling",
               "nl": "Geen meldingen"
             }
           },
@@ -145,7 +134,6 @@
             "id": "1",
             "label": {
               "en": "Casing opened",
-              "no": "Enhet åpnet",
               "nl": "Behuizing geopend"
             }
           },
@@ -153,7 +141,6 @@
             "id": "2",
             "label": {
               "en": "Temperature too high",
-              "no": "Temperatur for høy",
               "nl": "Temperatuur te hoog"
             }
           },
@@ -161,7 +148,6 @@
             "id": "3",
             "label": {
               "en": "Casing opened and temperature too high",
-              "no": "Enhet åpnet og temperatur for høy",
               "nl": "Behuizing geopend en temperatuur te hoog"
             }
           },
@@ -169,7 +155,6 @@
             "id": "4",
             "label": {
               "en": "Lack of Z-Wave range",
-              "no": "For dårlig Z-Wave rekkevidde",
               "nl": "Te weinig Z-Wave bereik"
             }
           },
@@ -177,7 +162,6 @@
             "id": "5",
             "label": {
               "en": "Casing opened and lack of Z-Wave range",
-              "no": "Enhet åpnet og for dårlig rekkevidde på Z-Wave",
               "nl": "Behuizing geopend en te weinig Z-Wave bereik"
             }
           },
@@ -185,7 +169,6 @@
             "id": "6",
             "label": {
               "en": "Temperature too high and lack of Z-Wave range",
-              "no": "Temperatur for høy og for dårlig rekkevidde på Z-Wave",
               "nl": "Temperatuur te hoog en te weinig Z-Wave bereik"
             }
           },
@@ -193,7 +176,6 @@
             "id": "7",
             "label": {
               "en": "All notifications above",
-              "no": "Alle varsler ovenfor",
               "nl": "Alle meldingen hierboven"
             }
           }
@@ -204,13 +186,11 @@
         "type": "dropdown",
         "label": {
           "en": "Acoutic notification",
-          "no": "Akustiske varsler",
           "nl": "Akoestische meldingen"
         },
         "value": "0",
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the accoustic behaviour.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer den akkustiske varslingen.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het akoestische gedrag."
         },
         "zwave": {
@@ -222,7 +202,6 @@
             "id": "0",
             "label": {
               "en": "No notifications",
-              "no": "Ingen varsling",
               "nl": "Geen meldingen"
             }
           },
@@ -230,7 +209,6 @@
             "id": "1",
             "label": {
               "en": "Casing opened",
-              "no": "Enhet åpnet",
               "nl": "Behuizing geopend"
             }
           },
@@ -238,7 +216,6 @@
             "id": "2",
             "label": {
               "en": "Temperature too high",
-              "no": "Temperatur for høy",
               "nl": "Temperatuur te hoog"
             }
           },
@@ -246,7 +223,6 @@
             "id": "3",
             "label": {
               "en": "Casing opened and temperature too high",
-              "no": "Enhet åpnet og temperatur for høy",
               "nl": "Behuizing geopend en temperatuur te hoog"
             }
           },
@@ -254,7 +230,6 @@
             "id": "4",
             "label": {
               "en": "Lack of Z-Wave range",
-              "no": "For dårlig Z-Wave rekkevidde",
               "nl": "Te weinig Z-Wave bereik"
             }
           },
@@ -262,7 +237,6 @@
             "id": "5",
             "label": {
               "en": "Casing opened and lack of Z-Wave range",
-              "no": "Enhet åpnet og for dårlig rekkevidde på Z-Wave",
               "nl": "Behuizing geopend en te weinig Z-Wave bereik"
             }
           },
@@ -270,7 +244,6 @@
             "id": "6",
             "label": {
               "en": "Temperature too high and lack of Z-Wave range",
-              "no": "Temperatur for høy og for dårlig rekkevidde på Z-Wave",
               "nl": "Temperatuur te hoog en te weinig Z-Wave bereik"
             }
           },
@@ -278,7 +251,6 @@
             "id": "7",
             "label": {
               "en": "All notifications above",
-              "no": "Alle varsler ovenfor",
               "nl": "Alle meldingen hierboven"
             }
           }

@@ -2,12 +2,10 @@
   "value": true,
   "label": {
     "en": "Enable alarm cancellation",
-    "no": "Aktiver alarmkansellering",
     "nl": "Schakel annulering in"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) allows to enable/disable cancellation of alarms.",
-    "no": "Denne parameteren ({{zwaveParameterIndex}}) tillater å aktivere/deaktivere kansellering av alarmer.",
     "nl": "Deze paramter ({{zwaveParameterIndex}}) bepaalt of de annulering van het alarm in-/uitgeschakeld is."
   },
   "zwave": {

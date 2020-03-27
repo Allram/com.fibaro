@@ -17,42 +17,36 @@
     "alarm_generic.contact1": {
       "title": {
         "en": "Input 1",
-        "no": "Inngang 1",
         "nl": "Ingang 1"
       }
     },
     "alarm_generic.contact2": {
       "title": {
         "en": "Input 2",
-        "no": "Inngang 2",
         "nl": "Ingang 2"
       }
     },
     "measure_temperature.sensor1": {
       "title": {
         "en": "Temperature Sensor 1",
-        "no": "Temperatur Sensor 1",
         "nl": "Temperatuur Sensor 1"
       }
     },
     "measure_temperature.sensor2": {
       "title": {
         "en": "Temperature Sensor 2",
-        "no": "Temperatur Sensor 2",
         "nl": "Temperatuur Sensor 2"
       }
     },
     "measure_temperature.sensor3": {
       "title": {
         "en": "Temperature Sensor 3",
-        "no": "Temperatur Sensor 3",
         "nl": "Temperatuur Sensor 3"
       }
     },
     "measure_temperature.sensor4": {
       "title": {
         "en": "Temperature Sensor 4",
-        "no": "Temperatur Sensor 4",
         "nl": "Temperatuur Sensor 4"
       }
     }
@@ -71,12 +65,10 @@
       8194,
       12290
     ],
-    "includeSecure": false,
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times.",
-        "no": "Trykk på knappen på {{driverNameNo}} tre ganger.",
         "nl": "Druk driemaal op de knop van uw {{driverNameNl}}."
       }
     },

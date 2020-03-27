@@ -1,7 +1,6 @@
 {
   "name": {
     "en": "Door/Window Sensor (Z-Wave plus)",
-    "no": "Dør/Vindussensor (Z-Wave plus)",
     "nl": "Deur/Raam Sensor (Z-Wave plus)"
   },
   "class": "sensor",
@@ -42,7 +41,6 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your Fibaro Door/Window Sensor three times",
-        "no": "Trykk på knappen på din Fibaro Dør/Vindussensor tre ganger.",
         "nl": "Druk driemaal op de knop op de Fibaro Deur/Raam Sensor"
       }
     },

@@ -32,20 +32,17 @@
       40960,
       45056
     ],
-    "includeSecure": false,
     "zwaveAllianceProductId": 2064,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/2064/FGKF-601-EN-T-v1.0_30.11.2016.pdf",
     "learnmode": {
       "instruction": {
         "en": "Press any button on the {{driverNameEn}} 3 times.",
-        "no": "Trykk hvilken som helst knapp på {{driverNameNo}} 3 ganger.",
         "nl": "Druk driemaal op een willekeurige knop op de {{driverNameNl}}."
       }
     },
     "unlearnmode": {
       "instruction": {
         "en": "Press O and – shortly at the same time, then press Δ or X shortly until the LED is green, finally press + to confirm the removal.",
-        "no": "Trykk kort på O og – samtidig, trykk så kort på Δ eller X frem til LED er grønn, Trykk så på + for å bekrefte fjerning.",
         "nl": "Druk O en – tegelijkertijd kort in, druk vervolgens kort op Δ of X tot de LED groen is, druk als laatste stap + kort in om het verwijderen te bevestigen."
       }
     },
@@ -62,91 +59,78 @@
       "1": {
         "hint": {
           "en": "Lifeline reports the device status and allows for assigning a single device only (main controller by default).",
-          "no": "Lifeline rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard).",
           "nl": "Lifeline rapporteert de status van het apparaat en staat maar 1 geassocieerd apparaat toe."
         }
       },
       "2": {
         "hint": {
           "en": "Square (□) - on/off is assigned to clicking the □ button and is used to turn on/off associated devices.",
-          "no": "Firkant (□) - på/av er tildelt trykking på □ knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Vierkant (□) - aan/uit is toegewezen aan het klikken van de □ en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "3": {
         "hint": {
           "en": "Square (□) - multilevel is assigned to clicking and holding the □ button and is used to turn on/off and change level of associated devices.",
-          "no": "Firkant (□) - multinivå på/av er tildelt trykking på □ knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Vierkant (□) - multilevel is toegewezen aan het klikken en vasthouden van de □ knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       },
       "4": {
         "hint": {
           "en": "Circle (○) - on/off is assigned to clicking the ○ button and is used to turn on/off associated devices.",
-          "no": "Sirkel (○) - på/av er tildelt trykking på ○ knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Cirkel (○) - aan/uit is toegewezen aan het klikken van de ○ en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "5": {
         "hint": {
           "en": "Circle (○) - multilevel is assigned to clicking and holding the ○ button and is used to turn on/off and change level of associated devices.",
-          "no": "Sirkel (○) - multinivå på/av er tildelt trykking på ○ knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Cirkel (○) - multilevel is toegewezen aan het klikken en vasthouden van de ○ knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       },
       "6": {
         "hint": {
           "en": "Cross (x) - on/off is assigned to clicking the ⨉ button and is used to turn on/off associated devices.",
-          "no": "Kryss (x) - på/av er tildelt trykking på ⨉ knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Kruis (x) - aan/uit is toegewezen aan het klikken van de ⨉ en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "7": {
         "hint": {
           "en": "Cross (x) - multilevel is assigned to clicking and holding the ⨉ button and is used to turn on/off and change level of associated devices.",
-          "no": "Cross (x) - multinivå på/av er tildelt trykking på ⨉ knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Kruis (x) - multilevel is toegewezen aan het klikken en vasthouden van de ⨉ knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       },
       "8": {
         "hint": {
           "en": "Triangle (△) - on/off is assigned to clicking the △ button and is used to turn on/off associated devices.",
-          "no": "Trekant (△) - på/av er tildelt trykking på △ knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Driehoek (△) - aan/uit is toegewezen aan het klikken van de △ en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "9": {
         "hint": {
           "en": "Triangle (△) - multilevel is assigned to clicking and holding the △ button and is used to turn on/off and change level of associated devices.",
-          "no": "Triangle (△) - multinivå på/av er tildelt trykking på △ knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Driehoek (△) - multilevel is toegewezen aan het klikken en vasthouden van de △ knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       },
       "10": {
         "hint": {
           "en": "Minus (-) - on/off is assigned to clicking the - button and is used to turn on/off associated devices.",
-          "no": "Minus (-) - på/av er tildelt trykking på - knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Min (-) - aan/uit is toegewezen aan het klikken van de - en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "11": {
         "hint": {
           "en": "Minus (-) - multilevel is assigned to clicking and holding the - button and is used to turn on/off and change level of associated devices.",
-          "no": "Minus (-) - multinivå på/av er tildelt trykking på - knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Min (-) - multilevel is toegewezen aan het klikken en vasthouden van de - knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       },
       "12": {
         "hint": {
           "en": "Plus (+) - on/off is assigned to clicking the + button and is used to turn on/off associated devices.",
-          "no": "Pluss (+) - på/av er tildelt trykking på + knappen og brukes til å skru på/av assosierte enheter.",
           "nl": "Plus (+) - aan/uit is toegewezen aan het klikken van de + en wordt gebruikt voor het aan/uit schakelen van geassocieerde apparaten."
         }
       },
       "13": {
         "hint": {
           "en": "Plus (+) - multilevel is assigned to clicking and holding the + button and is used to turn on/off and change level of associated devices.",
-          "no": "Plus (+) - multinivå på/av er tildelt trykking på + knappen og brukes til å skru på/av assosierte enheter og endre nivå på assosierte enheter.",
           "nl": "Plus (+) - multilevel is toegewezen aan het klikken en vasthouden van de + knop en wordt gebruikt voor het aan/uit schakelen en niveau veranderen van geassocieerde apparaten."
         }
       }

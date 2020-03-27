@@ -4,12 +4,10 @@
       "id": "FGKF-601-scene",
       "title": {
         "en": "Keyfob buttons",
-        "no": "Keyfob knapper",
         "nl": "Keyfob knoppen"
       },
       "hint": {
         "en": "In order to use \"Pressed 2x/3x\" enable this functionality in the device settings.",
-        "no": "For å bruke \"Trykket 2x/3x\" aktiver denne funksjonen i enhetenes innstillinger.",
         "nl": "Om gebruik te maken van \"2x/3x ingedrukt\" schakel deze functionaliteit in via de apparaat instellingen."
       },
       "args": [
@@ -21,7 +19,6 @@
               "id": "1",
               "label": {
                 "en": "Square (□)",
-                "no": "Firkant (□)",
                 "nl": "Vierkant (□)"
               }
             },
@@ -29,7 +26,6 @@
               "id": "2",
               "label": {
                 "en": "Circle (○)",
-                "no": "Sirkel (○)",
                 "nl": "Cirkel (○)"
               }
             },
@@ -37,7 +33,6 @@
               "id": "3",
               "label": {
                 "en": "Cross (x)",
-                "no": "Kryss (x)",
                 "nl": "Kruis (x)"
               }
             },
@@ -45,7 +40,6 @@
               "id": "4",
               "label": {
                 "en": "Triangle (△)",
-                "no": "Trekant (△)",
                 "nl": "Driehoek (△)"
               }
             },
@@ -53,7 +47,6 @@
               "id": "5",
               "label": {
                 "en": "Minus (-)",
-                "no": "Minus (-)",
                 "nl": "Min (-)"
               }
             },
@@ -61,7 +54,6 @@
               "id": "6",
               "label": {
                 "en": "Plus (+)",
-                "no": "Pluss (+)",
                 "nl": "Plus (+)"
               }
             }
@@ -75,7 +67,6 @@
               "id": "Key Pressed 1 time",
               "label": {
                 "en": "Pressed 1x",
-                "no": "Trykket 1x",
                 "nl": "1x ingedrukt"
               }
             },
@@ -83,7 +74,6 @@
               "id": "Key Pressed 2 times",
               "label": {
                 "en": "Pressed 2x",
-                "no": "Trykket 2x",
                 "nl": "2x ingedrukt"
               }
             },
@@ -91,7 +81,6 @@
               "id": "Key Pressed 3 times",
               "label": {
                 "en": "Pressed 3x",
-                "no": "Trykket 3x",
                 "nl": "3x ingedrukt"
               }
             },
@@ -99,7 +88,6 @@
               "id": "Key Held Down",
               "label": {
                 "en": "Long press",
-                "no": "Langt trykk",
                 "nl": "Lang drukken"
               }
             },
@@ -107,7 +95,6 @@
               "id": "Key Released",
               "label": {
                 "en": "Long press released",
-                "no": "Langt trykk sluppet",
                 "nl": "Lang drukken gestopt"
               }
             }
@@ -119,12 +106,10 @@
       "id": "FGKF-601-sequence",
       "title": {
         "en": "Keyfob sequence",
-        "no": "Keyfob sekvenser",
         "nl": "Keyfob reeks"
       },
       "hint": {
         "en": "First configure the sequences in the device settings panel of the Keyfob.",
-        "no": "Først, konfigurer sekvensene i enhetens innstillinger.",
         "nl": "Stel eerst reeksen in via de apparaat instellingen van de Keyfob."
       },
       "args": [
@@ -136,7 +121,6 @@
               "id": "7",
               "label": {
                 "en": "Sequence 1",
-                "no": "Sekvens 1",
                 "nl": "Reeks 1"
               }
             },
@@ -144,7 +128,6 @@
               "id": "8",
               "label": {
                 "en": "Sequence 2",
-                "no": "Sekvens 2",
                 "nl": "Reeks 2"
               }
             },
@@ -152,7 +135,6 @@
               "id": "9",
               "label": {
                 "en": "Sequence 3",
-                "no": "Sekvens 3",
                 "nl": "Reeks 3"
               }
             },
@@ -160,7 +142,6 @@
               "id": "10",
               "label": {
                 "en": "Sequence 4",
-                "no": "Sekvens 4",
                 "nl": "Reeks 4"
               }
             },
@@ -168,7 +149,6 @@
               "id": "11",
               "label": {
                 "en": "Sequence 5",
-                "no": "Sekvens 5",
                 "nl": "Reeks 5"
               }
             },
@@ -176,7 +156,6 @@
               "id": "12",
               "label": {
                 "en": "Sequence 6",
-                "no": "Sekvens 6",
                 "nl": "Reeks 6"
               }
             }

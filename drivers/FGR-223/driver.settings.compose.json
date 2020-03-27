@@ -4,12 +4,10 @@
     "type": "checkbox",
     "label": {
       "en": "Start calibration",
-      "no": "Start kalibrering",
       "nl": "Start kalibratie"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) starts the calibration procedure on save.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) starter kalibreringsprosedyren når du trykker på lagre.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) start de kalibratieprocedure na het opslaan."
     },
     "zwave": {
@@ -23,12 +21,10 @@
     "type": "checkbox",
     "label": {
       "en": "Invert input",
-      "no": "Inverter inngang",
       "nl": "Keer de ingangen om"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) inverts the input direction.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) inverterer inngangen.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) keert de ingangsdirectie om."
     },
     "zwave": {
@@ -42,12 +38,10 @@
     "type": "checkbox",
     "label": {
       "en": "Invert output",
-      "no": "Inverter utgng",
       "nl": "Keer de uitgangen om"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) inverts the output direction.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) inverterer utgangen.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) keert de uitgangsdirectie om."
     },
     "zwave": {
@@ -61,7 +55,6 @@
     "$id": "switch_type",
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines what switch is connected to this device.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvilken type bryter som er tilkoblet enheten.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor een schakelaar het apparaat activeert."
     },
     "zwave": {
@@ -74,7 +67,6 @@
         "id": "0",
         "label": {
           "en": "Double, Momentary switch",
-          "no": "Dobbel, momentanbryter",
           "nl": "Dubbele pulsdrukschakelaar "
         }
       },
@@ -82,7 +74,6 @@
         "id": "1",
         "label": {
           "en": "Toggle switches",
-          "no": "Vekslebrytere",
           "nl": "Tuimelschakelaars"
         }
       },
@@ -90,7 +81,6 @@
         "id": "2",
         "label": {
           "en": "Single, momentary switch",
-          "no": "Singel, momentanbryter",
           "nl": "Enkele pulsdrukschakelaar"
         }
       }

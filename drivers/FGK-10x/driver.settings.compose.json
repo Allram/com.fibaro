@@ -3,7 +3,6 @@
     "type": "group",
     "label": {
       "en": "Contact sensor",
-      "no": "Kontaktsensor",
       "nl": "Contact sensor"
     },
     "collapsed": false,
@@ -16,7 +15,6 @@
             "id": "0",
             "label": {
               "en": "Door/Window Sensor",
-              "no": "Dør/Vindussensor",
               "nl": "Deur/Raam Sensor"
             }
           },
@@ -24,7 +22,6 @@
             "id": "1",
             "label": {
               "en": "External Switch",
-              "no": "Ekstern bryter",
               "nl": "Externe Schakelaar"
             }
           }
@@ -38,7 +35,6 @@
             "id": "0",
             "label": {
               "en": "Door/Window Opened",
-              "no": "Dør/Vindu åpnet",
               "nl": "Deur/Raam Geopend"
             }
           },
@@ -46,7 +42,6 @@
             "id": "1",
             "label": {
               "en": "Door/Window Closed",
-              "no": "Dør/Vindu lukket",
               "nl": "Deur/Raam Gesloten"
             }
           }
@@ -64,7 +59,6 @@
             "id": "0",
             "label": {
               "en": "No Indication",
-              "no": "Ingen indikasjon",
               "nl": "Geen Indicatie"
             }
           },
@@ -72,7 +66,6 @@
             "id": "1",
             "label": {
               "en": "Status Changed",
-              "no": "Statusendring",
               "nl": "Status Veranderd"
             }
           },
@@ -80,7 +73,6 @@
             "id": "2",
             "label": {
               "en": "On Wakeup",
-              "no": "Ved oppvåkning",
               "nl": "Wakker Worden"
             }
           },
@@ -88,7 +80,6 @@
             "id": "3",
             "label": {
               "en": "Status Changed & On Wakeup",
-              "no": "Statusendring & ved oppvåkning",
               "nl": "Status Veranderd & Wakker Worden"
             }
           },
@@ -96,7 +87,6 @@
             "id": "4",
             "label": {
               "en": "Tamper",
-              "no": "Sabotasje",
               "nl": "Sabotage"
             }
           },
@@ -104,7 +94,6 @@
             "id": "5",
             "label": {
               "en": "Status Changed & Tamper",
-              "no": "Status endret & sabotasje",
               "nl": "Status Veranderd & Sabotage"
             }
           },
@@ -112,7 +101,6 @@
             "id": "6",
             "label": {
               "en": "On Wakeup & Tamper",
-              "no": "Ved oppvåkning & sabotasje",
               "nl": "Wakker Worden & Sabotage"
             }
           },
@@ -120,7 +108,6 @@
             "id": "7",
             "label": {
               "en": "Status Changed & On Wakeup & Tamper",
-              "no": "Status endret & ved oppvåkning & ved sabotasje",
               "nl": "Status Veranderd & Wakker Worden & Sabotage"
             }
           }
@@ -133,7 +120,6 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
-      "no": "Temperatursensor",
       "nl": "Temperatuurssensor"
     },
     "collapsed": true,
@@ -191,7 +177,6 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
-      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,

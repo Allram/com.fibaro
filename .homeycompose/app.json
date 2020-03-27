@@ -8,8 +8,7 @@
     "version": "2.4.1",
     "compatibility": ">=3.2.0",
     "description": {
-      "en": "Fibaro devices for Homey",
-      "no": "Fibaro enheter for Homey"
+      "en": "Fibaro devices for Homey"
     },
     "category": [
       "appliances",

@@ -3,7 +3,6 @@
     "type": "group",
     "label": {
       "en": "Flood sensor",
-      "no": "Lekkasjesensor",
       "nl": "Overstromingssensor"
     },
     "collapsed": false,
@@ -29,12 +28,10 @@
         "type": "dropdown",
         "label": {
           "en": "Flood signal",
-          "no": "Lekkasjesignal",
           "nl": "Overstroming signaal"
         },
         "hint": {
           "en": "This parameter (2) determines which visual and acoustig alarms go of when a flood is detected.",
-          "no": "Denne parameter (2) bestemmer hvilke visuelle og akustiske signaler som skal aktiveres når lekkasje er observert.",
           "nl": "Deze parameter (2) bepaalt welke visuele en akoestische alarmen af gaan bij water detectie."
         },
         "zwave": {
@@ -47,7 +44,6 @@
             "id": "0",
             "label": {
               "en": "None",
-              "no": "Ingen",
               "nl": "Geen"
             }
           },
@@ -55,7 +51,6 @@
             "id": "1",
             "label": {
               "en": "Visual",
-              "no": "Visuell",
               "nl": "Visueel"
             }
           },
@@ -63,7 +58,6 @@
             "id": "2",
             "label": {
               "en": "Acoustic",
-              "no": "Akustisk",
               "nl": "Akoestisch"
             }
           },
@@ -71,7 +65,6 @@
             "id": "3",
             "label": {
               "en": "Acoustic and visual",
-              "no": "Akustisk og visuell",
               "nl": "Akoestisch en visueel"
             }
           }
@@ -110,7 +103,6 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
-      "no": "Temperatursensor",
       "nl": "Temperatuursensor"
     },
     "collapsed": true,
@@ -191,7 +183,6 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
-      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,
@@ -201,12 +192,10 @@
         "type": "dropdown",
         "label": {
           "en": "Tamper alarm",
-          "no": "Sabotasjealarm",
           "nl": "Sabotage alarm"
         },
         "hint": {
           "en": "This parameter (74) determines when the tamper alarm is sent.",
-          "no": "Denne parameter (74) bestemmer når sabotasjealarm skal sendes.",
           "nl": "Deze parameter (74) bepaalt wanneer het sabotage alarm afgaat."
         },
         "zwave": {
@@ -219,7 +208,6 @@
             "id": "0",
             "label": {
               "en": "Tamper alarm off",
-              "no": "Sabotasjealarm av",
               "nl": "Sabotage alarm uit"
             }
           },
@@ -227,7 +215,6 @@
             "id": "1",
             "label": {
               "en": "Tamper alarm when removed from surface",
-              "no": "Sabotasjealarm når fjernet fra overflaten",
               "nl": "Sabotage alarm bij demontage"
             }
           },
@@ -235,7 +222,6 @@
             "id": "2",
             "label": {
               "en": "Tamper alarm on movement",
-              "no": "Sabotasjealarm ved bevegelse",
               "nl": "Sabotage alarm bij beweging"
             }
           },
@@ -243,7 +229,6 @@
             "id": "3",
             "label": {
               "en": "Both options",
-              "no": "Begge valg",
               "nl": "Beide opties"
             }
           }
@@ -255,7 +240,6 @@
     "type": "group",
     "label": {
       "en": "Visual and acoustic nofitications",
-      "no": "Visuelle og akustiske varsler",
       "nl": "Visuele en acoestische notificaties"
     },
     "collapsed": true,
@@ -265,12 +249,10 @@
         "type": "dropdown",
         "label": {
           "en": "Low temperature LED",
-          "no": "Lav temperatur LED",
           "nl": "Temperatuur laag LED"
         },
         "hint": {
           "en": "This parameter (61) determines which colour the low temperature alarm LED indication displays.",
-          "no": "Denne parameter (61) bestemmer hvilken farge som skal indikere lav temperatur på LED visning.",
           "nl": "Deze parameter (61) bepaalt de kleur van de LED wanneer het lage temperatuuralarm afgaat."
         },
         "zwave": {
@@ -283,7 +265,6 @@
             "id": "0",
             "label": {
               "en": "LED Off",
-              "no": "LED av",
               "nl": "LED Uit"
             }
           },
@@ -291,7 +272,6 @@
             "id": "16711680",
             "label": {
               "en": "Red",
-              "no": "Rød",
               "nl": "Rood"
             }
           },
@@ -299,7 +279,6 @@
             "id": "65280",
             "label": {
               "en": "Green",
-              "no": "Grønn",
               "nl": "Groen"
             }
           },
@@ -307,7 +286,6 @@
             "id": "255",
             "label": {
               "en": "Blue",
-              "no": "Blå",
               "nl": "Blauw"
             }
           },
@@ -315,7 +293,6 @@
             "id": "16776960",
             "label": {
               "en": "Yellow",
-              "no": "Gul",
               "nl": "Geel"
             }
           },
@@ -323,7 +300,6 @@
             "id": "65535",
             "label": {
               "en": "Cyan",
-              "no": "Cyan",
               "nl": "Cyaan"
             }
           },
@@ -331,7 +307,6 @@
             "id": "16750848",
             "label": {
               "en": "Orange",
-              "no": "Oransje",
               "nl": "Oranje"
             }
           },
@@ -339,7 +314,6 @@
             "id": "16777215",
             "label": {
               "en": "White",
-              "no": "Hvit",
               "nl": "Wit"
             }
           }
@@ -350,12 +324,10 @@
         "type": "dropdown",
         "label": {
           "en": "High temperature LED",
-          "no": "Høy temperatur LED",
           "nl": "Temperatuur hoog LED"
         },
         "hint": {
           "en": "This parameter (62) determines which colour the high temperature alarm LED indication displays.",
-          "no": "Denne parameter (62) bestemmer hvilken farge som skal indikere høy temperatur på LED visning.",
           "nl": "Deze parameter (62) bepaalt de kleur van de LED wanneer het hoge temperatuuralarm afgaat."
         },
         "zwave": {
@@ -368,7 +340,6 @@
             "id": "0",
             "label": {
               "en": "LED Off",
-              "no": "LED av",
               "nl": "LED Uit"
             }
           },
@@ -376,7 +347,6 @@
             "id": "16711680",
             "label": {
               "en": "Red",
-              "no": "Rød",
               "nl": "Rood"
             }
           },
@@ -384,7 +354,6 @@
             "id": "65280",
             "label": {
               "en": "Green",
-              "no": "Grønn",
               "nl": "Groen"
             }
           },
@@ -392,7 +361,6 @@
             "id": "255",
             "label": {
               "en": "Blue",
-              "no": "Blå",
               "nl": "Blauw"
             }
           },
@@ -400,7 +368,6 @@
             "id": "16776960",
             "label": {
               "en": "Yellow",
-              "no": "Gul",
               "nl": "Geel"
             }
           },
@@ -408,7 +375,6 @@
             "id": "65535",
             "label": {
               "en": "Cyan",
-              "no": "Cyan",
               "nl": "Cyaan"
             }
           },
@@ -416,7 +382,6 @@
             "id": "16750848",
             "label": {
               "en": "Orange",
-              "no": "Oransje",
               "nl": "Oranje"
             }
           },
@@ -424,7 +389,6 @@
             "id": "16777215",
             "label": {
               "en": "White",
-              "no": "Hvit",
               "nl": "Wit"
             }
           }
@@ -442,7 +406,6 @@
             "id": "0",
             "label": {
               "en": "LED doesn't indicate",
-              "no": "LED skal ikke aktiveres",
               "nl": "LED geeft niet weer"
             }
           },
@@ -450,7 +413,6 @@
             "id": "1",
             "label": {
               "en": "LED blinks every measurement",
-              "no": "LED blinker ved hver måling",
               "nl": "LED knippert bij elke meting"
             }
           },
@@ -458,7 +420,6 @@
             "id": "2",
             "label": {
               "en": "LED always on (when constantly powered)",
-              "no": "LED alltid på (når forsynt med konstant spenning)",
               "nl": "LED geeft altijd weer (onder constante spanning"
             }
           }

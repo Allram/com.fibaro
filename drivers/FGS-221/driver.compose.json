@@ -28,12 +28,10 @@
       8202,
       12298
     ],
-    "includeSecure": false,
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times",
-        "no": "Trykk på knappen på {{driverNameNo}} tre ganger",
         "nl": "Druk driemaal op de knop op uw {{driverNameNl}}"
       }
     },
@@ -49,7 +47,6 @@
         "icon": "{{driverAssetsPath}}/icon-2.svg",
         "name": {
           "en": "Relay 2 (S2 & Q2)",
-          "no": "Relè 2 (S2 & Q2)",
           "nl": "Relais 2 (S2 & Q2)"
         },
         "settings": []

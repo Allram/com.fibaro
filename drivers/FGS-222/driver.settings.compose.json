@@ -4,12 +4,10 @@
     "type": "checkbox",
     "label": {
       "en": "Auto-off behaviour",
-      "no": "Auto-av oppførsel",
       "nl": "Automatisch uit gedrag"
     },
     "hint": {
       "en": "If enabled pressing the switch for the second time will immediately turn off the relays, when disabled they will only turn off automatically.",
-      "no": "Hvis aktivert til trykking av bryteren for andre gang umiddelbart skru av relène, når daktivert vil de kun skru seg av automatisk.",
       "nl": "Als geactiveerd zullen de relais bij een tweede keer drukken meteen uitgaan, wanneer niet geactiveerd gaan de relais alleen automatisch uit. "
     },
     "zwave": {
@@ -23,12 +21,10 @@
     "type": "number",
     "label": {
       "en": "Auto-off relay 1",
-      "no": "Auto-av relè 1",
       "nl": "Automatisch uit relais 1"
     },
     "hint": {
       "en": "Set the time relay 1 will turn off automatically.",
-      "no": "Setter tiden relè 1 vil skru seg av automatisk",
       "nl": "Zet de tijd dat relais 1 automatisch uit gaat."
     },
     "zwave": {
@@ -47,12 +43,10 @@
     "type": "number",
     "label": {
       "en": "Auto-off relay 2",
-      "no": "Auto-av relè 2",
       "nl": "Automatisch uit relais 2"
     },
     "hint": {
       "en": "Set the time relay 2 will turn off automatically.",
-      "no": "Setter tiden relè 2 vil skru seg av automatisk",
       "nl": "Zet de tijd dat relais 2 automatisch uit gaat."
     },
     "zwave": {
@@ -79,12 +73,10 @@
     "type": "dropdown",
     "label": {
       "en": "Switch behaviour",
-      "no": "Bryteroppførsel",
       "nl": "Schakelaar gedrag"
     },
     "hint": {
       "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the {{driverNameEn}} when the switch is toggled.",
-      "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen på {{driverNameNo}} når bryteren er endret.",
       "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de {{driverNameNl}} wanneer de schakelaar omgezet wordt."
     },
     "zwave": {
@@ -97,7 +89,6 @@
         "id": "0",
         "label": {
           "en": "Toggle when switched",
-          "no": "Veksle når endret",
           "nl": "Wissel als de schakelaar omgezet wordt"
         }
       },
@@ -105,7 +96,6 @@
         "id": "1",
         "label": {
           "en": "On when switch is turned on",
-          "no": "På når enhet er på",
           "nl": "Aan als de schakelaar op aan staat"
         }
       }

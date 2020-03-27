@@ -2,7 +2,6 @@
   "id": "FGPB-101",
   "name": {
     "en": "Button",
-    "no": "Knapp",
     "nl": "Druk Knop"
   },
   "class": "sensor",
@@ -29,14 +28,12 @@
       40960,
       45056
     ],
-    "includeSecure": false,
     "zwaveAllianceProductId": 1944,
     "zwaveAllianceProductDocumentation": "https://Products.Z-WaveAlliance.org/ProductManual/File?folder=&filename=Manuals/1944/FGPB-101-EN-T-v1.0.pdf",
     "learnmode": {
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the {{driverNameEn}} 6 times",
-        "no": "Trykk på {{driverNameNo}} 6 ganger",
         "nl": "Druk 6 keer op de {{driverNameNl}}"
       }
     },
@@ -46,8 +43,7 @@
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": " Lifeline reports the device status and allows for assigning single device only (main controller by default).\r\n",
-          "no": "Rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard).\r\n"
+          "en": " Lifeline reports the device status and allows for assigning single device only (main controller by default).\r\n"
         }
       }
     }

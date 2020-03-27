@@ -3,7 +3,6 @@
     "type": "group",
     "label": {
       "en": "Contact sensor",
-      "no": "Kontaktsensor",
       "nl": "Contact sensor"
     },
     "collapsed": false,
@@ -24,7 +23,6 @@
             "id": "0",
             "label": {
               "en": "Closed by default",
-              "no": "Lukket som standard",
               "nl": "Normaal gesloten"
             }
           },
@@ -32,7 +30,6 @@
             "id": "1",
             "label": {
               "en": "Opened by default",
-              "no": "Åpen som standard",
               "nl": "Normaal Open"
             }
           },
@@ -40,7 +37,6 @@
             "id": "2",
             "label": {
               "en": "Monostable Switch",
-              "no": "Monostabil bryter",
               "nl": "Puls Schakelaar"
             }
           },
@@ -48,7 +44,6 @@
             "id": "3",
             "label": {
               "en": "Toggle Switch",
-              "no": "Vekslebryter",
               "nl": "Tuimel Schakelaar"
             }
           }
@@ -61,7 +56,6 @@
     "type": "group",
     "label": {
       "en": "Temperature sensor",
-      "no": "Temperatursensor",
       "nl": "Temperatuurssensor"
     },
     "collapsed": true,
@@ -86,7 +80,6 @@
     "type": "group",
     "label": {
       "en": "Tamper alarm",
-      "no": "Sabotasjealarm",
       "nl": "Sabotage alarm"
     },
     "collapsed": true,

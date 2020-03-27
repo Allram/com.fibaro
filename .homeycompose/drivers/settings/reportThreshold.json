@@ -2,12 +2,10 @@
   "value": 200,
   "label": {
     "en": "Report threshold",
-    "no": "Rapporteringsgrense",
     "nl": "Rapportage drempel"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the minimum change in value before reporting changes to Homey.",
-    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer minste verdiendring før verdien rapporteres til Homey.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de minimum verandering van de meetwaarde voordat deze naar Homey wordt gestuurd."
   },
   "zwave": {

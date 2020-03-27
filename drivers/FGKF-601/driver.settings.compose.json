@@ -3,7 +3,6 @@
     "type": "group",
     "label": {
       "en": "Buttons",
-      "no": "Knapper",
       "nl": "Knoppen"
     },
     "collapsed": true,
@@ -13,7 +12,6 @@
         "$id": "square_scenes",
         "label": {
           "en": "Square (□) button",
-          "no": "Firkant (□) knappen",
           "nl": "Vierkante (□) knop"
         },
         "zwave": {
@@ -26,7 +24,6 @@
         "$id": "circle_scenes",
         "label": {
           "en": "Circle (○) button",
-          "no": "Sirkel (○) knappen",
           "nl": "Cirkel (○) knop"
         },
         "zwave": {
@@ -39,7 +36,6 @@
         "$id": "cross_scenes",
         "label": {
           "en": "Cross (x) button",
-          "no": "Kryss (x) knappen",
           "nl": "Kruis (x) knop"
         },
         "zwave": {
@@ -52,7 +48,6 @@
         "$id": "triangle_scenes",
         "label": {
           "en": "Triangle (△) button",
-          "no": "Trekant (△) trekant",
           "nl": "Driehoek (△) knop"
         },
         "zwave": {
@@ -65,7 +60,6 @@
         "$id": "minus_scenes",
         "label": {
           "en": "Minus (-) button",
-          "no": "Minus (-) knappen",
           "nl": "Min (-) knop"
         },
         "zwave": {
@@ -78,7 +72,6 @@
         "$id": "plus_scenes",
         "label": {
           "en": "Plus (+) button",
-          "no": "Pluss (+) knappen",
           "nl": "Plus (+) knop"
         },
         "zwave": {
@@ -92,7 +85,6 @@
     "type": "group",
     "label": {
       "en": "Sequences",
-      "no": "Sekvenser",
       "nl": "Reeksen"
     },
     "collapsed": true,
@@ -110,7 +102,6 @@
         "type": "number",
         "label": {
           "en": "Time till lock",
-          "no": "Tid til lås",
           "nl": "Tijd tot vergrendeling"
         },
         "value": 1,
@@ -124,7 +115,6 @@
         },
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the time of inactivity after which the device will lock itself.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer hvor lenge enheten skal være inaktiv før den låser seg.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt hoe lang het apparaat inactief moet zijn voordat deze vergrendeld word."
         }
       },
@@ -133,7 +123,6 @@
         "$id": "sequence_lock",
         "label": {
           "en": "Lock sequence",
-          "no": "Låsesekvens",
           "nl": "Vergrendel reeks"
         },
         "zwave": {
@@ -202,7 +191,6 @@
     "type": "group",
     "label": {
       "en": "Association Group Button Values",
-      "no": "Assosiasjonsgruppe knappeverdier",
       "nl": "Associatie Groep Knop Waarden"
     },
     "collapsed": true,
@@ -212,7 +200,6 @@
         "type": "dropdown",
         "label": {
           "en": "Association groups operating mode",
-          "no": "Assosiasjonsgruppe operasjonsmodus",
           "nl": "Associatie groepen besturingsmodus"
         },
         "zwave": {
@@ -225,7 +212,6 @@
             "id": "0",
             "label": {
               "en": "Single press: toggle state",
-              "no": "Enkelt trykk: endre status",
               "nl": "Eenmaal drukken: schakel status"
             }
           },
@@ -233,7 +219,6 @@
             "id": "1",
             "label": {
               "en": "Single press: toggle state, double press: full brightness",
-              "no": "Enkelt trykk: endre status, dobbeltrykk: full lysstyrke",
               "nl": "Eenmaal drukken: schakel status, tweemaal drukken: volle helderheid"
             }
           },
@@ -241,14 +226,12 @@
             "id": "2",
             "label": {
               "en": "Single press: turn on, double press: turn off",
-              "no": "Enkelt trykk: skru på, dobbeltrykk: skru av",
               "nl": "Eenmaal drukken: schakel aan, tweemaal drukken: sckakel uit"
             }
           }
         ],
         "hint": {
           "en": "This parameter ({{zwaveParameterIndex}}) determines the behaviour of the {{driverNameEn}} with regard to its association groups.",
-          "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer oppførselen av {{driverNameNo}} med hensyn til assosiasjonsgruppene.",
           "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt het gedrag van de {{driverNameNl}} met betrekking tot zijn associatie groepen."
         }
       },
@@ -257,7 +240,6 @@
         "$id": "value_group_square",
         "label": {
           "en": "Group 2 and 3 (□)",
-          "no": "Gruppe 2 og 3 (□)",
           "nl": "Groep 2 en 3 (□)"
         },
         "zwave": {
@@ -271,7 +253,6 @@
         "$id": "value_group_circle",
         "label": {
           "en": "Group 4 and 5 (○)",
-          "no": "Gruppe 4 og 5 (○)",
           "nl": "Groep 4 en 5 (○)"
         },
         "zwave": {
@@ -285,7 +266,6 @@
         "$id": "value_group_cross",
         "label": {
           "en": "Group 6 and 7 (x)",
-          "no": "Gruppe 6 og 7 (x)",
           "nl": "Groep 6 en 7 (x)"
         },
         "zwave": {
@@ -299,7 +279,6 @@
         "$id": "value_group_triangle",
         "label": {
           "en": "Group 8 and 9 (△)",
-          "no": "Gruppe 8 og 9 (△)",
           "nl": "Groep 8 en 9 (△)"
         },
         "zwave": {
@@ -313,7 +292,6 @@
         "$id": "value_group_minus",
         "label": {
           "en": "Group 10 and 11 (-)",
-          "no": "Gruppe 10 og 11 (-)",
           "nl": "Groep 10 en 11 (-)"
         },
         "zwave": {
@@ -327,7 +305,6 @@
         "$id": "value_group_plus",
         "label": {
           "en": "Group 12 and 13 (+)",
-          "no": "Gruppe 12 og 13 (+)",
           "nl": "Groep 12 en 13 (+)"
         },
         "zwave": {

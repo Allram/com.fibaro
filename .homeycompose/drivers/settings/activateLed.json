@@ -2,7 +2,6 @@
   "type": "checkbox",
   "label": {
     "en": "Enable LED notifications",
-    "no": "Aktiver LED varsler",
     "nl": "Schakel LED notificaties in"
   },
   "zwave": {
@@ -11,7 +10,6 @@
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) allows you to enable/disable LED indications.",
-    "no": "Denne parameteren ({{zwaveParameterIndex}}) tillater deg å aktivere/deaktivere LED varsler.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt of de LED indicatie is ingeschakeld."
   },
   "value": true

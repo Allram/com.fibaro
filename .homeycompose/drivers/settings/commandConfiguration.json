@@ -2,12 +2,10 @@
   "value": "0",
   "label": {
     "en": "Activation/Deactivation command",
-    "no": "Aktivering/Deaktiveringskommando",
     "nl": "(De-)Activatie commando"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines the commands sent when the sensor/alarm activates and deactivates.",
-    "no": "Denne parameter ({{zwaveParameterIndex}}) bestemmer kommandoer som blir sendt når sensor/alark aktiveres og deaktiveres.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de commandos die worden verstuurt bij de (de-)activatie van de sensor/het alarm."
   },
   "zwave": {

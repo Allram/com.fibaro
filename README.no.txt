@@ -1,2 +1,0 @@
-Fibaro har et omfattende utvalg av sensorer og brytere, både plug-and-play og innebygd. Alle av disse kan styres direkte, trådløst av Homey. Begynn i det små med den enkle, vakre, kompakte veggpluggen, eller gå all-in og gjør alle eksisterende lysbrytere smarte med Fibaro Dimmer.
-Eller start med enhetene du allerede eier, som TV, Chromecast, Sonos eller smart termostat. Utvid og nyt et enda bedre hjem.

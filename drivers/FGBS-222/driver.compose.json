@@ -23,91 +23,78 @@
     "alarm_generic.input1": {
       "title": {
         "en": "Alarm input 1",
-        "no": "Alarm inngang 1",
         "nl": "Alarm ingang 1"
       }
     },
     "alarm_generic.input2": {
       "title": {
         "en": "Alarm input 2",
-        "no": "Alarm inngang 2",
         "nl": "Alarm ingang 2"
       }
     },
     "measure_voltage.input1": {
       "title": {
         "en": "Voltage input 1",
-        "no": "Spenning inngang 1",
         "nl": "Spanning ingang 1"
       }
     },
     "measure_voltage.input2": {
       "title": {
         "en": "Voltage input 2",
-        "no": "Spenning inngang 2",
         "nl": "Spanning ingang 2"
       }
     },
     "onoff.output1": {
       "title": {
         "en": "Output 1",
-        "no": "Utgang 1",
         "nl": "Uitgang 1"
       }
     },
     "onoff.output2": {
       "title": {
         "en": "Output 2",
-        "no": "Utgang 2",
         "nl": "Uitgang 2"
       }
     },
     "measure_temperature.internal": {
       "title": {
         "en": "Interal temperature sensor",
-        "no": "Intern temperatur sensor",
         "nl": "Interne temperatuur sensor"
       }
     },
     "measure_temperature.external1": {
       "title": {
         "en": "External temperature sensor 1",
-        "no": "Ekstern temperatur sensor 1",
         "nl": "Externe temperatuur sensor 1"
       }
     },
     "measure_temperature.external2": {
       "title": {
         "en": "External temperature sensor 2",
-        "no": "Ekstern temperatur sensor 2",
         "nl": "Externe temperatuur sensor 2"
       }
     },
     "measure_temperature.external3": {
       "title": {
         "en": "External temperature sensor 3",
-        "no": "Ekstern temperatur sensor 2",
         "nl": "Externe temperatuur sensor 3"
       }
     },
     "measure_temperature.external4": {
       "title": {
         "en": "External temperature sensor 4",
-        "no": "Ekstern temperatur sensor 4",
         "nl": "Externe temperatuur sensor 4"
       }
     },
     "measure_temperature.external5": {
       "title": {
         "en": "External temperature sensor 5",
-        "no": "Ekstern temperatur sensor 5",
         "nl": "Externe temperatuur sensor 5"
       }
     },
     "measure_temperature.external6": {
       "title": {
         "en": "External temperature sensor 6",
-        "no": "Ekstern temperatur sensor 6",
         "nl": "Externe temperatuur sensor 6"
       }
     }
@@ -128,7 +115,6 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press the button on your {{driverNameEn}} three times.",
-        "no": "Trykk på knappen på {{driverNameNo}} tre ganger.",
         "nl": "Druk driemaal op de knop van uw {{driverNameNl}}."
       }
     },

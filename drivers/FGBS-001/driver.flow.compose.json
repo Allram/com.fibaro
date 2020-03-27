@@ -4,7 +4,6 @@
       "id": "FGBS-001_i1_on",
       "title": {
         "en": "Input 1 opened",
-        "no": "Inngang 1 åpnet",
         "nl": "Ingang 1 geopend"
       },
       "args": []
@@ -13,7 +12,6 @@
       "id": "FGBS-001_i1_off",
       "title": {
         "en": "Input 1 closed",
-        "no": "Inngang 1 lukket",
         "nl": "Ingang 1 gesloten"
       },
       "args": []
@@ -22,7 +20,6 @@
       "id": "FGBS-001_i1_switch",
       "title": {
         "en": "Input 1 switched",
-        "no": "Inngang 1 endret",
         "nl": "Ingang 1 geschakeld"
       },
       "args": []
@@ -31,7 +28,6 @@
       "id": "FGBS-001_i2_on",
       "title": {
         "en": "Input 2 opened",
-        "no": "Inngang 2 åpnet",
         "nl": "Ingang 2 geopend"
       },
       "args": []
@@ -40,7 +36,6 @@
       "id": "FGBS-001_i2_off",
       "title": {
         "en": "Input 2 closed",
-        "no": "Inngang 2 lukket",
         "nl": "Ingang 2 gesloten"
       },
       "args": []
@@ -49,7 +44,6 @@
       "id": "FGBS-001_i2_switch",
       "title": {
         "en": "Input 2 switched",
-        "no": "Inngang 2 endret",
         "nl": "Ingang 2 geschakeld"
       },
       "args": []
@@ -58,7 +52,6 @@
       "id": "FGBS-001_temp1",
       "title": {
         "en": "Temperature 1 has changed",
-        "no": "Temperatur 1 er endret",
         "nl": "Temperatuur 1 is veranderd"
       },
       "args": [],
@@ -68,7 +61,6 @@
           "type": "number",
           "title": {
             "en": "Temperature",
-            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -79,7 +71,6 @@
       "id": "FGBS-001_temp2",
       "title": {
         "en": "Temperature 2 has changed",
-        "no": "Temperatur 2 er endret",
         "nl": "Temperatuur 2 is veranderd"
       },
       "args": [],
@@ -89,7 +80,6 @@
           "type": "number",
           "title": {
             "en": "Temperature",
-            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -100,7 +90,6 @@
       "id": "FGBS-001_temp3",
       "title": {
         "en": "Temperature 3 has changed",
-        "no": "Temperatur 3 er endret",
         "nl": "Temperatuur 3 is veranderd"
       },
       "args": [],
@@ -110,7 +99,6 @@
           "type": "number",
           "title": {
             "en": "Temperature",
-            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -121,7 +109,6 @@
       "id": "FGBS-001_temp4",
       "title": {
         "en": "Temperature 4 has changed",
-        "no": "Temperatur 4 er endret",
         "nl": "Temperatuur 4 is veranderd"
       },
       "args": [],
@@ -131,7 +118,6 @@
           "type": "number",
           "title": {
             "en": "Temperature",
-            "no": "Temperatur",
             "nl": "Temperatuur"
           },
           "example": 18
@@ -144,7 +130,6 @@
       "id": "FGBS-001_i1",
       "title": {
         "en": "Input 1 !{{is open|is closed}}",
-        "no": "Inngang 1 !{{er åpen|er lukket}}",
         "nl": "Ingang 1 !{{is geopend|is gesloten}}"
       },
       "args": []
@@ -153,7 +138,6 @@
       "id": "FGBS-001_i2",
       "title": {
         "en": "Input 2 !{{is open|is closed}}",
-        "no": "Inngang 2 !{{er åpen|er lukket}}",
         "nl": "Ingang 2 !{{is geopend|is gesloten}}"
       },
       "args": []

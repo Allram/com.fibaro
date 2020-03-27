@@ -2,12 +2,10 @@
   "value": 30,
   "label": {
     "en": "Cancellation delay (s)",
-    "no": "Kanselleringsforsinkelse (s)",
     "nl": "Annuleringsperiode (s)"
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) sets the time after which the visual and acoustic alarm will be cancelled.",
-    "no": "Denne parameter ({{zwaveParameterIndex}}) setter tiden når både visuell og akustisk alarm vil bli avstilt.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt de tijd waarna de visuele en akoestische alarmen gedeactiveert worden."
   },
   "zwave": {

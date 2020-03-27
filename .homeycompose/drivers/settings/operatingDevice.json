@@ -2,7 +2,6 @@
   "type": "radio",
   "label": {
     "en": "Switch type",
-    "no": "Brytertype",
     "nl": "Schakelaar type"
   },
   "zwave": {
@@ -11,7 +10,6 @@
   },
   "hint": {
     "en": "This parameter ({{zwaveParameterIndex}}) determines what device triggers the alarm.",
-    "no": "Denen parameter ({{zwaveParameterIndex}}) bestemmer hvilken enheter som trigger alarm.",
     "nl": "Deze parameter ({{zwaveParameterIndex}}) bepaalt wat voor apparaat het alarm activeert."
   },
   "value": "0",

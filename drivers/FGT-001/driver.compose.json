@@ -2,7 +2,6 @@
   "id": "FGT-001",
   "name": {
     "en": "Radiator Thermostat",
-    "no": "Radiator termostat",
     "nl": "Radiator Thermostaat"
   },
   "class": "thermostat",
@@ -43,7 +42,6 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Use the included key to quickly triple click the button on the {{driverNameEn}}",
-        "no": "Bruk den inkluderte nøkkelen for å trippeltrykke på knappen på {{driverNameNo}}",
         "nl": "Gebruik het bijgeleverde sleuteltje om drie keer snel op de knop op de {{driverNameNl}} te drukken"
       }
     },
@@ -53,8 +51,7 @@
     "associationGroupsOptions": {
       "1": {
         "hint": {
-          "en": "Z-Wave Plus Lifeline association group that reports the device status and allows for assigning single device only (main controller by default)",
-          "no": "Z-Wave Plus Lifeline rapporterer enhetens status og tillater tilordning til kun enkeltenheter (nettverkskontroller som standard)."
+          "en": "Z-Wave Plus Lifeline association group that reports the device status and allows for assigning single device only (main controller by default)"
         }
       }
     }

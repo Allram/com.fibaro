@@ -26,7 +26,6 @@
       "image": "{{driverAssetsPath}}/learnmode.svg",
       "instruction": {
         "en": "Press a button on your {{driverNameEn}} three times",
-        "no": "Trykk på knappen på {{driverNameNo}} tre ganger",
         "nl": "Druk driemaal op een knop van uw {{driverNameNl}}"
       }
     },
