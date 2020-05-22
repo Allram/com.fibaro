@@ -1,19 +1,30 @@
 {
-  "2.4.0": {
-    "en": "Added Walli Switch and Walli Rollershutter",
-    "nl": "Walli schakelaar en Walli rolluikschakelaar toegevoegd."
+  "2.2.8": {
+    "en": "Fix RGBW light temperature mode. Thanks to aartse for contributing his fix."
+  },
+  "2.2.9": {
+    "en": "Change FGWPx-102 default LED parameters, thanks to Caseda for notifying us. Fixed a value issue for the FGD-212 brightness parameters, thanks to Thorarin for his fix."
+  },
+  "2.2.10": {
+    "en": "Fixed FGD-212, FGS-212, FGS-213, FGS-223, LED Mode for Plug 102"
   },
   "2.3.0": {
     "en": "Added RGBW 2 controller (FGRGBW-442).",
     "nl": "RGBW 2 controller (FGRGBW-442) toegevoegd."
   },
-  "2.2.9": {
-    "en": "Change FGWPx-102 default LED parameters, thanks to Caseda for notifying us. Fixed a value issue for the FGD-212 brightness parameters, thanks to Thorarin for his fix."
+  "2.4.0": {
+    "en": "Added Walli Switch and Walli Rollershutter",
+    "nl": "Walli schakelaar en Walli rolluikschakelaar toegevoegd."
   },
-  "2.2.8": {
-    "en": "Fix RGBW light temperature mode. Thanks to aartse for contributing his fix."
+  "2.4.2": {
+    "en": "Walli Switch fixes"
   },
-  "2.2.10": {
-    "en": "Fixed FGD-212, FGS-212, FGS-213, FGS-223, LED Mode for Plug 102"
+  "2.4.3": {
+    "en": "Walli Switch now works in single and double mode.",
+    "nl": "Walli Schakelaar werkt nu in enkele en dubbele modus."
+  },
+  "2.4.4": {
+    "en": "Bugfixes for various devices (Dimmer 2, Smart Implant).",
+    "nl": "Optimalisatie voor verschillende apparaten (Dimmer 2, Smart Implant)."
   }
 }

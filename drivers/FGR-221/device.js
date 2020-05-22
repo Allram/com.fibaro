@@ -1,12 +1,12 @@
 'use strict';
 
-const ZwaveDevice = require('homey-meshdriver').ZwaveDevice;
+const { ZwaveDevice } = require('homey-meshdriver');
 
 class FibaroRollerShutterDevice extends ZwaveDevice {
 
-	onMeshInit() {
-		this.registerCapability('dim', 'SWITCH_MULTILEVEL');
-	}
+  onMeshInit() {
+    this.registerCapability('dim', 'SWITCH_MULTILEVEL');
+  }
 
 }
 

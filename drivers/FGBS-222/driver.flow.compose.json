@@ -200,6 +200,48 @@
           "example": 18
         }
       ]
+    },
+    {
+      "id": "analog_input_1",
+      "title": {
+        "en": "Voltage input 1 changed",
+        "nl": "Voltage ingang 1 veranderd"
+      },
+      "hint": {
+        "en": "This will only trigger if the input type is set to analog",
+        "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
+      },
+      "tokens": [
+        {
+          "name": "volt",
+          "type": "number",
+          "title": {
+            "en": "Volt"
+          },
+          "example": 5
+        }
+      ]
+    },
+    {
+      "id": "analog_input_2",
+      "title": {
+        "en": "Voltage input 2 changed",
+        "nl": "Voltage ingang 2 veranderd"
+      },
+      "hint": {
+        "en": "This will only trigger if the input type is set to analog",
+        "nl": "Dit zal alleen werken wanneer het ingangtype staat ingesteld op analoog"
+      },
+      "tokens": [
+        {
+          "name": "volt",
+          "type": "number",
+          "title": {
+            "en": "Volt"
+          },
+          "example": 5
+        }
+      ]
     }
   ],
   "conditions": [

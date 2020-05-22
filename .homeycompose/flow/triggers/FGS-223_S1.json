@@ -1,9 +1,9 @@
 {
     "id": "FGS-223_S1",
-      "title": {
-        "en": "Left Switch Scene (S1)",
-        "nl": "Linker Schakelaar Scene (S1)"
-      },
+    "title": {
+      "en": "Left Switch Scene (S1)",
+      "nl": "Linker Schakelaar Scene (S1)"
+    },
     "args": [
       {
         "name": "device",
