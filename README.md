@@ -1,3 +1,10 @@
+# This is not needed anymore
+To force unsecure, you can use the official Fibaro app and include the device as Walli. It will then be forced unsecure and added as the correct device.
+
+
+
+
+
 # Fibaro
 This app adds support for Fibaro devices in Homey.
 
